@@ -7,7 +7,7 @@
 #SBATCH --array=1
 #SBATCH --mail-type=FAIL
 
-for scav in `seq 0.110 0.005 0.180`; do
-    mpirun -np 2 python3 nanobeam.py -s_cav ${scav} > nanobeam_cavity_length${scav}.out;
-    grep harminv0: nanobeam_cavity_length${scav}.out |cut -d , -f2,4 |grep -v frequency >> nanobeam_cavity_varylength.dat;
-done;
+JOB_NUM=$((SLURM_ARRAY_TASK_ID))
+
+mpirun -np 2 python3 nanobeam.py -s_cav $1 > nanobeam_cavity_length$1.out;
+grep harminv0: nanobeam_cavity_length$1.out |cut -d , -f2,4 |grep -v frequency >> nanobeam_cavity_varylength.dat;
