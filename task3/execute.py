@@ -13,7 +13,7 @@ try:
     step = sys.argv[1]
 except:
     start = 0.11
-    step = 0.05
+    step = 0.005
     end = 0.180 + step
 
 s_cavs = np.arange(start,end+step,step)
