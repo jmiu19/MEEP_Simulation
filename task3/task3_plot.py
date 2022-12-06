@@ -22,7 +22,7 @@ except:
 ## read in data
 df = pd.read_csv('nanobeam_cavity_varylength.dat', header=None, sep='\s\s+|,', engine='python')
 df.columns = ['nu', 'Q-factor']
-cavityLengths = np.arange(start, end+step, end)
+cavityLengths = np.arange(start, end+step, step)
 df['cavityLength'] = cavityLengths
 df['lambda'] = 1/df['nu'].values
 
