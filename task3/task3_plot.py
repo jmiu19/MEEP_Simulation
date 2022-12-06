@@ -1,12 +1,28 @@
 import pandas as pd
 import numpy as np
 import os
+import sys
 from matplotlib import pyplot as plt
+
+"""
+first argument: starting s_cav (microns)
+second argument: step of s_cav (microns)
+third argument: ending s_cav (microns)
+"""
+try:
+    start = float(sys.argv[0])
+    end = float(sys.argv[2])
+    step = float(sys.argv[1])
+except:
+    start = 0.11
+    step = 0.005
+    end = 0.180
+
 
 ## read in data
 df = pd.read_csv('nanobeam_cavity_varylength.dat', header=None, sep='\s\s+|,', engine='python')
 df.columns = ['nu', 'Q-factor']
-cavityLengths = np.arange(0.11,0.185,0.005)
+cavityLengths = np.arange(start, end+step, end)
 df['cavityLength'] = cavityLengths
 df['lambda'] = 1/df['nu'].values
 
