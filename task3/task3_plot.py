@@ -4,27 +4,14 @@ import os
 import sys
 from matplotlib import pyplot as plt
 
-"""
-first argument: starting s_cav (microns)
-second argument: step of s_cav (microns)
-third argument: ending s_cav (microns)
-"""
-try:
-    start = float(sys.argv[0])
-    end = float(sys.argv[2])
-    step = float(sys.argv[1])
-except:
-    start = 0.11
-    step = 0.005
-    end = 0.180
 
 
 ## read in data
-df = pd.read_csv('nanobeam_cavity_varylength.dat', header=None, sep='\s\s+|,', engine='python')
-df.columns = ['nu', 'Q-factor']
-cavityLengths = np.arange(start, end+step, step)
-df['cavityLength'] = cavityLengths
+df = pd.read_csv('nanobeam_cavity_varylength.dat', header=None, sep=',', engine='python')
+df.columns = ['cavityLength', 'nu', 'Q-factor']
+cavityLengths = df['cavityLength'].values.tolist()
 df['lambda'] = 1/df['nu'].values
+df = df.sort_values('cavityLength', axis=0)
 
 ## plot Q-factor over cavityLength
 plt.figure(figsize=(5,3))

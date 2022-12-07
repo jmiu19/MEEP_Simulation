@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=task3
-#SBATCH --mem-per-cpu=8g
+#SBATCH --mem-per-cpu=16g
 #SBATCH --account=dengh0
 #SBATCH --partition=standard
 #SBATCH --cpus-per-task=4
