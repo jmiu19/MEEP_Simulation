@@ -52,7 +52,7 @@ def main(args):
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_start, height=mp.inf,
                                     center=mp.Vector3(+0.5*sx-0.5*a_start-mm*a_start,0,0)))
     ## add holes (taper) to the band
-    for mm in range(Ndef+2):
+    for mm in range(Ndef+1):
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_taper[mm], height=mp.inf,
                                     center=mp.Vector3(-0.5*sx+Nwvg*a_start+(sum(a_taper[:mm]) if mm>0 else 0)+0.5*a_taper[mm],0,0)))
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_taper[mm], height=mp.inf,
