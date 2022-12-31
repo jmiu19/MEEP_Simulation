@@ -12,6 +12,7 @@ df.columns = ['cavityLength', 'nu', 'Q-factor']
 cavityLengths = df['cavityLength'].values.tolist()
 df['lambda'] = 1/df['nu'].values
 df = df.sort_values('cavityLength', axis=0)
+df.to_csv('output/nanobeam_cavity_varylength.csv')
 
 ## plot Q-factor over cavityLength
 plt.figure(figsize=(5,3))
@@ -21,7 +22,7 @@ plt.legend()
 plt.grid()
 plt.xlabel(r"cavity length ($\mu$m)", fontsize=14)
 plt.ylabel("Q-factor", fontsize=14)
-plt.savefig('Q_sCav.png', bbox_inches='tight')
+plt.savefig('output/Q_sCav.png', bbox_inches='tight')
 
 ## plot resonant wavelength over cavityLength
 plt.figure(figsize=(5,3))
@@ -31,7 +32,7 @@ plt.legend()
 plt.grid()
 plt.xlabel(r"cavity length ($\mu$m)", fontsize=14)
 plt.ylabel(r"resonant $\lambda$ ($\mu$m)", fontsize=14)
-plt.savefig('lambda_sCav.png', bbox_inches='tight')
+plt.savefig('output/lambda_sCav.png', bbox_inches='tight')
 
 
 
@@ -46,4 +47,4 @@ plt.figure(dpi=100)
 plt.imshow(eps_data.transpose(), interpolation='spline36', cmap='binary')
 plt.imshow(ey_data.transpose(), interpolation='spline36', cmap='RdBu', alpha=0.9)
 plt.axis('off')
-plt.savefig('config.png', bbox_inches='tight')
+plt.savefig('output/config.png', bbox_inches='tight')
