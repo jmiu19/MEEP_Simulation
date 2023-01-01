@@ -86,7 +86,8 @@ def main(args):
     # reset simulation and define plot
     sim.reset_meep()
     figure = plt.figure(dpi=100)
-    Animate = mp.Animate2D(fields=mp.Ey, f=figure, realtime=False, normalize=True)
+    Animate = mp.Animate2D(fields=mp.Ey, f=figure, realtime=False, normalize=True,
+                           output_plane=mp.Volume(center=mp.Vector3(0,0,0),size=mp.Vector3(sx, sy, 0)))
     plt.close()
     # simulate the animation
     sim.run(mp.at_every(1, Animate), until_after_sources=500)
