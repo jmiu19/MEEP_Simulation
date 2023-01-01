@@ -78,20 +78,18 @@ def main(args):
                         dimensions=3,
                         symmetries=symmetries)
 
-    sim.run(mp.in_volume(mp.Volume(center=mp.Vector3(), size=mp.Vector3(sx,sy,0)), mp.at_end(mp.output_epsilon, mp.output_efield_y)),
-            mp.after_sources(mp.Harminv(mp.Ey, mp.Vector3(), fcen, df)),
-            until_after_sources=500)
-
-    ## testing for animation
-    # reset simulation and define plot
+    ## For animation
     sim.reset_meep()
     figure = plt.figure(dpi=100)
     Animate = mp.Animate2D(fields=mp.Ey, f=figure, realtime=False, normalize=True,
                            output_plane=mp.Volume(center=mp.Vector3(0,0,0),size=mp.Vector3(sx, sy, 0)))
     plt.close()
-    # simulate the animation
-    sim.run(mp.at_every(1, Animate), until_after_sources=500)
-    plt.close()
+
+    # run the simulation
+    sim.run(mp.in_volume(mp.Volume(center=mp.Vector3(), size=mp.Vector3(sx,sy,0)), mp.at_end(mp.output_epsilon, mp.output_efield_y)),
+            mp.at_every(1, Animate), mp.after_sources(mp.Harminv(mp.Ey, mp.Vector3(), fcen, df)),
+            until_after_sources=500)
+
     # save the animation
     filename = "output/animation.mp4"
     Animate.to_mp4(10, filename)
