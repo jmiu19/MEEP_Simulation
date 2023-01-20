@@ -66,9 +66,9 @@ def main(args):
     ## add holes (taper) to the band
     for mm in range(Ndef):
         geometry.append(mp.Cylinder(material=mp.air, radius=r_taper[::-1][mm], height=mp.inf,
-                                    center=mp.Vector3(sum(+a_taper[::-1][:mm+1])-a_taper[-1]/2,0,0)))
+                                    center=mp.Vector3(+sum(a_taper[::-1][:mm+1])-a_taper[-1]/2,0,0)))
         geometry.append(mp.Cylinder(material=mp.air, radius=r_taper[::-1][mm], height=mp.inf,
-                                    center=mp.Vector3(sum(-a_taper[::-1][:mm+1])+a_taper[-1]/2,0,0)))
+                                    center=mp.Vector3(-sum(a_taper[::-1][:mm+1])+a_taper[-1]/2,0,0)))
 
     ## define the source
     lambda_min = Lam_s        # minimum source wavelength  (do 0.72 um)
