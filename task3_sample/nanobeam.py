@@ -1,5 +1,9 @@
 import meep as mp
 import argparse
+import os
+import sys
+from matplotlib import pyplot as plt
+
 
 def main(args):
 
