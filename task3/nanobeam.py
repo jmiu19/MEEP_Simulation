@@ -59,13 +59,13 @@ def main(args):
 
     ## add holes (waveguide) to the band
     for mm in range(Nwvg):
-        geometry.append(mp.Cylinder(material=mp.air, radius=r*a_start, height=mp.inf,
+        geometry.append(mp.Cylinder(material=mp.air, radius=r*a_0, height=mp.inf,
                                     center=mp.Vector3(+sum(a_taper)-a_taper[-1]/2+mm*a_0,0,0)))
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_start, height=mp.inf,
                                     center=mp.Vector3(-sum(a_taper)+a_taper[-1]/2-mm*a_0,0,0)))
     ## add holes (taper) to the band
     for mm in range(Ndef):
-        geometry.append(mp.Cylinder(material=mp.air, radius=r*a_taper[mm], height=mp.inf,
+        geometry.append(mp.Cylinder(material=mp.air, radius=r_taper[::-1][mm], height=mp.inf,
                                     center=mp.Vector3(sum(+a_taper[::-1][:mm+1])-a_taper[-1]/2,0,0)))
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_taper[mm], height=mp.inf,
                                     center=mp.Vector3(sum(-a_taper[::-1][:mm+1])+a_taper[-1]/2,0,0)))
