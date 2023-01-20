@@ -20,6 +20,8 @@ def main(args):
     r = args.r                            # hole radius in unit of periodicity (try 0.35)
     h = args.hh                           # waveguide height      (try 0.140 um)
     w = args.w                            # waveguide width       (try 1.4 in unit of a)
+    Lam_u = args.Lam_u                    # source maximum wavelength
+    Lam_s = args.Lam_s                    # source minimum wavelength
 
     dair = 1.00                           # air padding   # can try to reduce,
                                                           # should be longer than half-wavelength,
@@ -69,8 +71,8 @@ def main(args):
                                     center=mp.Vector3(sum(-a_taper[::-1][:mm+1])+a_taper[-1]/2,0,0)))
 
     ## define the source
-    lambda_min = 0.72        # minimum source wavelength  (do 0.72 um)
-    lambda_max = 0.77        # maximum source wavelength  (do 0.77 um)
+    lambda_min = Lam_s        # minimum source wavelength  (do 0.72 um)
+    lambda_max = Lam_u        # maximum source wavelength  (do 0.77 um)
     fmin = 1/lambda_max
     fmax = 1/lambda_min
     fcen = 0.5*(fmin+fmax)
@@ -112,6 +114,8 @@ if __name__ == '__main__':
     parser.add_argument('-w', type=float, default=1.4, help='waveguide width (default: 1.4 in unit of a)')
     parser.add_argument('-Ndef', type=int, default=4, help='number of defect periods (default: 4)')
     parser.add_argument('-Nwvg', type=int, default=8, help='number of waveguide periods (default: 8)')
+    parser.add_argument('-Lam_u', type=int, default=0.77, help='source maximal wavelength (default: 0.77)')
+    parser.add_argument('-Lam_s', type=int, default=0.72, help='source minimal wavelength (default: 0.72)')
     args = parser.parse_args()
     main(args)
 
