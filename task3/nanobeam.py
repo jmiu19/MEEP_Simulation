@@ -114,8 +114,8 @@ if __name__ == '__main__':
     parser.add_argument('-w', type=float, default=1.4, help='waveguide width (default: 1.4 in unit of a)')
     parser.add_argument('-Ndef', type=int, default=4, help='number of defect periods (default: 4)')
     parser.add_argument('-Nwvg', type=int, default=8, help='number of waveguide periods (default: 8)')
-    parser.add_argument('-Lam_u', type=int, default=0.77, help='source maximal wavelength (default: 0.77)')
-    parser.add_argument('-Lam_s', type=int, default=0.72, help='source minimal wavelength (default: 0.72)')
+    parser.add_argument('-Lam_u', type=float, default=0.77, help='source maximal wavelength (default: 0.77)')
+    parser.add_argument('-Lam_s', type=float, default=0.72, help='source minimal wavelength (default: 0.72)')
     args = parser.parse_args()
     main(args)
 
