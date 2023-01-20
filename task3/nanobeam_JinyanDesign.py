@@ -15,11 +15,12 @@ def main(args):
                                           #(~10 nanometer mesh is a typical value for testing)
                                           #(~2 nanometer mesh is a typical value for publication)
 
-    a_0 = args.a_0                        # lattice constant      (try 0.330 um)
-    taper_inc = args.taper_inc            # increment of r/a      (try 0.02 um)
-    r = args.r                            # hole radius in unit of periodicity (try 0.35)
+    a_start = args.a_start                # starting periodicity  (lattice constant, try 0.410 um)
+    a_end = args.a_end                    # ending periodicity    (try 0.330 um)
+    s_cav = args.s_cav                    # cavity length
+    r = args.r                            # hole radius           (in unit of periodicity)
     h = args.hh                           # waveguide height      (try 0.140 um)
-    w = args.w                            # waveguide width       (try 1.4 in unit of a)
+    w = args.w                            # waveguide width       (try 0.500 um)
 
     dair = 1.00                           # air padding   # can try to reduce,
                                                           # should be longer than half-wavelength,
@@ -27,23 +28,12 @@ def main(args):
     dpml = 1.00                           # PML thickness (Do not touch)
 
     Ndef = args.Ndef                      # number of defect periods   (try 4)
-
-    a_taper = []
-    r_taper = []
-    for i in range(Ndef+1):
-        if i == 0:
-            a_i = a_0
-        else:
-            a_i =  r_taper[-1] / 0.35
-        r_i = (r-taper_inc*i) * a_i
-        r_taper.append(r_i)
-        a_taper.append(a_i)
-
+    a_taper = mp.interpolate(Ndef-1, [a_start,a_end])[1:]
 
     Nwvg = args.Nwvg                      # number of waveguide periods
                                           # (can try smaller number to reduce simulation time)
-    sx = 2*sum(a_taper)-a_taper[-1] + 2*(Nwvg-1)*a_0 + a_0       # length of the crystal cavity
-    sy = dpml+dair+(w*a_0)+dair+dpml                                   # width of the simulation cell
+    sx = 2*(Nwvg*a_start+sum(a_taper))-a_end+s_cav+2*r*a_end     # length of the crystal cavity
+    sy = dpml+dair+w+dair+dpml                                   # width of the simulation cell
     sz = dpml+dair+h+dair+dpml                                   # height of the simulation cell
 
     cell_size = mp.Vector3(sx,sy,sz)
@@ -58,15 +48,15 @@ def main(args):
     ## add holes (waveguide) to the band
     for mm in range(Nwvg):
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_start, height=mp.inf,
-                                    center=mp.Vector3(+sum(a_taper)-a_taper[-1]/2+mm*a_0,0,0)))
+                                    center=mp.Vector3(-0.5*sx+0.5*a_start+mm*a_start,0,0)))
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_start, height=mp.inf,
-                                    center=mp.Vector3(-sum(a_taper)+a_taper[-1]/2-mm*a_0,0,0)))
+                                    center=mp.Vector3(+0.5*sx-0.5*a_start-mm*a_start,0,0)))
     ## add holes (taper) to the band
     for mm in range(Ndef):
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_taper[mm], height=mp.inf,
-                                    center=mp.Vector3(sum(+a_taper[::-1][:mm+1])-a_taper[-1]/2,0,0)))
+                                    center=mp.Vector3(-0.5*sx+Nwvg*a_start+(sum(a_taper[:mm]) if mm>0 else 0)+0.5*a_taper[mm],0,0)))
         geometry.append(mp.Cylinder(material=mp.air, radius=r*a_taper[mm], height=mp.inf,
-                                    center=mp.Vector3(sum(-a_taper[::-1][:mm+1])+a_taper[-1]/2,0,0)))
+                                    center=mp.Vector3(+0.5*sx-Nwvg*a_start-(sum(a_taper[:mm]) if mm>0 else 0)-0.5*a_taper[mm],0,0)))
 
     ## define the source
     lambda_min = 0.72        # minimum source wavelength  (do 0.72 um)
@@ -105,11 +95,12 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-a_0', type=float, default=0.33, help='lattice constant (default: 0.33 um)')
-    parser.add_argument('-taper_inc', type=float, default=0.02, help='increment of the ratio r/a for the taper region (default: 0.02)')
+    parser.add_argument('-a_start', type=float, default=0.41, help='starting periodicity (default: 0.41 um)')
+    parser.add_argument('-a_end', type=float, default=0.33, help='ending periodicity (default: 0.33 um)')
+    parser.add_argument('-s_cav', type=float, default=0.146, help='cavity length (default: 0.146 um)')
     parser.add_argument('-r', type=float, default=0.35, help='hole radius (default: 0.35 in unit of a)')
     parser.add_argument('-hh', type=float, default=0.14, help='waveguide height (default: 0.14 um)')
-    parser.add_argument('-w', type=float, default=1.4, help='waveguide width (default: 1.4 in unit of a)')
+    parser.add_argument('-w', type=float, default=0.50, help='waveguide width (default: 0.50 um)')
     parser.add_argument('-Ndef', type=int, default=4, help='number of defect periods (default: 4)')
     parser.add_argument('-Nwvg', type=int, default=8, help='number of waveguide periods (default: 8)')
     args = parser.parse_args()
