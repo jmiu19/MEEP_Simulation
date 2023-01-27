@@ -10,7 +10,7 @@ def main(args):
     then run the simulation   [[!!  units in microns (um) !!]]
     """
 
-    resolution = 40                       # pixels/um
+    resolution = 30                       # pixels/um
                                           #(start with ~50 nanometer mesh for testing)
                                           #(~10 nanometer mesh is a typical value for testing)
                                           #(~2 nanometer mesh is a typical value for publication)
@@ -34,7 +34,7 @@ def main(args):
     r_taper = []
     x_taper = []
     for i in range(Ndef+1):
-        r_i = (r - taper_inc * (N-i)) * a_0
+        r_i = (r_0 - taper_inc * (Ndef-i)) * a_0
         a_i = r_i / r_0
         a_taper.append(a_i)
         r_taper.append(r_i)
@@ -69,10 +69,10 @@ def main(args):
 
     ## add holes (waveguide) to the band
     for mm in range(Nwvg):
-        geometry.append(mp.Cylinder(material=mp.air, radius=r*a_0, height=mp.inf,
-                                    center=mp.Vector3(+sum(a_taper)-a_tapper[-1]/2+mm*a_0,0,0)))
-        geometry.append(mp.Cylinder(material=mp.air, radius=r*a_0, height=mp.inf,
-                                    center=mp.Vector3(-sum(x_taper)+a_tapper[-1]/2-mm*a_0,0,0)))
+        geometry.append(mp.Cylinder(material=mp.air, radius=r_0*a_0, height=mp.inf,
+                                    center=mp.Vector3(+sum(a_taper)-a_taper[-1]/2+mm*a_0,0,0)))
+        geometry.append(mp.Cylinder(material=mp.air, radius=r_0*a_0, height=mp.inf,
+                                    center=mp.Vector3(-sum(x_taper)+a_taper[-1]/2-mm*a_0,0,0)))
     ## add holes (taper) to the band
     for mm in range(Ndef):
         geometry.append(mp.Cylinder(material=mp.air, radius=r_taper[mm], height=mp.inf,
