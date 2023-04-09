@@ -1,0 +1,9 @@
+Warning: grid volume is not an integer number of pixels; cell size will be rounded to nearest pixel.
+Traceback (most recent call last):
+  File "/home/jmiu/MEEP_Simulation/coupled_bands_asymmetric_waveguide/automated_plot_resonance.py", line 7, in <module>
+Traceback (most recent call last):
+  File "/home/jmiu/MEEP_Simulation/coupled_bands_asymmetric_waveguide/automated_plot_resonance.py", line 7, in <module>
+    from scipy.optimize import curve_fit
+ModuleNotFoundError: No module named 'scipy'
+    from scipy.optimize import curve_fit
+ModuleNotFoundError: No module named 'scipy'

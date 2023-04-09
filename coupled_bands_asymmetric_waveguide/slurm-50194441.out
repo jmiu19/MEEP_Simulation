@@ -1,0 +1,64 @@
+/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/numpy/core/getlimits.py:500: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/numpy/core/getlimits.py:500: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+Warning: grid volume is not an integer number of pixels; cell size will be rounded to nearest pixel.
+Warning: grid volume is not an integer number of pixels; cell size will be rounded to nearest pixel.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/jmiu/MEEP_Simulation/coupled_bands_asymmetric_waveguide/automated_plot_resonance.py", line 48, in <module>
+  File "/home/jmiu/MEEP_Simulation/coupled_bands_asymmetric_waveguide/automated_plot_resonance.py", line 48, in <module>
+    df = pd.read_csv('output/cavity_resonances.dat', header=None, delimiter=', ', engine='python', skiprows=2)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    df = pd.read_csv('output/cavity_resonances.dat', header=None, delimiter=', ', engine='python', skiprows=2)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    return parser.read(nrows)
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1778, in read
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1778, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/python_parser.py", line 282, in read
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/python_parser.py", line 282, in read
+    alldata = self._rows_to_cols(content)
+    alldata = self._rows_to_cols(content)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/python_parser.py", line 1045, in _rows_to_cols
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/python_parser.py", line 1045, in _rows_to_cols
+    self._alert_malformed(msg, row_num + 1)
+    self._alert_malformed(msg, row_num + 1)
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/python_parser.py", line 765, in _alert_malformed
+  File "/home/jmiu/.conda/envs/new-conda/envs/pmp-new-conda/lib/python3.11/site-packages/pandas/io/parsers/python_parser.py", line 765, in _alert_malformed
+    raise ParserError(msg)
+pandas.errors.ParserError: Expected 6 fields in line 9, saw 7. Error could possibly be due to quotes being ignored when a multi-char delimiter is used.
+    raise ParserError(msg)
+pandas.errors.ParserError: Expected 6 fields in line 9, saw 7. Error could possibly be due to quotes being ignored when a multi-char delimiter is used.

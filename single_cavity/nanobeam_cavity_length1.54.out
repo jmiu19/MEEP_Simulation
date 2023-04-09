@@ -1,0 +1,59 @@
+Using MPI version 4.0, 2 processes
+-----------
+Initializing structure...
+Padding x to even number of grid points.
+Padding y to even number of grid points.
+Padding z to even number of grid points.
+Halving computational cell along direction x
+Halving computational cell along direction y
+Halving computational cell along direction z
+Splitting into 2 chunks by voxels
+time for choose_chunkdivision = 0.000946045 s
+Working in 3D dimensions.
+Computational cell is 12.4875 x 4.5125 x 4.1375 with resolution 80
+     block, center = (0,0,0)
+          size (1e+20,0.5082,0.14)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     cylinder, center = (1.29643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.29643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.62643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.62643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.95643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.95643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (2.28643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-2.28643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (2.61643,0,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     ...(+ 29 objects not shown)...
+time for set_epsilon = 23.1156 s
+-----------
+Meep progress: 0.00625/284.6666679382324 = 0.0% done in 10.3s, 467223.8s to go
+on time step 1 (time=0.00625), 10.2584 s/step
+Meep progress: 0.11875000000000001/284.6666679382324 = 0.0% done in 14.4s, 34622.5s to go
+on time step 19 (time=0.11875), 0.232801 s/step
+Meep progress: 0.23125/284.6666679382324 = 0.1% done in 18.7s, 22963.7s to go
+on time step 37 (time=0.23125), 0.234487 s/step
+Meep progress: 0.34375/284.6666679382324 = 0.1% done in 22.8s, 18873.9s to go
+on time step 55 (time=0.34375), 0.230493 s/step
+Meep progress: 0.45625000000000004/284.6666679382324 = 0.2% done in 27.0s, 16837.0s to go
+on time step 73 (time=0.45625), 0.233881 s/step
+Meep progress: 0.56875/284.6666679382324 = 0.2% done in 31.1s, 15545.0s to go
+on time step 91 (time=0.56875), 0.227302 s/step

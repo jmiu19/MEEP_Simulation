@@ -1,0 +1,4 @@
+Warning: grid volume is not an integer number of pixels; cell size will be rounded to nearest pixel.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 50739095 ON gl3287 CANCELLED AT 2023-04-07T10:59:14 ***
+slurmstepd: error: *** STEP 50739095.0 ON gl3287 CANCELLED AT 2023-04-07T10:59:14 ***
