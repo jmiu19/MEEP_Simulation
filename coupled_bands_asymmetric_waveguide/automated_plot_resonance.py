@@ -133,6 +133,7 @@ ax.invert_xaxis()
 
 fig.tight_layout() 
 fig.savefig('output/resonancePlt/leaky_modes.png')
+df.to_csv('output/sim_result_data.csv')
 
 
 
