@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 
 def main(args):
 
-    resolution = 20                       # pixels/um
+    resolution = 40                       # pixels/um
                                           #(start with ~50 nanometer mesh for testing)
                                           #(~10 nanometer mesh is a typical value for testing)
                                           #(~2 nanometer mesh is a typical value for publication)
