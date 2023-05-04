@@ -13,7 +13,7 @@ try:
     step = float(sys.argv[1])
 except:
     start = 0.11
-    step = 0.005
+    step = 0.07
     end = 0.180
 
 

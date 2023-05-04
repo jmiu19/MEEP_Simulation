@@ -157,6 +157,7 @@ ax.invert_xaxis()
 plt.colorbar(scalarmappaple, label='Q-factor')
 fig.tight_layout() 
 fig.savefig('output/resonancePlt/leaky_modes.png')
+df.to_csv('output/sim_result_data.csv')
 
 
 
