@@ -2,12 +2,12 @@
 #SBATCH --job-name=coupled_cavities_chulwon
 #SBATCH --account=dengh0
 #SBATCH --partition=standard
-#SBATCH --cpus-per-task=2
-#SBATCH --nodes=2
-#SBATCH --ntasks-per-node=4
-#SBATCH --mem-per-cpu=16g
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=4
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem-per-cpu=1g
 #SBATCH --mail-type=FAIL
-#SBATCH --time=120:00:00
+#SBATCH --time=2:00:00
 
 
 JOB_NUM=$((SLURM_ARRAY_TASK_ID))

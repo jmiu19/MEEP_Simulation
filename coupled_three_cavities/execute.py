@@ -10,7 +10,7 @@ Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
 Animate = ['True']
-Times = [200]
+Times = [300]
 Nwvg_ups = [3]
 Nwvg_los = [15]
 
