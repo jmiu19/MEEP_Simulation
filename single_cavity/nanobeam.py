@@ -17,7 +17,7 @@ def main(args):
 
     a_0 = args.a_0                        # lattice constant      (try 0.330 um)
     taper_inc = args.taper_inc            # increment of r/a      (try 0.02 um)
-    r_0 = args.r_0                        # hole radius in unit of periodicity (try 0.35)
+    r_0 = args.r_0                        # hole radius           (try 0.35 in unit of a)
     h = args.hh                           # waveguide height      (try 0.140 um)
     w = args.w                            # waveguide width       (try 1.4 in unit of a)
     Lam_u = args.Lam_u                    # source maximum wavelength
