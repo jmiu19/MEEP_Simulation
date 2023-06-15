@@ -10,7 +10,7 @@ def main(args):
     then run the simulation   [[!!  units in microns (um) !!]]
     """
 
-    resolution = 60                       # pixels/um
+    resolution = args.Res                 # pixels/um
                                           #(start with ~50 nanometer mesh for testing)
                                           #(~10 nanometer mesh is a typical value for testing)
                                           #(~2 nanometer mesh is a typical value for publication)
@@ -116,15 +116,16 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-a_0', type=float, default=0.32, help='lattice constant (default: 0.32 um)')
+    parser.add_argument('-a_0', type=float, default=0.33, help='lattice constant (default: 0.33 um)')
     parser.add_argument('-taper_inc', type=float, default=0.02, help='increment of the ratio r/a for the taper region (default: 0.02)')
-    parser.add_argument('-r_0', type=float, default=0.34, help='hole radius (default: 0.34 in unit of a)')
-    parser.add_argument('-hh', type=float, default=0.13, help='waveguide height (default: 0.13 um)')
+    parser.add_argument('-r_0', type=float, default=0.35, help='hole radius (default: 0.35 in unit of a)')
+    parser.add_argument('-hh', type=float, default=0.14, help='waveguide height (default: 0.14 um)')
     parser.add_argument('-w', type=float, default=1.4, help='waveguide width (default: 1.4 in unit of a)')
     parser.add_argument('-Ndef', type=int, default=4, help='number of defect periods (default: 4)')
     parser.add_argument('-Nwvg', type=int, default=15, help='number of waveguide periods (default: 15)')
-    parser.add_argument('-Lam_u', type=float, default=0.77, help='source maximal wavelength (default: 0.77)')
-    parser.add_argument('-Lam_s', type=float, default=0.72, help='source minimal wavelength (default: 0.72)')
+    parser.add_argument('-Lam_u', type=float, default=0.85, help='source maximal wavelength (default: 0.85)')
+    parser.add_argument('-Lam_s', type=float, default=0.60, help='source minimal wavelength (default: 0.60)')
+    parser.add_argument('-Res', type=int, default=40, help='resolution of cell pixels/um (default: 40)')
     args = parser.parse_args()
     main(args)
 
