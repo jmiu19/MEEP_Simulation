@@ -54,7 +54,7 @@ def main(args):
 
     Nwvg = args.Nwvg                      # number of waveguide periods
                                           # (can try smaller number to reduce simulation time)
-    sx = 2*sum(a_taper) + 2*(Nwvg-1)*a_0 + a_0       # length of the crystal cavity
+    sx = 2*sum(a_taper) + 2*(15)*a_0 + a_0       # length of the crystal cavity
     sy = dpml+dair+(w*a_0)+dair+dpml                 # width of the simulation cell
     sz = dpml+dair+h+dair+dpml                       # height of the simulation cell
 
