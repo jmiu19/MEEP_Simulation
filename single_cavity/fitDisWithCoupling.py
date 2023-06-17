@@ -29,8 +29,10 @@ from sympy import symbols, solve
 alpha = expParam[0]
 kappa = expParam[1]
 targetC = 0.0016
-d = -np.log(targetC/alpha)/kappa
-print('solve for d with C = 0.0009 yields d =', round(d,3))
+presetW = 0.462
+dplusW_computed = -np.log(targetC/alpha)/kappa
+d_computed= dplusW_computed- presetW
+print('solve for d with C = '+str(targetC)+' yields d =', round(d_computed,3))
 
 
 ########################################
