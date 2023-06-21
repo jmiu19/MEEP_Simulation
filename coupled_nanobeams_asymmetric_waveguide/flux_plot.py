@@ -20,6 +20,6 @@ plt.plot(df['freq'], df['transmission_upper'], alpha=0.3, label="upper cavity", 
 plt.plot(df['freq'], df['transmission_lower'], alpha=0.3, label="lower cavity", color="blue")
 plt.legend()
 plt.grid()
-plt.xlabel(r"wavelength", fontsize=14)
+plt.xlabel(r"frequency", fontsize=14)
 plt.ylabel(r"transmission", fontsize=14)
 plt.savefig('output/fluxPlt/fluxPlt'+name+'.png', bbox_inches='tight')

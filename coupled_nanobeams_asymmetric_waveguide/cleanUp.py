@@ -5,9 +5,11 @@ import os
 fileLists = ['./*.h5',
              './*.out',
              './*.png',
+             './*.csv',
              './output/*.png',
-             './output/fluxPlt/*.png',
              './output/*.dat',
+             './output/fluxPlt/*.png',
+             './output/resonancePlt/*.png',
              './output/animation/*.mp4',
              './output/*.out']
 

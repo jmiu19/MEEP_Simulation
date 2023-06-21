@@ -13,6 +13,6 @@ mpirun python3 nanobeam.py -params $1 > output/OUTPUT$1.out;
 line=$(grep harminv0: output/OUTPUT$1.out |cut -d , -f2-7 |grep -v frequency);
 echo "$1, $line" >> output/cavity_resonances.dat;
 grep flux1: output/OUTPUT$1.out > output/FLUX$1.dat;
-mpirun -np 2 python3 flux_plot.py $1;
-mpirun -np 2 python3 automated_plot_resonance.py;
+mpirun python3 flux_plot.py $1;
+mpirun python3 automated_plot_resonance.py;
 

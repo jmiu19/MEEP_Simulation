@@ -30,11 +30,11 @@ def simulation(params):
 
 
 
-    a_0 = 0.33        # lattice constant      (try 0.330 um)
+    a_0 = 0.325        # lattice constant      (try 0.330 um)
     r_inc = 0.02      # increment of r/a      (try 0.02 um)
     r_0 = 0.35        # hole radius in unit of periodicity (try 0.35)
-    h = 0.14          # waveguide height      (try 0.140 um)
-    w = 1.4           # waveguide width       (try 1.4 in unit of a)
+    h = 0.13          # waveguide height      (try 0.140 um)
+    w = 1.5           # waveguide width       (try 1.4 in unit of a)
 
     dair = 1.00       # air padding   # can try to reduce,
                        # should be longer than half-wavelength,
@@ -128,7 +128,7 @@ def simulation(params):
                #size=mp.Vector3(0,3*(w*a_0),0)),
                # source at lower cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df),
-               component=mp.Ey, center=mp.Vector3(0, -(w*a_0+sep)/2, 0))]# ,
+               component=-mp.Ey, center=mp.Vector3(0, -(w*a_0+sep)/2, 0))]# ,
                #size=mp.Vector3(0,3*(w*a_0),0)),]
 
     ## symmetry of the system ###############################################
