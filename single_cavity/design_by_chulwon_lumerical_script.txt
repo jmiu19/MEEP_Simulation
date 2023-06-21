@@ -1,0 +1,49 @@
+N=numcav; ## number of cavity
+
+for (i=1:N){
+    rr=(radius-(incre*(N-i+1)))*a;
+    aaa=matrix(1,i);
+
+    for (j=1:i){
+        rrr=(radius-(incre*(N-j+1)))*a;
+        aa=rrr/radius;
+        aaa(j)=aa;
+        xx=sum(aaa);
+        }
+
+    x=xx-(aaa(i)/2);
+
+    ### Hole type Nanobeam
+    addcircle;
+    set("x",x);
+    set("y",0);
+    set("z",0);
+    set("radius",rr);
+    set("material",etch);
+
+    addcircle;
+    set("x",-x);
+    set("y",0);
+    set("z",0);
+    set("radius",rr);
+    set("material",etch);
+    }
+
+
+
+### Mirror region
+for (i=1:period){
+    addcircle;
+    set("x",x+aa/2-a/2+i*a);
+    set("y",0);
+    set("z",0);
+    set("radius",radi);
+    set("material",fill);
+
+    addcircle;
+    set("x",-(x+aa/2-a/2+i*a));
+    set("y",0);
+    set("z",0);
+    set("radius",radi);
+    set("material",fill);
+    }

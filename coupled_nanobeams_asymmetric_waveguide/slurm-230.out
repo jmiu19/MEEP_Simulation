@@ -1,0 +1,43 @@
+Warning: grid volume is not an integer number of pixels; cell size will be rounded to nearest pixel.
+Traceback (most recent call last):
+  File "/home/miu/miniconda3/envs/meep/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3652, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '[60,0.26,0.6,0.85,True,300,15,15]'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/miu/Documents/Git/MEEP_Simulation/coupled_nanobeams_asymmetric_waveguide/automated_plot_resonance.py", line 76, in <module>
+    df.loc[index, 'sep'] = parameters.loc[row_name]['Seps']
+                           ~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/miu/miniconda3/envs/meep/lib/python3.11/site-packages/pandas/core/indexing.py", line 1103, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/miu/miniconda3/envs/meep/lib/python3.11/site-packages/pandas/core/indexing.py", line 1343, in _getitem_axis
+    return self._get_label(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/miu/miniconda3/envs/meep/lib/python3.11/site-packages/pandas/core/indexing.py", line 1293, in _get_label
+    return self.obj.xs(label, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/miu/miniconda3/envs/meep/lib/python3.11/site-packages/pandas/core/generic.py", line 4095, in xs
+    loc = index.get_loc(key)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/miu/miniconda3/envs/meep/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3654, in get_loc
+    raise KeyError(key) from err
+KeyError: '[60,0.26,0.6,0.85,True,300,15,15]'
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[7806,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

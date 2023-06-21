@@ -17,6 +17,7 @@ def simulation(params):
                    # (~10 nanometer mesh is a typical value for testing)
                    # (~2 nanometer mesh is a typical value for publication)
     ## variable parameters ###################################################
+    a_0 = params['a']              # lattice constant (try 0.330 um)
     sep = params['Seps']           # separation distance between cavities
     lambda_min = params['Lam_ss']  # source minimum wavelength
     lambda_max = params['Lam_us']  # source maximum wavelength
@@ -29,12 +30,10 @@ def simulation(params):
                               # (for the purpose of normalizing the flux plot)
 
 
-
-    a_0 = 0.325        # lattice constant      (try 0.330 um)
     r_inc = 0.02      # increment of r/a      (try 0.02 um)
     r_0 = 0.35        # hole radius in unit of periodicity (try 0.35)
-    h = 0.13          # waveguide height      (try 0.140 um)
-    w = 1.5           # waveguide width       (try 1.4 in unit of a)
+    h = 0.13          # waveguide height      (try 0.140 um) (exp 0.130 um)
+    w = 1.5           # waveguide width       (try 1.4 in unit of a) (exp 1.5)
 
     dair = 1.00       # air padding   # can try to reduce,
                        # should be longer than half-wavelength,
