@@ -18,7 +18,7 @@ def simulation(params):
                    # (~2 nanometer mesh is a typical value for publication)
     ## variable parameters ###################################################
     a_0 = params['a']              # lattice constant (try 0.330 um)
-    sep = params['Seps']           # separation distance between cavities
+    sep = 0.8*a_0 # params['Seps']           # separation distance between cavities
     lambda_min = params['Lam_ss']  # source minimum wavelength
     lambda_max = params['Lam_us']  # source maximum wavelength
     sim_time = params['Times']     # simulation time after source

@@ -5,12 +5,12 @@ import pandas as pd
 
 ## submit the simulation jobs to cluster
 Resolution = [60]
-latticeConstant = [0.315]
-Seps = [0.252]
+latticeConstant = [0.315, 0.317, 0.319, 0.321, 0.323, 0.325]
+Seps = ['0.8a']
 Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
-Animate = ['False']
+Animate = ['True']
 Times = [300]
 Nwvg_ups = [15]
 Nwvg_los = [15]
