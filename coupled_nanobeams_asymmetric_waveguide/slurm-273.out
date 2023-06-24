@@ -3,4 +3,3 @@
 /home/miu/miniconda3/envs/meep/lib/python3.11/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
   return self._float_to_str(self.smallest_subnormal)
 Warning: grid volume is not an integer number of pixels; cell size will be rounded to nearest pixel.
-Warning: grid volume is not an integer number of pixels; cell size will be rounded to nearest pixel.

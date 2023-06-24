@@ -1,0 +1,55 @@
+-----------
+Initializing structure...
+Padding x to even number of grid points.
+Halving computational cell along direction x
+Halving computational cell along direction z
+time for choose_chunkdivision = 0.000642061 s
+Working in 3D dimensions.
+Computational cell is 12.4875 x 5.575 x 4.125 with resolution 80
+     block, center = (0,0.5375,0)
+          size (1e+20,0.495,0.13)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     block, center = (0,-0.5375,0)
+          size (1e+20,0.495,0.13)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     cylinder, center = (1.29643,0.5375,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.29643,0.5375,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.62643,0.5375,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.62643,0.5375,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.95643,0.5375,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.95643,0.5375,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (0.127286,0.5375,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-0.127286,0.5375,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     ...(+ 44 objects not shown)...
+subpixel-averaging is 44.9548% done, 4.89885 s remaining
+subpixel-averaging is 90.4076% done, 0.424447 s remaining
+subpixel-averaging is 41.2939% done, 5.68766 s remaining
+subpixel-averaging is 83.3922% done, 0.796746 s remaining
+subpixel-averaging is 44.9243% done, 4.90432 s remaining
+subpixel-averaging is 90.3466% done, 0.427476 s remaining
+subpixel-averaging is 41.1679% done, 5.7175 s remaining
+subpixel-averaging is 82.9561% done, 0.821982 s remaining
+subpixel-averaging is 44.9446% done, 4.9 s remaining
+subpixel-averaging is 90.3975% done, 0.42492 s remaining
+subpixel-averaging is 41.2551% done, 5.69649 s remaining
+subpixel-averaging is 83.3534% done, 0.79899 s remaining
+time for set_epsilon = 102.09 s
+-----------

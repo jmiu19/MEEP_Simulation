@@ -19,5 +19,5 @@ for name in fileLists:
         print('no '+name[-3:]+' file')
     else :
         for file in fileList :
-            print(file+' removed')
             os.remove(file)
+            print(file+' removed')
