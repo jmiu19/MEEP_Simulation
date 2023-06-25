@@ -32,8 +32,8 @@ def simulation(params):
 
     r_inc = 0.02      # increment of r/a      (try 0.02 um)
     r_0 = 0.35        # hole radius in unit of periodicity (try 0.35)
-    h = 0.13          # waveguide height      (try 0.140 um) (exp 0.130 um)
-    w = 1.5           # waveguide width       (try 1.4 in unit of a) (exp 1.5)
+    h = 0.14          # waveguide height      (try 0.140 um) (exp 0.130 um)
+    w = 1.4           # waveguide width       (try 1.4 in unit of a) (exp 1.5)
 
     dair = 1.00       # air padding   # can try to reduce,
                        # should be longer than half-wavelength,
