@@ -6,15 +6,15 @@ import pandas as pd
 ## submit the simulation jobs to cluster
 Resolution = [80]
 latticeConstant = [0.33]
-Seps = [0.6, 0.52, 0.58, 0.54, 0.56]
+Seps = [0.52]
 Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
 Animate = ['True']
 Times = [300]
-Nwvg_ups = [3]
+Nwvg_ups = [15]
 Nwvg_los = [15]
-machine = 'GL'     ## 'MIC' or 'GL'
+machine = 'MIC'     ## 'MIC' or 'GL'
 
 
 def configGen(depth, params, machine_shell_script):
