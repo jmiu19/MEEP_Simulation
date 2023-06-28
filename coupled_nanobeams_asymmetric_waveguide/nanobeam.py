@@ -67,7 +67,7 @@ def simulation(params):
 
 
     ## size of the computation cell
-    sx = 2*sum(a_taper) + 2*(max(nwvg_up, nwvg_lo)-1)*a_0 + a_0  # length of cavity
+    sx = 2*sum(a_taper)+2*(max(nwvg_up,nwvg_lo)-1)*a_0+a_0 # length of cell
     sy = dpml+dair+2*(w*a_0)+sep+dair+dpml   # width of the simulation cell
     sz = dpml+dair+h+dair+dpml              # height of the simulation cell
     cell_size = mp.Vector3(sx,sy,sz)
@@ -124,11 +124,9 @@ def simulation(params):
     sources = [# source at upper cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df),
                component=mp.Ey, center=mp.Vector3(0, +(w*a_0+sep)/2, 0)),
-               #size=mp.Vector3(0,3*(w*a_0),0)),
                # source at lower cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df),
-               component=-mp.Ey, center=mp.Vector3(0, -(w*a_0+sep)/2, 0))]# ,
-               #size=mp.Vector3(0,3*(w*a_0),0)),]
+               component=-mp.Ey, center=mp.Vector3(0, -(w*a_0+sep)/2, 0))]
 
     ## symmetry of the system ###############################################
     symmetries = [mp.Mirror(mp.X,+1),   ## try symmetry in x direction
@@ -161,10 +159,11 @@ def simulation(params):
         Animate = mp.Animate2D(fields=mp.Ey, f=figure, 
                                realtime=False, normalize=False,
                                output_plane=mp.Volume(center=mp.Vector3(),
-                                                      size=mp.Vector3(sx, sy, 0)))
+                                                      size=mp.Vector3(sx,sy,0)))
 
         ## run the simulation and save the data #############################
-        sim.run(mp.in_volume(mp.Volume(center=mp.Vector3(), size=mp.Vector3(sx,sy,0)),
+        sim.run(mp.in_volume(mp.Volume(center=mp.Vector3(), 
+                             size=mp.Vector3(sx,sy,0)),
                              mp.at_end(mp.output_epsilon, mp.output_efield_y)),
                 mp.at_every(1, Animate),
                 mp.after_sources(mp.Harminv(mp.Ey, 

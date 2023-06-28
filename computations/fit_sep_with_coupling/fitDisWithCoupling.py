@@ -29,7 +29,7 @@ plt.show()
 from sympy import symbols, solve
 alpha = expParam[0]
 kappa = expParam[1]
-targetC = 0.0005 # 0.0016
+targetC = 0.0016
 presetW = 0.462
 dplusW_computed = -np.log(targetC/alpha)/kappa
 d_computed= dplusW_computed- presetW
@@ -48,9 +48,9 @@ amax = 401 # number of iteration when computing eigenvalues
 
 ## Default constants
 Ecm = 1.371-0.00009j
-ini_C = 0.0005
+ini_C = 0.00132
 XC = 1.371-0.00009j
-delGamma = 0.0032j
+delGamma = 0.003256j
 
 ## Create empty dataframe for storing data
 df_Eigen = pd.DataFrame(columns=['eigVal_lossDiff_applied',
@@ -68,7 +68,7 @@ df_Eigen = pd.DataFrame(columns=['eigVal_lossDiff_applied',
 ##                                    ##
 ########################################
 for a in range(1,amax+1):
-    C = ini_C + 0.00001*(a-1)
+    C = ini_C + 0.0000015*(a-1)
     M = np.array([[ Ecm-delGamma, C  ],
                   [ C,            XC ]])
     H = np.array([[ Ecm, C  ],
