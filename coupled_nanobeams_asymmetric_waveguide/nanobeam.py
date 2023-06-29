@@ -38,7 +38,7 @@ def simulation(params):
     dair = 1.00       # air padding   # can try to reduce,
                        # should be longer than half-wavelength,
                        # one-wavelength or longer is desired
-    dpml = 1.00       # PML thickness (Do not touch)
+    dpml = 1.00       # PML thickness (should fix at 1 um)
     Ndef = 4          # number of defect periods   (try 4)
 
 

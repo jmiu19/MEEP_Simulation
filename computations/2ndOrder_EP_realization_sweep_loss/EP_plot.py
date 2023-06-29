@@ -4,35 +4,35 @@ import pandas as pd
 import os
 from scipy.optimize import curve_fit
 
-def expFit(x, alpha, kappa):
-    return alpha * np.exp(-kappa*x)
+def expFit(x, alpha, kappa, beta):
+    return alpha * np.exp(-kappa*x)+beta
 
-df = pd.read_csv('coupling.csv')
-dplusW = df['d+w']
-C = df['C']
+df = pd.read_csv('single_cav_vary_Nwvg.csv')
+df.columns = ['Nwvg', 'freq', 'decay', 'Q', 'lamb']
 
-expParam, expCov = curve_fit(expFit, dplusW, C, p0=[0.005,0.005], maxfev=10000)
-print('a*e^{-kx}')
-print('param [a, k] yields', expParam)
-print('st. dev. [a, k] yields', np.sqrt([expCov[0][0], expCov[1][1]]))
+expParam, expCov = curve_fit(expFit, df['Nwvg'], df['decay'], 
+                             p0=[0.005,0.005, 0.005], maxfev=10000)
+print('a*e^{-kx}+b')
+print('param [a, k, b] yields', expParam)
+print('st. dev. [a, k, b] yields', np.sqrt([expCov[0][0], 
+                                            expCov[1][1],
+                                            expCov[2][2]]))
 
+
+fit_x = np.linspace(df['Nwvg'].values.tolist()[0]*0.95, 
+                    df['Nwvg'].values.tolist()[-1]*1.05, 100)
 fig, ax = plt.subplots(figsize = (6,4), dpi = 150)
-plt.scatter(dplusW, C, label='estimated coupling', color='orange')
-plt.plot(dplusW, expFit(dplusW, expParam[0], expParam[1]), 
+plt.scatter(df['Nwvg'], df['decay'], color='orange')
+plt.plot(fit_x, expFit(fit_x, expParam[0], expParam[1], expParam[2]), 
          label='exponential fit', color='blue')
-plt.xlabel(r'd + width (micron)', size='x-large')
-plt.ylabel(r'coupling strength',  size='x-large')
+plt.xlabel(r'number of waveguide holes', size='x-large')
+plt.ylabel(r'decay rate',  size='x-large')
 plt.legend(prop={'size':'x-large'})
 plt.tight_layout()
 plt.show()
 
-alpha = expParam[0]
-kappa = expParam[1]
-targetC = 0.0016
-presetW = 0.462
-dplusW_computed = -np.log(targetC/alpha)/kappa
-d_computed= dplusW_computed- presetW
-print('solve for d with C = '+str(targetC)+' yields d =', round(d_computed,3))
+
+
 
 
 ########################################
@@ -41,22 +41,22 @@ print('solve for d with C = '+str(targetC)+' yields d =', round(d_computed,3))
 ##                                    ##
 ########################################
 
-## Create constant
-
-amax = 401 # number of iteration when computing eigenvalues
-
 ## Default constants
-Ecm = 1.371-0.00009j
-ini_C = 0.00132
-XC = 1.371-0.00009j
-delGamma = 0.003256j
+targetC = 0.00162
+highQ_decay = df[df['Nwvg']==max(df['Nwvg'])]['decay'].values[0]
+lowQ_decay = df[df['Nwvg']==min(df['Nwvg'])]['decay'].values[0]
+ini_gamma = abs(highQ_decay-lowQ_decay)
+Ecm = 1.3712-highQ_decay*1j
+XC = 1.3712-highQ_decay*1j
+
 
 ## Create empty dataframe for storing data
 df_Eigen = pd.DataFrame(columns=['eigVal_lossDiff_applied',
                                  'eigVec_lossDiff_applied',
                                  'eigVal_lossless',
                                  'eigVec_lossless',
-                                 'Coupling coeff.',
+                                 'coupling_coeff.',
+                                 'loss_diff',
                                  'Ecm',
                                  'XC',
                                  'Ecm-XC'])
@@ -66,12 +66,12 @@ df_Eigen = pd.DataFrame(columns=['eigVal_lossDiff_applied',
 ##         Compute Eigenvals          ##
 ##                                    ##
 ########################################
-for a in range(1,amax+1):
-    C = ini_C + 0.0000015*(a-1)
-    M = np.array([[ Ecm-delGamma, C  ],
-                  [ C,            XC ]])
-    H = np.array([[ Ecm, C  ],
-                  [ C,   XC ]])
+for gamma in np.linspace(1.05*lowQ_decay, 
+                         0.95*highQ_decay, 300):
+    M = np.array([[ Ecm-gamma*1j,   targetC ],
+                  [ targetC,          XC ]])
+    H = np.array([[ Ecm,     targetC ],
+                  [ targetC,      XC ]])
     MeigVal, MeigVec = np.linalg.eig(M)
     HeigVal, HeigVec = np.linalg.eig(H)
     # append eigenvals and eigenvectors to dataframe
@@ -79,11 +79,14 @@ for a in range(1,amax+1):
                                          MeigVec, 
                                          HeigVal, 
                                          HeigVec, 
-                                         C, Ecm, 
-                                         XC, Ecm-XC]
+                                         targetC, 
+                                         gamma,
+                                         Ecm, XC, 
+                                         Ecm-XC]
 
 ## output the dataframe
 df_Eigen.to_csv('result.csv')
+
 
 
 ########################################
@@ -94,27 +97,20 @@ df_Eigen.to_csv('result.csv')
 ## loss difference applied eigenvals
 realEigVal = np.real(df_Eigen['eigVal_lossDiff_applied'].values.tolist())
 compEigVal = np.imag(df_Eigen['eigVal_lossDiff_applied'].values.tolist())
-
 realEigVal1 = [vals[0] for vals in realEigVal]
 realEigVal2 = [vals[1] for vals in realEigVal]
-
 compEigVal1 = [vals[0] for vals in compEigVal]
 compEigVal2 = [vals[1] for vals in compEigVal]
-
 realCompEigVals = [[realEigVal1, realEigVal2], [compEigVal1, compEigVal2]]
 
 ## lossless eigvals
 HrealEigVal = np.real(df_Eigen['eigVal_lossless'].values.tolist())
+HcompEigVal = np.imag(df_Eigen['eigVal_lossless'].values.tolist())
 HrealEigVal1 = [vals[0] for vals in HrealEigVal]
 HrealEigVal2 = [vals[1] for vals in HrealEigVal]
-HrealVals = [HrealEigVal1, HrealEigVal2]
-
-## Extract the eigenvectors
-eigVecsSet = df_Eigen['eigVec_lossDiff_applied']
-eigVec1 = [[vecs[0][0], vecs[1][0]] for vecs in eigVecsSet]
-eigVec2 = [[vecs[0][1], vecs[1][1]] for vecs in eigVecsSet]
-HopfCoeffC = [vec[0]**2 for vec in eigVec1]
-HopfCoeffE = [vec[1]**2 for vec in eigVec1]
+HcompEigVal1 = [vals[0] for vals in HcompEigVal]
+HcompEigVal2 = [vals[1] for vals in HcompEigVal]
+HrealCompEigVals = [[HrealEigVal1, HrealEigVal2], [HcompEigVal1, HcompEigVal2]]
 
 
 
@@ -124,27 +120,25 @@ HopfCoeffE = [vec[1]**2 for vec in eigVec1]
 ##            Generate plots          ##
 ##                                    ##
 ########################################
-Cs = df_Eigen['Coupling coeff.'].values.tolist()
+Gammas = df_Eigen['loss_diff'].values.tolist()
 
-## plot the eigenvalues
-if not os.path.exists('plots'):
-    os.makedirs('plots')
-
-names = ['Eigenval 1', 'Eigenval 2', 'Imag(', 'Re(']
-
-
-fig, ax = plt.subplots(2, 1, sharex=True, figsize=(6,4), dpi=150)
+fig, ax = plt.subplots(2, 1, sharex=True, figsize=(6,6), dpi=150)
 for j in range(2):
     for i in range(len(realCompEigVals[j])):
-        ax[j].plot(Cs, realCompEigVals[j][i], label=names[i])
-        ax[j].set_ylabel(names[-j-1]+'E)', fontsize='x-large')
-        if j==0:
-            ax[j].plot(Cs, HrealVals[i], 
-                       label='lossless modes', 
-                       color='green', alpha=0.3)
-plt.legend()
-plt.xticks(np.linspace(Cs[0],Cs[-1],5))
-plt.xlabel("coupling strength",fontsize='x-large')
+        ax[j].plot(Gammas, realCompEigVals[j][i], 
+                   color='orange', alpha=0.3)
+        ax[j].plot(Gammas, HrealCompEigVals[j][i], 
+                   color='blue', alpha=0.3)
+    for decay in df['decay']:
+        ax[j].axvline(x=decay, color='gray', alpha=0.3)
+
+
+ax[1].set_ylabel('Im(freq.)', fontsize='x-large')
+ax[0].set_ylabel('Re(freq.)', fontsize='x-large')
+plt.legend(prop={'size': 'large'})
+plt.xlabel("loss difference",fontsize='x-large')
 plt.tight_layout()
 plt.show()
+
+
 
