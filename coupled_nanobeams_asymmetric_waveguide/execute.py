@@ -12,7 +12,7 @@ Lam_ss = [0.60]
 NULL = ['True']
 Animate = ['True']
 Times = [300]
-Nwvg_ups = [1,2,3,4,5,6]
+Nwvg_ups = [1]
 Nwvg_los = [15]
 machine = 'GL'     ## 'MIC' or 'GL'
 
