@@ -49,7 +49,7 @@ amax = 401 # number of iteration when computing eigenvalues
 Ecm = 1.371-0.00009j
 ini_C = 0.00132
 XC = 1.371-0.00009j
-delGamma = 0.003256j
+delGamma = 0.012438968j
 
 ## Create empty dataframe for storing data
 df_Eigen = pd.DataFrame(columns=['eigVal_lossDiff_applied',
