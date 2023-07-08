@@ -7,14 +7,14 @@ import pandas as pd
 Resolution = [80]
 Lam_us = [0.85]
 Lam_ss = [0.60]
-widths = [1.4]
+widths = [1.405, 1.4075, 1.4025]
 latticeConstant = [0.33] 
 NULL = ['True'] # True when waveguide holes added
 Animate = ['True'] # True when produce animation
 Times = [300]   # length of time after source
 Nwvgs = [1]     # number of waveguide holes
 leng_Nwvg = [15] # length of nanobeam (in Nwvg unit)
-machine = 'MIC'     ## 'MIC' or 'GL'
+machine = 'GL'     ## 'MIC' or 'GL'
 
 
 def configGen(depth, params, machine_shell_script):
