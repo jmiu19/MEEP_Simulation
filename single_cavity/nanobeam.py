@@ -98,7 +98,8 @@ def simulation(params):
     fcen = 0.5*(fmin+fmax)
     df = fmax-fmin
 
-    sources = [mp.Source(mp.GaussianSource(fcen, fwidth=df), component=mp.Ey, center=mp.Vector3())]
+    sources = [mp.Source(mp.GaussianSource(fcen, fwidth=df), 
+                         component=mp.Ey, center=mp.Vector3())]
 
     ## symmetry of the system ###############################################
     symmetries = [mp.Mirror(mp.X,+1), mp.Mirror(mp.Y,-1), mp.Mirror(mp.Z,+1)]

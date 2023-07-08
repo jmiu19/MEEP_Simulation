@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=asym_two_cav
+#SBATCH --job-name=single_cav
 #SBATCH --cpus-per-task=8
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1

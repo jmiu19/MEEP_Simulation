@@ -122,10 +122,10 @@ def simulation(params):
     df = fmax-fmin
 
     sources = [# source at upper cavity
-               mp.Source(mp.GaussianSource(fcen, fwidth=df),
+               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=5,
                component=mp.Ey, center=mp.Vector3(0, +(w*a_0+sep)/2, 0)),
                # source at lower cavity
-               mp.Source(mp.GaussianSource(fcen, fwidth=df),
+               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
                component=-mp.Ey, center=mp.Vector3(0, -(w*a_0+sep)/2, 0))]
 
     ## symmetry of the system ###############################################
