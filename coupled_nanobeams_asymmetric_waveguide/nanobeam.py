@@ -27,7 +27,7 @@ def simulation(params):
     nwvg_lo = params['Nwvg_los']   # number of waveguide holes in lower cavity
     w_lo = params['w_los'] # lower nanobeam width
     w_up = params['w_ups'] # upper nanobeam width (try 1.4) (exp 1.5)
-
+    sourceAmp = params['sourceAmps'] # amplitude of the lower source
 
     NULL = params['NULL']   # bool value, false simulates with no holes
                               # (for the purpose of normalizing the flux plot)
@@ -113,10 +113,10 @@ def simulation(params):
     df = fmax-fmin
 
     sources = [# source at upper cavity
-               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=5,
+               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
                component=mp.Ey, center=mp.Vector3(0, +ctr_sep/2, 0)),
                # source at lower cavity
-               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
+               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=sourceAmp,
                component=-mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
 
     ## symmetry of the system ###############################################
