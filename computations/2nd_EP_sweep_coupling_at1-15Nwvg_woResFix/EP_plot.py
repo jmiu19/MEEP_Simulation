@@ -148,9 +148,9 @@ print('computed sep='+str(d_computed)+' for target C='+str(targetC))
 expParam_width, expCov_width = curve_fit(expFit, dplusW, Cs, p0=[0.005,0.005, 0.005], maxfev=10000)
 alpha, kappa, beta = expParam_width[0], expParam_width[1], expParam_width[2]
 sim_df = pd.read_csv('sim_data.csv')
-minC = min(sim_df['C'].values.tolist())*0.95
-maxC = max(sim_df['C'].values.tolist())*1.05
-C_range = np.linspace(0.95*minC, 1.05*maxC, 300)
+minC = min(sim_df['C'].values.tolist())
+maxC = max(sim_df['C'].values.tolist())
+C_range = np.linspace(0.9*minC, 1.02*maxC, 300)
 d_range = [-np.log((targetC-beta)/alpha)/kappa-presetW for targetC in C_range]
 
 df_Eigen = pd.DataFrame(columns=['eigVal_lossDiff_applied',
@@ -206,7 +206,7 @@ HrealCompEigVals = [[HrealEigVal1, HrealEigVal2], [HcompEigVal1, HcompEigVal2]]
 ##            Generate plots          ##
 ##                                    ##
 ########################################
-fig, ax = plt.subplots(2, 1, sharex=True, figsize=(6,6), dpi=150)
+fig, ax = plt.subplots(3, 1, sharex=True, figsize=(6,9), dpi=100)
 
 for j in range(2):
     for i in range(len(realCompEigVals[j])):
@@ -220,11 +220,11 @@ ax[0].scatter(sim_df['d'], sim_df['freq_lossy'],
               label='lossy with high-Q', color='orange')
 ax[0].scatter(sim_df['d'], sim_df['freq_lossless'],
               label='two high-Q', color='blue')
-ax[0].set_ylabel('Re(freq.) (Meep unit)', fontsize='x-large')
-ax[0].axvspan(1.05*sim_df['d'].values.tolist()[-1], d_computed, 
-              color='red', alpha =0.1, lw =0)
-ax[0].axvspan(d_computed, 0.9*sim_df['d'].values.tolist()[0], 
+ax[0].set_ylabel('Re(freq.)', fontsize='x-large')
+ax[0].axvspan(1.05*sim_df['d'].values.tolist()[-1], d_computed,
               color='green', alpha =0.1, lw =0)
+ax[0].axvspan(d_computed, 0.95*sim_df['d'].values.tolist()[0],
+              color='red', alpha =0.1, lw =0)
 ax[0].yaxis.set_major_formatter(FormatStrFormatter('%.3f'))
 
 ax[1].scatter(sim_df['d'], sim_df['decay_lossy'],
@@ -232,14 +232,26 @@ ax[1].scatter(sim_df['d'], sim_df['decay_lossy'],
 ax[1].scatter(sim_df['d'], sim_df['decay_lossless'],
               label='two high-Q', color='blue')
 ax[1].set_ylabel('Im(freq.)', fontsize='x-large')
-ax[1].axvspan(d_computed, 0.9*sim_df['d'].values.tolist()[0], 
-              color='green', alpha =0.1, lw =0)
-ax[1].axvspan(1.05*sim_df['d'].values.tolist()[-1], d_computed, 
+ax[1].axvspan(d_computed, 0.95*sim_df['d'].values.tolist()[0],
               color='red', alpha =0.1, lw =0)
+ax[1].axvspan(1.05*sim_df['d'].values.tolist()[-1], d_computed,
+              color='green', alpha =0.1, lw =0)
 ax[1].yaxis.set_major_formatter(FormatStrFormatter('%.3f'))
 
+for i in range(len(realCompEigVals[0])):
+    ax[2].plot(d_range, 1/np.array(realCompEigVals[0][i]),
+               color='orange', alpha=0.3)
+ax[2].scatter(sim_df['d'], 1/sim_df['freq_lossy'].values,
+              label='lossy with high-Q', color='orange')
+ax[2].set_ylabel('Re(wvlength.)', fontsize='x-large')
+ax[2].axvspan(d_computed, 0.95*sim_df['d'].values.tolist()[0],
+              color='red', alpha =0.1, lw =0)
+ax[2].axvspan(1.05*sim_df['d'].values.tolist()[-1], d_computed,
+              color='green', alpha =0.1, lw =0)
+ax[2].yaxis.set_major_formatter(FormatStrFormatter('%.3f'))
 
-plt.legend(prop={'size': 'large'})
-plt.xlabel("separation distance (nm)",fontsize='x-large')
+
+ax[1].legend(prop={'size': 'large'})
+plt.xlabel("separation distance (um)",fontsize='x-large')
 plt.tight_layout()
 plt.show()

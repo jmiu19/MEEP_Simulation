@@ -164,7 +164,7 @@ df_Eigen = pd.DataFrame(columns=['eigVal_lossDiff_applied',
 
 for C in C_range:
     M = np.array([[ Ecm-delGamma, C  ],
-                  [ C,            XC ]])
+                  [ C,            XC-0.002]])
     H = np.array([[ Ecm, C  ],
                   [ C,   XC ]])
     MeigVal, MeigVec = np.linalg.eig(M)
@@ -235,6 +235,6 @@ ax[1].set_ylabel('Im(freq.)', fontsize='x-large')
 ax[1].ticklabel_format(axis='y',style='sci',scilimits=(0,0))
 
 plt.legend(prop={'size': 'large'})
-plt.xlabel("separation distance (nm)",fontsize='x-large')
+plt.xlabel("separation distance (um)",fontsize='x-large')
 plt.tight_layout()
 plt.show()
