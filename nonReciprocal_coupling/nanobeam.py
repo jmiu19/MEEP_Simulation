@@ -59,7 +59,7 @@ def simulation(params):
     ## size of the computation cell
     sx = 2*sum(a_taper)+2*(max(nwvg_up,nwvg_lo)-1)*a_0+a_0 # length of cell
     sy = dpml+dair+((w_lo+w_up)*a_0)+sep+dair+dpml      # width of the cell
-    sz = dpml+dair+h+dair+dpml              # height of the simulation cell
+    sz = dpml+dair+6*h+dair+dpml              # height of the simulation cell
     cell_size = mp.Vector3(sx,sy,sz)
     boundary_layers = [mp.PML(dpml)]
 
@@ -117,12 +117,12 @@ def simulation(params):
                component=mp.Ey, center=mp.Vector3(0, +ctr_sep/2, 0)),
                # source at lower cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
-               component=mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
+               component=-mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
 
     ## symmetry of the system ###############################################
     symmetries = [mp.Mirror(mp.X,+1),   ## try symmetry in x direction
                   #mp.Mirror(mp.Y,-1),
-                  mp.Mirror(mp.Z,+1)]   ## only put symmetry in z direction
+                  mp.Mirror(mp.Z,+1)]   ## put symmetry in z direction
 
     ## define the simulation and detector objects ###########################
     sim = mp.Simulation(resolution=resolution,
@@ -141,11 +141,11 @@ def simulation(params):
                      center=mp.Vector3(+sum(a_taper)+6*a_0, -ctr_sep/2, 0),
                      size=mp.Vector3(0, (w_lo*a_0), h))
     freg_between = mp.FluxRegion(center=mp.Vector3(0, 0, 0),
-                                 size=mp.Vector3(sx-2*dpml, 0, h))
-    freg_above = mp.FluxRegion(center=mp.Vector3(ctr_sep, 0, 0),
-                               size=mp.Vector3(sx-2*dpml, 0, h))
-    freg_below = mp.FluxRegion(center=mp.Vector3(-ctr_sep, 0, 0),
-                               size=mp.Vector3(sx-2*dpml, 0, 2*h))
+                     size=mp.Vector3(0.8*(sx-2*dpml), 0, 0.95*(sz-2*dpml)))
+    freg_above = mp.FluxRegion(center=mp.Vector3(0, ctr_sep, 0),
+                     size=mp.Vector3(0.8*(sx-2*dpml), 0, 0.95*(sz-2*dpml)))
+    freg_below = mp.FluxRegion(center=mp.Vector3(0, -ctr_sep, 0),
+                     size=mp.Vector3(0.8*(sx-2*dpml), 0, 0.95*(sz-2*dpml)))
     nfreq = 500 # number of frequencies at which to compute flux
     trans_upper_cavity = sim.add_flux(fcen, df, nfreq, freg_upper_cavity)
     trans_lower_cavity = sim.add_flux(fcen, df, nfreq, freg_lower_cavity)

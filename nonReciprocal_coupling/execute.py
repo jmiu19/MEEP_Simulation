@@ -4,14 +4,14 @@ import numpy as np
 import pandas as pd
 
 ## submit the simulation jobs to cluster
-Resolution = [6]
+Resolution = [60]
 latticeConstant = [0.33]
 Seps = [0.1, 0.5]
 Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
 Animate = ['True']
-Times = [200, 0]
+Times = [200, 1]
 Nwvg_ups = [3,15]
 Nwvg_los = [15]
 width_ups = [1.4]
