@@ -25,8 +25,7 @@ def simulation(params):
     animate = params['Animate']    # bool value, true generates animation
     nwvg_up = params['Nwvg_ups']   # number of waveguide holes in upper cavity
     nwvg_lo = params['Nwvg_los']   # number of waveguide holes in lower cavity
-    w_lo = params['w_los'] # lower nanobeam width
-    w_up = params['w_ups'] # upper nanobeam width (try 1.4) (exp 1.5)
+    width = params['widths']        # upper nanobeam width (try 1.4) (exp 1.5)
 
 
     NULL = params['NULL']   # bool value, false simulates with no holes
@@ -58,7 +57,7 @@ def simulation(params):
 
     ## size of the computation cell
     sx = 2*sum(a_taper)+2*(max(nwvg_up,nwvg_lo)-1)*a_0+a_0 # length of cell
-    sy = dpml+dair+((w_lo+w_up)*a_0)+sep+dair+dpml      # width of the cell
+    sy = dpml+dair+(2*width*a_0)+sep+dair+dpml      # width of the cell
     sz = dpml+dair+6*h+dair+dpml              # height of the simulation cell
     cell_size = mp.Vector3(sx,sy,sz)
     boundary_layers = [mp.PML(dpml)]
@@ -68,13 +67,13 @@ def simulation(params):
     SiN = mp.Medium(index=nSiN)
 
     ## create the band
-    ctr_sep = (((w_lo+w_up)/2)*a_0+sep) # y-sep between the nanobeam ctrs
+    ctr_sep = (width*a_0+sep) # y-sep between the nanobeam ctrs
     geometry = [mp.Block(material=SiN,
                          center=mp.Vector3(0, ctr_sep/2, 0),
-                         size=mp.Vector3(mp.inf,w_up*a_0,h)),
+                         size=mp.Vector3(mp.inf,width*a_0,h)),
                 mp.Block(material=SiN,
                          center=mp.Vector3(0, -ctr_sep/2, 0),
-                         size=mp.Vector3(mp.inf,w_lo*a_0,h))]
+                         size=mp.Vector3(mp.inf,width*a_0,h))]
 
     ## defines holes in the device ###########################################
     if (NULL):
@@ -136,10 +135,10 @@ def simulation(params):
     ## for flux diagram
     freg_upper_cavity = mp.FluxRegion(
                      center=mp.Vector3(+sum(a_taper)+6*a_0, +ctr_sep/2, 0),
-                     size=mp.Vector3(0, (w_up*a_0), h))
+                     size=mp.Vector3(0, (width*a_0), h))
     freg_lower_cavity = mp.FluxRegion(
                      center=mp.Vector3(+sum(a_taper)+6*a_0, -ctr_sep/2, 0),
-                     size=mp.Vector3(0, (w_lo*a_0), h))
+                     size=mp.Vector3(0, (width*a_0), h))
     freg_between = mp.FluxRegion(center=mp.Vector3(0, 0, 0),
                      size=mp.Vector3(0.8*(sx-2*dpml), 0, 0.95*(sz-2*dpml)))
     freg_above = mp.FluxRegion(center=mp.Vector3(0, ctr_sep, 0),

@@ -14,8 +14,7 @@ Animate = ['True']
 Times = [200, 1]
 Nwvg_ups = [3,15]
 Nwvg_los = [15]
-width_ups = [1.4]
-width_los = [1.4]
+widths = [1.4]
 machine = 'GL'     ## 'MIC' or 'GL'
 
 
@@ -64,8 +63,7 @@ parameters = {
     'Nwvg_ups': Nwvg_ups,
     'Nwvg_los': Nwvg_los,
     'a': latticeConstant,
-    'w_los': width_los,
-    'w_ups': width_ups,
+    'widths': widths,
 }
 
 
