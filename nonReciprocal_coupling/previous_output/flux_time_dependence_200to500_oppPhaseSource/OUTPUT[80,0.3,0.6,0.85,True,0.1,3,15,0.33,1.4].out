@@ -1,0 +1,1542 @@
+Using MPI version 4.0, 2 processes
+-----------
+Initializing structure...
+Padding x to even number of grid points.
+Padding z to even number of grid points.
+Halving computational cell along direction x
+Halving computational cell along direction z
+Splitting into 2 chunks by voxels
+time for choose_chunkdivision = 0.00133204 s
+Working in 3D dimensions.
+Computational cell is 12.4875 x 5.225 x 4.8375 with resolution 80
+     block, center = (0,0.381,0)
+          size (1e+20,0.462,0.14)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     block, center = (0,-0.381,0)
+          size (1e+20,0.462,0.14)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     cylinder, center = (1.29643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.29643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.62643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.62643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.95643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.95643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (0.127286,0.381,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-0.127286,0.381,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     ...(+ 44 objects not shown)...
+subpixel-averaging is 71.7071% done, 1.57837 s remaining
+subpixel-averaging is 49.3644% done, 4.10367 s remaining
+subpixel-averaging is 98.8366% done, 0.0470935 s remaining
+subpixel-averaging is 71.6126% done, 1.58599 s remaining
+subpixel-averaging is 49.2835% done, 4.11638 s remaining
+subpixel-averaging is 98.6883% done, 0.0531763 s remaining
+subpixel-averaging is 71.5558% done, 1.5902 s remaining
+subpixel-averaging is 49.297% done, 4.11461 s remaining
+subpixel-averaging is 98.6209% done, 0.0559398 s remaining
+time for set_epsilon = 65.7237 s
+-----------
+Meep progress: 0.00625/20.499999618530275 = 0.0% done in 22.2s, 72731.6s to go
+on time step 1 (time=0.00625), 22.181 s/step
+Meep progress: 0.05/20.499999618530275 = 0.2% done in 26.3s, 10764.7s to go
+on time step 8 (time=0.05), 0.5912 s/step
+Meep progress: 0.09375/20.499999618530275 = 0.5% done in 30.4s, 6626.9s to go
+on time step 15 (time=0.09375), 0.589392 s/step
+Meep progress: 0.1375/20.499999618530275 = 0.7% done in 34.6s, 5124.7s to go
+on time step 22 (time=0.1375), 0.594224 s/step
+Meep progress: 0.18125000000000002/20.499999618530275 = 0.9% done in 38.7s, 4343.4s to go
+on time step 29 (time=0.18125), 0.5914 s/step
+Meep progress: 0.225/20.499999618530275 = 1.1% done in 42.9s, 3864.5s to go
+on time step 36 (time=0.225), 0.59165 s/step
+Meep progress: 0.26875/20.499999618530275 = 1.3% done in 47.0s, 3540.3s to go
+on time step 43 (time=0.26875), 0.591858 s/step
+Meep progress: 0.30625/20.499999618530275 = 1.5% done in 51.0s, 3365.9s to go
+on time step 49 (time=0.30625), 0.669254 s/step
+Meep progress: 0.35000000000000003/20.499999618530275 = 1.7% done in 55.2s, 3177.6s to go
+on time step 56 (time=0.35), 0.592763 s/step
+Meep progress: 0.39375000000000004/20.499999618530275 = 1.9% done in 59.3s, 3030.5s to go
+on time step 63 (time=0.39375), 0.593347 s/step
+Meep progress: 0.4375/20.499999618530275 = 2.1% done in 63.5s, 2911.3s to go
+on time step 70 (time=0.4375), 0.59114 s/step
+Meep progress: 0.48125/20.499999618530275 = 2.3% done in 67.6s, 2812.9s to go
+on time step 77 (time=0.48125), 0.590741 s/step
+Meep progress: 0.525/20.499999618530275 = 2.6% done in 71.8s, 2730.1s to go
+on time step 84 (time=0.525), 0.590573 s/step
+Meep progress: 0.56875/20.499999618530275 = 2.8% done in 76.3s, 2675.4s to go
+on time step 91 (time=0.56875), 0.655328 s/step
+Meep progress: 0.6125/20.499999618530275 = 3.0% done in 80.5s, 2613.4s to go
+on time step 98 (time=0.6125), 0.592012 s/step
+Meep progress: 0.65625/20.499999618530275 = 3.2% done in 84.6s, 2559.1s to go
+on time step 105 (time=0.65625), 0.592044 s/step
+Meep progress: 0.7000000000000001/20.499999618530275 = 3.4% done in 88.8s, 2510.7s to go
+on time step 112 (time=0.7), 0.590142 s/step
+Meep progress: 0.74375/20.499999618530275 = 3.6% done in 92.9s, 2467.5s to go
+on time step 119 (time=0.74375), 0.590223 s/step
+Meep progress: 0.7875000000000001/20.499999618530275 = 3.8% done in 97.0s, 2429.1s to go
+on time step 126 (time=0.7875), 0.592148 s/step
+Meep progress: 0.83125/20.499999618530275 = 4.1% done in 101.2s, 2394.1s to go
+on time step 133 (time=0.83125), 0.591353 s/step
+Meep progress: 0.86875/20.499999618530275 = 4.2% done in 105.2s, 2376.8s to go
+on time step 139 (time=0.86875), 0.667321 s/step
+Meep progress: 0.9125000000000001/20.499999618530275 = 4.5% done in 109.3s, 2347.1s to go
+on time step 146 (time=0.9125), 0.593944 s/step
+Meep progress: 0.95625/20.499999618530275 = 4.7% done in 113.5s, 2319.4s to go
+on time step 153 (time=0.95625), 0.591848 s/step
+     block, center = (0,0.381,0)
+          size (1e+20,0.462,0.14)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     block, center = (0,-0.381,0)
+          size (1e+20,0.462,0.14)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     cylinder, center = (1.29643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.29643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.62643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.62643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.95643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-1.95643,0.381,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (0.127286,0.381,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-0.127286,0.381,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     ...(+ 44 objects not shown)...
+Meep progress: 1.0/20.499999618530275 = 4.9% done in 118.0s, 2301.7s to go
+on time step 160 (time=1), 0.650343 s/step
+Meep progress: 1.04375/20.499999618530275 = 5.1% done in 122.2s, 2277.7s to go
+on time step 167 (time=1.04375), 0.593633 s/step
+Meep progress: 1.0875000000000001/20.499999618530275 = 5.3% done in 126.3s, 2255.2s to go
+on time step 174 (time=1.0875), 0.592047 s/step
+Meep progress: 1.125/20.499999618530275 = 5.5% done in 130.3s, 2244.7s to go
+on time step 180 (time=1.125), 0.666765 s/step
+Meep progress: 1.16875/20.499999618530275 = 5.7% done in 134.5s, 2224.5s to go
+on time step 187 (time=1.16875), 0.59361 s/step
+Meep progress: 1.2125000000000001/20.499999618530275 = 5.9% done in 138.6s, 2205.3s to go
+on time step 194 (time=1.2125), 0.592098 s/step
+Meep progress: 1.25625/20.499999618530275 = 6.1% done in 142.8s, 2187.1s to go
+on time step 201 (time=1.25625), 0.591212 s/step
+Meep progress: 1.3/20.499999618530275 = 6.3% done in 146.9s, 2169.8s to go
+on time step 208 (time=1.3), 0.590819 s/step
+Meep progress: 1.34375/20.499999618530275 = 6.6% done in 151.1s, 2153.4s to go
+on time step 215 (time=1.34375), 0.591425 s/step
+Meep progress: 1.3875000000000002/20.499999618530275 = 6.8% done in 155.2s, 2137.8s to go
+on time step 222 (time=1.3875), 0.591796 s/step
+Meep progress: 1.425/20.499999618530275 = 7.0% done in 159.2s, 2131.3s to go
+on time step 228 (time=1.425), 0.670934 s/step
+Meep progress: 1.46875/20.499999618530275 = 7.2% done in 163.4s, 2116.9s to go
+on time step 235 (time=1.46875), 0.592875 s/step
+Meep progress: 1.5125000000000002/20.499999618530275 = 7.4% done in 167.5s, 2102.8s to go
+on time step 242 (time=1.5125), 0.59086 s/step
+Meep progress: 1.5562500000000001/20.499999618530275 = 7.6% done in 171.6s, 2089.4s to go
+on time step 249 (time=1.55625), 0.591676 s/step
+Meep progress: 1.6/20.499999618530275 = 7.8% done in 175.8s, 2076.4s to go
+on time step 256 (time=1.6), 0.590032 s/step
+Meep progress: 1.64375/20.499999618530275 = 8.0% done in 179.9s, 2063.9s to go
+on time step 263 (time=1.64375), 0.591531 s/step
+Meep progress: 1.6875/20.499999618530275 = 8.2% done in 184.5s, 2057.1s to go
+on time step 270 (time=1.6875), 0.657738 s/step
+Meep progress: 1.7312500000000002/20.499999618530275 = 8.4% done in 188.7s, 2045.2s to go
+on time step 277 (time=1.73125), 0.589996 s/step
+Meep progress: 1.7750000000000001/20.499999618530275 = 8.7% done in 192.8s, 2033.9s to go
+on time step 284 (time=1.775), 0.59282 s/step
+Meep progress: 1.81875/20.499999618530275 = 8.9% done in 196.9s, 2022.9s to go
+on time step 291 (time=1.81875), 0.59127 s/step
+Meep progress: 1.8625/20.499999618530275 = 9.1% done in 201.1s, 2012.1s to go
+on time step 298 (time=1.8625), 0.590931 s/step
+Meep progress: 1.90625/20.499999618530275 = 9.3% done in 205.2s, 2001.8s to go
+on time step 305 (time=1.90625), 0.591885 s/step
+Meep progress: 1.9500000000000002/20.499999618530275 = 9.5% done in 209.4s, 1991.6s to go
+on time step 312 (time=1.95), 0.590869 s/step
+Meep progress: 1.9937500000000001/20.499999618530275 = 9.7% done in 213.9s, 1985.8s to go
+on time step 319 (time=1.99375), 0.653963 s/step
+Meep progress: 2.0375/20.499999618530275 = 9.9% done in 218.4s, 1978.9s to go
+on time step 326 (time=2.0375), 0.635643 s/step
+Meep progress: 2.0812500000000003/20.499999618530275 = 10.2% done in 222.5s, 1969.2s to go
+on time step 333 (time=2.08125), 0.589761 s/step
+Meep progress: 2.125/20.499999618530275 = 10.4% done in 226.6s, 1959.7s to go
+on time step 340 (time=2.125), 0.588329 s/step
+Meep progress: 2.16875/20.499999618530275 = 10.6% done in 230.8s, 1950.7s to go
+on time step 347 (time=2.16875), 0.592779 s/step
+Meep progress: 2.2125/20.499999618530275 = 10.8% done in 234.9s, 1941.7s to go
+on time step 354 (time=2.2125), 0.590443 s/step
+Meep progress: 2.25/20.499999618530275 = 11.0% done in 238.9s, 1938.0s to go
+on time step 360 (time=2.25), 0.669256 s/step
+Meep progress: 2.29375/20.499999618530275 = 11.2% done in 243.1s, 1929.4s to go
+on time step 367 (time=2.29375), 0.593038 s/step
+Meep progress: 2.3375/20.499999618530275 = 11.4% done in 247.2s, 1920.9s to go
+on time step 374 (time=2.3375), 0.591549 s/step
+Meep progress: 2.38125/20.499999618530275 = 11.6% done in 251.4s, 1912.6s to go
+on time step 381 (time=2.38125), 0.590987 s/step
+Meep progress: 2.4250000000000003/20.499999618530275 = 11.8% done in 255.5s, 1904.5s to go
+on time step 388 (time=2.425), 0.593334 s/step
+Meep progress: 2.46875/20.499999618530275 = 12.0% done in 259.7s, 1896.4s to go
+on time step 395 (time=2.46875), 0.591192 s/step
+Meep progress: 2.5125/20.499999618530275 = 12.3% done in 263.8s, 1888.6s to go
+on time step 402 (time=2.5125), 0.593479 s/step
+Meep progress: 2.5500000000000003/20.499999618530275 = 12.4% done in 267.8s, 1885.2s to go
+on time step 408 (time=2.55), 0.668616 s/step
+Meep progress: 2.59375/20.499999618530275 = 12.7% done in 272.0s, 1877.5s to go
+on time step 415 (time=2.59375), 0.591884 s/step
+Meep progress: 2.6375/20.499999618530275 = 12.9% done in 276.1s, 1869.8s to go
+on time step 422 (time=2.6375), 0.590258 s/step
+Meep progress: 2.6812500000000004/20.499999618530275 = 13.1% done in 280.2s, 1862.4s to go
+on time step 429 (time=2.68125), 0.59242 s/step
+Meep progress: 2.725/20.499999618530275 = 13.3% done in 284.4s, 1855.0s to go
+on time step 436 (time=2.725), 0.591669 s/step
+Meep progress: 2.7687500000000003/20.499999618530275 = 13.5% done in 288.5s, 1847.7s to go
+on time step 443 (time=2.76875), 0.591371 s/step
+Meep progress: 2.8125/20.499999618530275 = 13.7% done in 293.1s, 1843.4s to go
+on time step 450 (time=2.8125), 0.656297 s/step
+Meep progress: 2.85625/20.499999618530275 = 13.9% done in 297.3s, 1836.2s to go
+on time step 457 (time=2.85625), 0.59141 s/step
+Meep progress: 2.9000000000000004/20.499999618530275 = 14.1% done in 301.4s, 1829.2s to go
+on time step 464 (time=2.9), 0.591321 s/step
+Meep progress: 2.94375/20.499999618530275 = 14.4% done in 305.5s, 1822.2s to go
+on time step 471 (time=2.94375), 0.591209 s/step
+Meep progress: 2.9875000000000003/20.499999618530275 = 14.6% done in 309.7s, 1815.4s to go
+on time step 478 (time=2.9875), 0.593709 s/step
+Meep progress: 3.03125/20.499999618530275 = 14.8% done in 314.1s, 1810.1s to go
+on time step 485 (time=3.03125), 0.630779 s/step
+Meep progress: 3.075/20.499999618530275 = 15.0% done in 318.2s, 1803.4s to go
+on time step 492 (time=3.075), 0.591593 s/step
+Meep progress: 3.1187500000000004/20.499999618530275 = 15.2% done in 322.8s, 1799.1s to go
+on time step 499 (time=3.11875), 0.653533 s/step
+Meep progress: 3.1625/20.499999618530275 = 15.4% done in 327.0s, 1792.4s to go
+on time step 506 (time=3.1625), 0.590479 s/step
+Meep progress: 3.2062500000000003/20.499999618530275 = 15.6% done in 331.1s, 1785.8s to go
+on time step 513 (time=3.20625), 0.59147 s/step
+Meep progress: 3.25/20.499999618530275 = 15.9% done in 335.2s, 1779.3s to go
+on time step 520 (time=3.25), 0.591661 s/step
+Meep progress: 3.29375/20.499999618530275 = 16.1% done in 339.4s, 1772.9s to go
+on time step 527 (time=3.29375), 0.592212 s/step
+Meep progress: 3.3375000000000004/20.499999618530275 = 16.3% done in 343.5s, 1766.5s to go
+on time step 534 (time=3.3375), 0.592557 s/step
+Meep progress: 3.375/20.499999618530275 = 16.5% done in 347.5s, 1763.4s to go
+on time step 540 (time=3.375), 0.668015 s/step
+Meep progress: 3.41875/20.499999618530275 = 16.7% done in 351.7s, 1757.2s to go
+on time step 547 (time=3.41875), 0.592968 s/step
+Meep progress: 3.4625000000000004/20.499999618530275 = 16.9% done in 355.8s, 1750.9s to go
+on time step 554 (time=3.4625), 0.592666 s/step
+Meep progress: 3.50625/20.499999618530275 = 17.1% done in 360.0s, 1744.7s to go
+on time step 561 (time=3.50625), 0.592329 s/step
+Meep progress: 3.5500000000000003/20.499999618530275 = 17.3% done in 364.1s, 1738.6s to go
+on time step 568 (time=3.55), 0.591336 s/step
+Meep progress: 3.59375/20.499999618530275 = 17.5% done in 368.3s, 1732.4s to go
+on time step 575 (time=3.59375), 0.591758 s/step
+Meep progress: 3.6375/20.499999618530275 = 17.7% done in 372.4s, 1726.5s to go
+on time step 582 (time=3.6375), 0.594198 s/step
+Meep progress: 3.6750000000000003/20.499999618530275 = 17.9% done in 376.4s, 1723.4s to go
+on time step 588 (time=3.675), 0.667457 s/step
+Meep progress: 3.71875/20.499999618530275 = 18.1% done in 380.6s, 1717.4s to go
+on time step 595 (time=3.71875), 0.593418 s/step
+Meep progress: 3.7625/20.499999618530275 = 18.4% done in 384.7s, 1711.4s to go
+on time step 602 (time=3.7625), 0.591045 s/step
+Meep progress: 3.8062500000000004/20.499999618530275 = 18.6% done in 388.9s, 1705.5s to go
+on time step 609 (time=3.80625), 0.591195 s/step
+Meep progress: 3.85/20.499999618530275 = 18.8% done in 393.0s, 1699.6s to go
+on time step 616 (time=3.85), 0.589963 s/step
+Meep progress: 3.8937500000000003/20.499999618530275 = 19.0% done in 397.1s, 1693.7s to go
+on time step 623 (time=3.89375), 0.591835 s/step
+Meep progress: 3.9375/20.499999618530275 = 19.2% done in 401.7s, 1689.8s to go
+on time step 630 (time=3.9375), 0.657665 s/step
+Meep progress: 3.98125/20.499999618530275 = 19.4% done in 405.9s, 1684.0s to go
+on time step 637 (time=3.98125), 0.589895 s/step
+Meep progress: 4.025/20.499999618530275 = 19.6% done in 410.3s, 1679.4s to go
+on time step 644 (time=4.025), 0.633232 s/step
+Meep progress: 4.0687500000000005/20.499999618530275 = 19.8% done in 414.5s, 1673.7s to go
+on time step 651 (time=4.06875), 0.59345 s/step
+Meep progress: 4.1125/20.499999618530275 = 20.1% done in 418.6s, 1668.0s to go
+on time step 658 (time=4.1125), 0.591943 s/step
+Meep progress: 4.15625/20.499999618530275 = 20.3% done in 422.7s, 1662.3s to go
+on time step 665 (time=4.15625), 0.59068 s/step
+Meep progress: 4.2/20.499999618530275 = 20.5% done in 426.9s, 1656.6s to go
+on time step 672 (time=4.2), 0.590065 s/step
+Meep progress: 4.2375/20.499999618530275 = 20.7% done in 430.9s, 1653.6s to go
+on time step 678 (time=4.2375), 0.667709 s/step
+Meep progress: 4.28125/20.499999618530275 = 20.9% done in 435.0s, 1647.9s to go
+on time step 685 (time=4.28125), 0.589722 s/step
+Meep progress: 4.325/20.499999618530275 = 21.1% done in 439.1s, 1642.3s to go
+on time step 692 (time=4.325), 0.589656 s/step
+Meep progress: 4.36875/20.499999618530275 = 21.3% done in 443.3s, 1636.7s to go
+on time step 699 (time=4.36875), 0.592008 s/step
+Meep progress: 4.4125000000000005/20.499999618530275 = 21.5% done in 447.4s, 1631.2s to go
+on time step 706 (time=4.4125), 0.591392 s/step
+Meep progress: 4.45625/20.499999618530275 = 21.7% done in 451.6s, 1625.7s to go
+on time step 713 (time=4.45625), 0.591853 s/step
+Meep progress: 4.5/20.499999618530275 = 22.0% done in 456.1s, 1621.9s to go
+on time step 720 (time=4.5), 0.656599 s/step
+Meep progress: 4.54375/20.499999618530275 = 22.2% done in 460.3s, 1616.4s to go
+on time step 727 (time=4.54375), 0.592007 s/step
+Meep progress: 4.5875/20.499999618530275 = 22.4% done in 464.4s, 1611.0s to go
+on time step 734 (time=4.5875), 0.591734 s/step
+Meep progress: 4.6312500000000005/20.499999618530275 = 22.6% done in 468.6s, 1605.6s to go
+on time step 741 (time=4.63125), 0.592738 s/step
+Meep progress: 4.675/20.499999618530275 = 22.8% done in 472.7s, 1600.2s to go
+on time step 748 (time=4.675), 0.591738 s/step
+Meep progress: 4.71875/20.499999618530275 = 23.0% done in 476.9s, 1594.8s to go
+on time step 755 (time=4.71875), 0.592709 s/step
+Meep progress: 4.7625/20.499999618530275 = 23.2% done in 481.0s, 1589.5s to go
+on time step 762 (time=4.7625), 0.591826 s/step
+Meep progress: 4.800000000000001/20.499999618530275 = 23.4% done in 485.0s, 1586.4s to go
+on time step 768 (time=4.8), 0.667127 s/step
+Meep progress: 4.84375/20.499999618530275 = 23.6% done in 489.2s, 1581.1s to go
+on time step 775 (time=4.84375), 0.591242 s/step
+Meep progress: 4.8875/20.499999618530275 = 23.8% done in 493.3s, 1575.8s to go
+on time step 782 (time=4.8875), 0.591596 s/step
+Meep progress: 4.93125/20.499999618530275 = 24.1% done in 497.4s, 1570.5s to go
+on time step 789 (time=4.93125), 0.592147 s/step
+Meep progress: 4.9750000000000005/20.499999618530275 = 24.3% done in 501.6s, 1565.3s to go
+on time step 796 (time=4.975), 0.591685 s/step
+Meep progress: 5.018750000000001/20.499999618530275 = 24.5% done in 506.0s, 1560.9s to go
+on time step 803 (time=5.01875), 0.634114 s/step
+Meep progress: 5.0625/20.499999618530275 = 24.7% done in 510.6s, 1557.1s to go
+on time step 810 (time=5.0625), 0.655488 s/step
+Meep progress: 5.10625/20.499999618530275 = 24.9% done in 514.7s, 1551.8s to go
+on time step 817 (time=5.10625), 0.590136 s/step
+Meep progress: 5.15/20.499999618530275 = 25.1% done in 518.9s, 1546.6s to go
+on time step 824 (time=5.15), 0.591919 s/step
+Meep progress: 5.1937500000000005/20.499999618530275 = 25.3% done in 523.0s, 1541.4s to go
+on time step 831 (time=5.19375), 0.591169 s/step
+Meep progress: 5.237500000000001/20.499999618530275 = 25.5% done in 527.2s, 1536.2s to go
+on time step 838 (time=5.2375), 0.593343 s/step
+Meep progress: 5.28125/20.499999618530275 = 25.8% done in 531.3s, 1531.1s to go
+on time step 845 (time=5.28125), 0.592899 s/step
+Meep progress: 5.325/20.499999618530275 = 26.0% done in 535.5s, 1525.9s to go
+on time step 852 (time=5.325), 0.590604 s/step
+Meep progress: 5.36875/20.499999618530275 = 26.2% done in 540.0s, 1522.1s to go
+on time step 859 (time=5.36875), 0.654132 s/step
+Meep progress: 5.4125000000000005/20.499999618530275 = 26.4% done in 544.2s, 1516.9s to go
+on time step 866 (time=5.4125), 0.590948 s/step
+Meep progress: 5.456250000000001/20.499999618530275 = 26.6% done in 548.3s, 1511.8s to go
+on time step 873 (time=5.45625), 0.591011 s/step
+Meep progress: 5.5/20.499999618530275 = 26.8% done in 552.5s, 1506.7s to go
+on time step 880 (time=5.5), 0.591187 s/step
+Meep progress: 5.54375/20.499999618530275 = 27.0% done in 556.6s, 1501.6s to go
+on time step 887 (time=5.54375), 0.590363 s/step
+Meep progress: 5.5875/20.499999618530275 = 27.3% done in 560.7s, 1496.6s to go
+on time step 894 (time=5.5875), 0.59429 s/step
+Meep progress: 5.625/20.499999618530275 = 27.4% done in 564.7s, 1493.4s to go
+on time step 900 (time=5.625), 0.666682 s/step
+Meep progress: 5.66875/20.499999618530275 = 27.7% done in 568.9s, 1488.4s to go
+on time step 907 (time=5.66875), 0.594089 s/step
+Meep progress: 5.7125/20.499999618530275 = 27.9% done in 573.1s, 1483.4s to go
+on time step 914 (time=5.7125), 0.592243 s/step
+Meep progress: 5.7562500000000005/20.499999618530275 = 28.1% done in 577.2s, 1478.4s to go
+on time step 921 (time=5.75625), 0.5915 s/step
+Meep progress: 5.800000000000001/20.499999618530275 = 28.3% done in 581.3s, 1473.4s to go
+on time step 928 (time=5.8), 0.592168 s/step
+Meep progress: 5.84375/20.499999618530275 = 28.5% done in 585.5s, 1468.4s to go
+on time step 935 (time=5.84375), 0.592881 s/step
+Meep progress: 5.8875/20.499999618530275 = 28.7% done in 589.6s, 1463.4s to go
+on time step 942 (time=5.8875), 0.589203 s/step
+Meep progress: 5.93125/20.499999618530275 = 28.9% done in 594.2s, 1459.5s to go
+on time step 949 (time=5.93125), 0.652603 s/step
+Meep progress: 5.9750000000000005/20.499999618530275 = 29.1% done in 598.3s, 1454.5s to go
+on time step 956 (time=5.975), 0.591349 s/step
+Meep progress: 6.018750000000001/20.499999618530275 = 29.4% done in 602.8s, 1450.3s to go
+on time step 963 (time=6.01875), 0.636095 s/step
+Meep progress: 6.0625/20.499999618530275 = 29.6% done in 606.9s, 1445.4s to go
+on time step 970 (time=6.0625), 0.59378 s/step
+Meep progress: 6.10625/20.499999618530275 = 29.8% done in 611.1s, 1440.4s to go
+on time step 977 (time=6.10625), 0.592572 s/step
+Meep progress: 6.15/20.499999618530275 = 30.0% done in 615.2s, 1435.5s to go
+on time step 984 (time=6.15), 0.591545 s/step
+Meep progress: 6.1937500000000005/20.499999618530275 = 30.2% done in 619.8s, 1431.6s to go
+on time step 991 (time=6.19375), 0.65441 s/step
+Meep progress: 6.237500000000001/20.499999618530275 = 30.4% done in 623.9s, 1426.7s to go
+on time step 998 (time=6.2375), 0.592217 s/step
+Meep progress: 6.28125/20.499999618530275 = 30.6% done in 628.1s, 1421.8s to go
+on time step 1005 (time=6.28125), 0.591342 s/step
+Meep progress: 6.325/20.499999618530275 = 30.9% done in 632.2s, 1416.9s to go
+on time step 1012 (time=6.325), 0.593231 s/step
+Meep progress: 6.36875/20.499999618530275 = 31.1% done in 636.4s, 1412.1s to go
+on time step 1019 (time=6.36875), 0.593496 s/step
+Meep progress: 6.4125000000000005/20.499999618530275 = 31.3% done in 640.5s, 1407.2s to go
+on time step 1026 (time=6.4125), 0.591267 s/step
+Meep progress: 6.456250000000001/20.499999618530275 = 31.5% done in 644.7s, 1402.3s to go
+on time step 1033 (time=6.45625), 0.591857 s/step
+Meep progress: 6.49375/20.499999618530275 = 31.7% done in 648.7s, 1399.1s to go
+on time step 1039 (time=6.49375), 0.66799 s/step
+Meep progress: 6.5375000000000005/20.499999618530275 = 31.9% done in 652.8s, 1394.3s to go
+on time step 1046 (time=6.5375), 0.591076 s/step
+Meep progress: 6.581250000000001/20.499999618530275 = 32.1% done in 657.0s, 1389.4s to go
+on time step 1053 (time=6.58125), 0.591563 s/step
+Meep progress: 6.625/20.499999618530275 = 32.3% done in 661.1s, 1384.6s to go
+on time step 1060 (time=6.625), 0.590265 s/step
+Meep progress: 6.66875/20.499999618530275 = 32.5% done in 665.2s, 1379.7s to go
+on time step 1067 (time=6.66875), 0.592832 s/step
+Meep progress: 6.7125/20.499999618530275 = 32.7% done in 669.4s, 1374.9s to go
+on time step 1074 (time=6.7125), 0.592863 s/step
+Meep progress: 6.75/20.499999618530275 = 32.9% done in 673.4s, 1371.7s to go
+on time step 1080 (time=6.75), 0.667543 s/step
+Meep progress: 6.79375/20.499999618530275 = 33.1% done in 677.5s, 1366.9s to go
+on time step 1087 (time=6.79375), 0.592243 s/step
+Meep progress: 6.8375/20.499999618530275 = 33.4% done in 681.7s, 1362.1s to go
+on time step 1094 (time=6.8375), 0.592574 s/step
+Meep progress: 6.8812500000000005/20.499999618530275 = 33.6% done in 685.8s, 1357.3s to go
+on time step 1101 (time=6.88125), 0.592041 s/step
+Meep progress: 6.925000000000001/20.499999618530275 = 33.8% done in 690.0s, 1352.6s to go
+on time step 1108 (time=6.925), 0.593533 s/step
+Meep progress: 6.96875/20.499999618530275 = 34.0% done in 694.1s, 1347.8s to go
+on time step 1115 (time=6.96875), 0.59188 s/step
+Meep progress: 7.0125/20.499999618530275 = 34.2% done in 698.6s, 1343.7s to go
+on time step 1122 (time=7.0125), 0.637639 s/step
+Meep progress: 7.05625/20.499999618530275 = 34.4% done in 703.2s, 1339.7s to go
+on time step 1129 (time=7.05625), 0.656858 s/step
+Meep progress: 7.1000000000000005/20.499999618530275 = 34.6% done in 707.3s, 1335.0s to go
+on time step 1136 (time=7.1), 0.592006 s/step
+Meep progress: 7.143750000000001/20.499999618530275 = 34.8% done in 711.5s, 1330.2s to go
+on time step 1143 (time=7.14375), 0.592563 s/step
+Meep progress: 7.1875/20.499999618530275 = 35.1% done in 715.6s, 1325.5s to go
+on time step 1150 (time=7.1875), 0.591725 s/step
+Meep progress: 7.23125/20.499999618530275 = 35.3% done in 719.8s, 1320.7s to go
+on time step 1157 (time=7.23125), 0.592426 s/step
+Meep progress: 7.275/20.499999618530275 = 35.5% done in 723.9s, 1316.0s to go
+on time step 1164 (time=7.275), 0.589619 s/step
+Meep progress: 7.3125/20.499999618530275 = 35.7% done in 727.9s, 1312.8s to go
+on time step 1170 (time=7.3125), 0.669682 s/step
+Meep progress: 7.35625/20.499999618530275 = 35.9% done in 732.1s, 1308.0s to go
+on time step 1177 (time=7.35625), 0.591085 s/step
+Meep progress: 7.4/20.499999618530275 = 36.1% done in 736.2s, 1303.3s to go
+on time step 1184 (time=7.4), 0.591262 s/step
+Meep progress: 7.4437500000000005/20.499999618530275 = 36.3% done in 740.4s, 1298.6s to go
+on time step 1191 (time=7.44375), 0.593536 s/step
+Meep progress: 7.487500000000001/20.499999618530275 = 36.5% done in 744.5s, 1293.9s to go
+on time step 1198 (time=7.4875), 0.591808 s/step
+Meep progress: 7.53125/20.499999618530275 = 36.7% done in 748.6s, 1289.1s to go
+on time step 1205 (time=7.53125), 0.591445 s/step
+Meep progress: 7.575/20.499999618530275 = 37.0% done in 752.8s, 1284.4s to go
+on time step 1212 (time=7.575), 0.590972 s/step
+Meep progress: 7.61875/20.499999618530275 = 37.2% done in 757.4s, 1280.5s to go
+on time step 1219 (time=7.61875), 0.655436 s/step
+Meep progress: 7.6625000000000005/20.499999618530275 = 37.4% done in 761.5s, 1275.8s to go
+on time step 1226 (time=7.6625), 0.590585 s/step
+Meep progress: 7.706250000000001/20.499999618530275 = 37.6% done in 765.6s, 1271.1s to go
+on time step 1233 (time=7.70625), 0.590135 s/step
+Meep progress: 7.75/20.499999618530275 = 37.8% done in 769.8s, 1266.4s to go
+on time step 1240 (time=7.75), 0.591962 s/step
+Meep progress: 7.79375/20.499999618530275 = 38.0% done in 773.9s, 1261.7s to go
+on time step 1247 (time=7.79375), 0.591485 s/step
+Meep progress: 7.8375/20.499999618530275 = 38.2% done in 778.1s, 1257.1s to go
+on time step 1254 (time=7.8375), 0.591914 s/step
+Meep progress: 7.875/20.499999618530275 = 38.4% done in 782.1s, 1253.8s to go
+on time step 1260 (time=7.875), 0.669053 s/step
+Meep progress: 7.91875/20.499999618530275 = 38.6% done in 786.2s, 1249.2s to go
+on time step 1267 (time=7.91875), 0.594344 s/step
+Meep progress: 7.9625/20.499999618530275 = 38.8% done in 790.4s, 1244.5s to go
+on time step 1274 (time=7.9625), 0.591624 s/step
+Meep progress: 8.00625/20.499999618530275 = 39.1% done in 794.8s, 1240.3s to go
+on time step 1281 (time=8.00625), 0.633181 s/step
+Meep progress: 8.05/20.499999618530275 = 39.3% done in 798.9s, 1235.6s to go
+on time step 1288 (time=8.05), 0.591556 s/step
+Meep progress: 8.09375/20.499999618530275 = 39.5% done in 803.1s, 1231.0s to go
+on time step 1295 (time=8.09375), 0.59108 s/step
+Meep progress: 8.137500000000001/20.499999618530275 = 39.7% done in 807.2s, 1226.3s to go
+on time step 1302 (time=8.1375), 0.591289 s/step
+Meep progress: 8.18125/20.499999618530275 = 39.9% done in 811.8s, 1222.4s to go
+on time step 1309 (time=8.18125), 0.655578 s/step
+Meep progress: 8.225/20.499999618530275 = 40.1% done in 816.0s, 1217.7s to go
+on time step 1316 (time=8.225), 0.591663 s/step
+Meep progress: 8.26875/20.499999618530275 = 40.3% done in 820.1s, 1213.1s to go
+on time step 1323 (time=8.26875), 0.593293 s/step
+Meep progress: 8.3125/20.499999618530275 = 40.5% done in 824.3s, 1208.5s to go
+on time step 1330 (time=8.3125), 0.592278 s/step
+Meep progress: 8.356250000000001/20.499999618530275 = 40.8% done in 828.4s, 1203.9s to go
+on time step 1337 (time=8.35625), 0.591279 s/step
+Meep progress: 8.4/20.499999618530275 = 41.0% done in 832.5s, 1199.2s to go
+on time step 1344 (time=8.4), 0.589859 s/step
+Meep progress: 8.4375/20.499999618530275 = 41.2% done in 836.5s, 1195.9s to go
+on time step 1350 (time=8.4375), 0.667259 s/step
+Meep progress: 8.481250000000001/20.499999618530275 = 41.4% done in 840.7s, 1191.3s to go
+on time step 1357 (time=8.48125), 0.59099 s/step
+Meep progress: 8.525/20.499999618530275 = 41.6% done in 844.8s, 1186.7s to go
+on time step 1364 (time=8.525), 0.593432 s/step
+Meep progress: 8.56875/20.499999618530275 = 41.8% done in 849.0s, 1182.1s to go
+on time step 1371 (time=8.56875), 0.593058 s/step
+Meep progress: 8.6125/20.499999618530275 = 42.0% done in 853.1s, 1177.5s to go
+on time step 1378 (time=8.6125), 0.589539 s/step
+Meep progress: 8.65625/20.499999618530275 = 42.2% done in 857.2s, 1172.9s to go
+on time step 1385 (time=8.65625), 0.591478 s/step
+Meep progress: 8.700000000000001/20.499999618530275 = 42.4% done in 861.4s, 1168.3s to go
+on time step 1392 (time=8.7), 0.590864 s/step
+Meep progress: 8.7375/20.499999618530275 = 42.6% done in 865.4s, 1165.0s to go
+on time step 1398 (time=8.7375), 0.666989 s/step
+Meep progress: 8.78125/20.499999618530275 = 42.8% done in 869.5s, 1160.4s to go
+on time step 1405 (time=8.78125), 0.591499 s/step
+Meep progress: 8.825000000000001/20.499999618530275 = 43.0% done in 873.7s, 1155.8s to go
+on time step 1412 (time=8.825), 0.591401 s/step
+Meep progress: 8.86875/20.499999618530275 = 43.3% done in 877.8s, 1151.2s to go
+on time step 1419 (time=8.86875), 0.590173 s/step
+Meep progress: 8.9125/20.499999618530275 = 43.5% done in 881.9s, 1146.6s to go
+on time step 1426 (time=8.9125), 0.591159 s/step
+Meep progress: 8.95625/20.499999618530275 = 43.7% done in 886.1s, 1142.1s to go
+on time step 1433 (time=8.95625), 0.592998 s/step
+Meep progress: 9.0/20.499999618530275 = 43.9% done in 891.0s, 1138.5s to go
+on time step 1440 (time=9), 0.698246 s/step
+Meep progress: 9.043750000000001/20.499999618530275 = 44.1% done in 895.1s, 1133.9s to go
+on time step 1447 (time=9.04375), 0.593595 s/step
+Meep progress: 9.0875/20.499999618530275 = 44.3% done in 899.3s, 1129.3s to go
+on time step 1454 (time=9.0875), 0.590956 s/step
+Meep progress: 9.13125/20.499999618530275 = 44.5% done in 903.4s, 1124.8s to go
+on time step 1461 (time=9.13125), 0.590915 s/step
+Meep progress: 9.175/20.499999618530275 = 44.8% done in 907.5s, 1120.2s to go
+on time step 1468 (time=9.175), 0.589725 s/step
+Meep progress: 9.21875/20.499999618530275 = 45.0% done in 911.6s, 1115.6s to go
+on time step 1475 (time=9.21875), 0.589102 s/step
+Meep progress: 9.262500000000001/20.499999618530275 = 45.2% done in 915.8s, 1111.1s to go
+on time step 1482 (time=9.2625), 0.591628 s/step
+Meep progress: 9.3/20.499999618530275 = 45.4% done in 919.8s, 1107.7s to go
+on time step 1488 (time=9.3), 0.670691 s/step
+Meep progress: 9.34375/20.499999618530275 = 45.6% done in 923.9s, 1103.2s to go
+on time step 1495 (time=9.34375), 0.590199 s/step
+Meep progress: 9.387500000000001/20.499999618530275 = 45.8% done in 928.1s, 1098.6s to go
+on time step 1502 (time=9.3875), 0.59272 s/step
+Meep progress: 9.43125/20.499999618530275 = 46.0% done in 932.2s, 1094.1s to go
+on time step 1509 (time=9.43125), 0.591623 s/step
+Meep progress: 9.475/20.499999618530275 = 46.2% done in 936.4s, 1089.5s to go
+on time step 1516 (time=9.475), 0.591334 s/step
+Meep progress: 9.51875/20.499999618530275 = 46.4% done in 940.5s, 1085.0s to go
+on time step 1523 (time=9.51875), 0.591038 s/step
+Meep progress: 9.5625/20.499999618530275 = 46.6% done in 945.1s, 1081.0s to go
+on time step 1530 (time=9.5625), 0.657402 s/step
+Meep progress: 9.606250000000001/20.499999618530275 = 46.9% done in 949.2s, 1076.5s to go
+on time step 1537 (time=9.60625), 0.591577 s/step
+Meep progress: 9.65/20.499999618530275 = 47.1% done in 953.4s, 1072.0s to go
+on time step 1544 (time=9.65), 0.593444 s/step
+Meep progress: 9.693750000000001/20.499999618530275 = 47.3% done in 957.5s, 1067.4s to go
+on time step 1551 (time=9.69375), 0.59164 s/step
+Meep progress: 9.7375/20.499999618530275 = 47.5% done in 961.7s, 1062.9s to go
+on time step 1558 (time=9.7375), 0.592924 s/step
+Meep progress: 9.78125/20.499999618530275 = 47.7% done in 965.8s, 1058.4s to go
+on time step 1565 (time=9.78125), 0.590785 s/step
+Meep progress: 9.825000000000001/20.499999618530275 = 47.9% done in 970.0s, 1053.9s to go
+on time step 1572 (time=9.825), 0.589698 s/step
+Meep progress: 9.8625/20.499999618530275 = 48.1% done in 974.0s, 1050.5s to go
+on time step 1578 (time=9.8625), 0.669112 s/step
+Meep progress: 9.90625/20.499999618530275 = 48.3% done in 978.1s, 1046.0s to go
+on time step 1585 (time=9.90625), 0.590877 s/step
+Meep progress: 9.950000000000001/20.499999618530275 = 48.5% done in 982.2s, 1041.5s to go
+on time step 1592 (time=9.95), 0.590891 s/step
+Meep progress: 9.99375/20.499999618530275 = 48.8% done in 986.4s, 1037.0s to go
+on time step 1599 (time=9.99375), 0.591683 s/step
+Meep progress: 10.037500000000001/20.499999618530275 = 49.0% done in 990.8s, 1032.8s to go
+on time step 1606 (time=10.0375), 0.633812 s/step
+Meep progress: 10.08125/20.499999618530275 = 49.2% done in 995.0s, 1028.3s to go
+on time step 1613 (time=10.0813), 0.592127 s/step
+Meep progress: 10.125/20.499999618530275 = 49.4% done in 999.6s, 1024.2s to go
+on time step 1620 (time=10.125), 0.656526 s/step
+Meep progress: 10.168750000000001/20.499999618530275 = 49.6% done in 1003.7s, 1019.7s to go
+on time step 1627 (time=10.1688), 0.591849 s/step
+Meep progress: 10.2125/20.499999618530275 = 49.8% done in 1007.8s, 1015.2s to go
+on time step 1634 (time=10.2125), 0.590861 s/step
+Meep progress: 10.256250000000001/20.499999618530275 = 50.0% done in 1012.0s, 1010.8s to go
+on time step 1641 (time=10.2563), 0.591526 s/step
+Meep progress: 10.3/20.499999618530275 = 50.2% done in 1016.1s, 1006.3s to go
+on time step 1648 (time=10.3), 0.590153 s/step
+Meep progress: 10.34375/20.499999618530275 = 50.5% done in 1020.3s, 1001.8s to go
+on time step 1655 (time=10.3438), 0.59091 s/step
+Meep progress: 10.387500000000001/20.499999618530275 = 50.7% done in 1024.4s, 997.3s to go
+on time step 1662 (time=10.3875), 0.591493 s/step
+Meep progress: 10.425/20.499999618530275 = 50.9% done in 1028.4s, 993.9s to go
+on time step 1668 (time=10.425), 0.667399 s/step
+Meep progress: 10.46875/20.499999618530275 = 51.1% done in 1032.5s, 989.4s to go
+on time step 1675 (time=10.4688), 0.591356 s/step
+Meep progress: 10.512500000000001/20.499999618530275 = 51.3% done in 1036.7s, 984.9s to go
+on time step 1682 (time=10.5125), 0.589257 s/step
+Meep progress: 10.55625/20.499999618530275 = 51.5% done in 1040.8s, 980.4s to go
+on time step 1689 (time=10.5563), 0.591334 s/step
+Meep progress: 10.600000000000001/20.499999618530275 = 51.7% done in 1045.0s, 975.9s to go
+on time step 1696 (time=10.6), 0.593106 s/step
+Meep progress: 10.64375/20.499999618530275 = 51.9% done in 1049.1s, 971.5s to go
+on time step 1703 (time=10.6438), 0.591828 s/step
+Meep progress: 10.6875/20.499999618530275 = 52.1% done in 1053.7s, 967.4s to go
+on time step 1710 (time=10.6875), 0.658579 s/step
+Meep progress: 10.731250000000001/20.499999618530275 = 52.3% done in 1057.9s, 963.0s to go
+on time step 1717 (time=10.7313), 0.592624 s/step
+Meep progress: 10.775/20.499999618530275 = 52.6% done in 1062.0s, 958.5s to go
+on time step 1724 (time=10.775), 0.591406 s/step
+Meep progress: 10.818750000000001/20.499999618530275 = 52.8% done in 1066.1s, 954.0s to go
+on time step 1731 (time=10.8188), 0.59097 s/step
+Meep progress: 10.8625/20.499999618530275 = 53.0% done in 1070.3s, 949.6s to go
+on time step 1738 (time=10.8625), 0.588295 s/step
+Meep progress: 10.90625/20.499999618530275 = 53.2% done in 1074.4s, 945.1s to go
+on time step 1745 (time=10.9062), 0.590589 s/step
+Meep progress: 10.950000000000001/20.499999618530275 = 53.4% done in 1078.5s, 940.6s to go
+on time step 1752 (time=10.95), 0.590008 s/step
+Meep progress: 10.99375/20.499999618530275 = 53.6% done in 1083.1s, 936.6s to go
+on time step 1759 (time=10.9938), 0.654869 s/step
+Meep progress: 11.037500000000001/20.499999618530275 = 53.8% done in 1087.5s, 932.3s to go
+on time step 1766 (time=11.0375), 0.629524 s/step
+Meep progress: 11.08125/20.499999618530275 = 54.1% done in 1091.6s, 927.9s to go
+on time step 1773 (time=11.0813), 0.589605 s/step
+Meep progress: 11.125/20.499999618530275 = 54.3% done in 1095.8s, 923.4s to go
+on time step 1780 (time=11.125), 0.590273 s/step
+Meep progress: 11.168750000000001/20.499999618530275 = 54.5% done in 1099.9s, 918.9s to go
+on time step 1787 (time=11.1688), 0.589159 s/step
+Meep progress: 11.2125/20.499999618530275 = 54.7% done in 1104.0s, 914.5s to go
+on time step 1794 (time=11.2125), 0.589683 s/step
+Meep progress: 11.256250000000001/20.499999618530275 = 54.9% done in 1108.6s, 910.4s to go
+on time step 1801 (time=11.2563), 0.653103 s/step
+Meep progress: 11.3/20.499999618530275 = 55.1% done in 1112.7s, 905.9s to go
+on time step 1808 (time=11.3), 0.591412 s/step
+Meep progress: 11.34375/20.499999618530275 = 55.3% done in 1116.9s, 901.5s to go
+on time step 1815 (time=11.3438), 0.589988 s/step
+Meep progress: 11.387500000000001/20.499999618530275 = 55.5% done in 1121.0s, 897.0s to go
+on time step 1822 (time=11.3875), 0.588115 s/step
+Meep progress: 11.43125/20.499999618530275 = 55.8% done in 1125.1s, 892.6s to go
+on time step 1829 (time=11.4313), 0.590554 s/step
+Meep progress: 11.475000000000001/20.499999618530275 = 56.0% done in 1129.2s, 888.1s to go
+on time step 1836 (time=11.475), 0.589025 s/step
+Meep progress: 11.51875/20.499999618530275 = 56.2% done in 1133.4s, 883.7s to go
+on time step 1843 (time=11.5188), 0.59114 s/step
+Meep progress: 11.5625/20.499999618530275 = 56.4% done in 1138.0s, 879.6s to go
+on time step 1850 (time=11.5625), 0.654681 s/step
+Meep progress: 11.606250000000001/20.499999618530275 = 56.6% done in 1142.1s, 875.2s to go
+on time step 1857 (time=11.6063), 0.588344 s/step
+Meep progress: 11.65/20.499999618530275 = 56.8% done in 1146.2s, 870.7s to go
+on time step 1864 (time=11.65), 0.5908 s/step
+Meep progress: 11.693750000000001/20.499999618530275 = 57.0% done in 1150.3s, 866.3s to go
+on time step 1871 (time=11.6938), 0.589379 s/step
+Meep progress: 11.7375/20.499999618530275 = 57.3% done in 1154.5s, 861.9s to go
+on time step 1878 (time=11.7375), 0.592845 s/step
+Meep progress: 11.78125/20.499999618530275 = 57.5% done in 1158.6s, 857.4s to go
+on time step 1885 (time=11.7812), 0.585615 s/step
+Meep progress: 11.825000000000001/20.499999618530275 = 57.7% done in 1163.2s, 853.3s to go
+on time step 1892 (time=11.825), 0.653281 s/step
+Meep progress: 11.86875/20.499999618530275 = 57.9% done in 1167.3s, 848.9s to go
+on time step 1899 (time=11.8688), 0.590424 s/step
+Meep progress: 11.912500000000001/20.499999618530275 = 58.1% done in 1171.4s, 844.4s to go
+on time step 1906 (time=11.9125), 0.587947 s/step
+Meep progress: 11.95625/20.499999618530275 = 58.3% done in 1175.5s, 840.0s to go
+on time step 1913 (time=11.9563), 0.588127 s/step
+Meep progress: 12.0/20.499999618530275 = 58.5% done in 1179.9s, 835.8s to go
+on time step 1920 (time=12), 0.63117 s/step
+Meep progress: 12.043750000000001/20.499999618530275 = 58.8% done in 1184.1s, 831.4s to go
+on time step 1927 (time=12.0438), 0.590488 s/step
+Meep progress: 12.0875/20.499999618530275 = 59.0% done in 1188.2s, 826.9s to go
+on time step 1934 (time=12.0875), 0.589356 s/step
+Meep progress: 12.125/20.499999618530275 = 59.1% done in 1192.2s, 823.5s to go
+on time step 1940 (time=12.125), 0.667084 s/step
+Meep progress: 12.168750000000001/20.499999618530275 = 59.4% done in 1196.3s, 819.0s to go
+on time step 1947 (time=12.1688), 0.586753 s/step
+Meep progress: 12.2125/20.499999618530275 = 59.6% done in 1200.4s, 814.6s to go
+on time step 1954 (time=12.2125), 0.58916 s/step
+Meep progress: 12.256250000000001/20.499999618530275 = 59.8% done in 1204.6s, 810.2s to go
+on time step 1961 (time=12.2563), 0.590257 s/step
+Meep progress: 12.3/20.499999618530275 = 60.0% done in 1208.7s, 805.8s to go
+on time step 1968 (time=12.3), 0.589449 s/step
+Meep progress: 12.34375/20.499999618530275 = 60.2% done in 1212.8s, 801.4s to go
+on time step 1975 (time=12.3438), 0.592603 s/step
+Meep progress: 12.387500000000001/20.499999618530275 = 60.4% done in 1217.4s, 797.3s to go
+on time step 1982 (time=12.3875), 0.652786 s/step
+Meep progress: 12.43125/20.499999618530275 = 60.6% done in 1221.5s, 792.9s to go
+on time step 1989 (time=12.4313), 0.590575 s/step
+Meep progress: 12.475000000000001/20.499999618530275 = 60.9% done in 1225.7s, 788.5s to go
+on time step 1996 (time=12.475), 0.588682 s/step
+Meep progress: 12.51875/20.499999618530275 = 61.1% done in 1229.8s, 784.0s to go
+on time step 2003 (time=12.5188), 0.590225 s/step
+Meep progress: 12.5625/20.499999618530275 = 61.3% done in 1233.9s, 779.7s to go
+on time step 2010 (time=12.5625), 0.592608 s/step
+Meep progress: 12.606250000000001/20.499999618530275 = 61.5% done in 1238.1s, 775.2s to go
+on time step 2017 (time=12.6063), 0.588525 s/step
+Meep progress: 12.65/20.499999618530275 = 61.7% done in 1242.2s, 770.8s to go
+on time step 2024 (time=12.65), 0.588118 s/step
+Meep progress: 12.693750000000001/20.499999618530275 = 61.9% done in 1246.8s, 766.7s to go
+on time step 2031 (time=12.6938), 0.65306 s/step
+Meep progress: 12.7375/20.499999618530275 = 62.1% done in 1250.9s, 762.3s to go
+on time step 2038 (time=12.7375), 0.589969 s/step
+Meep progress: 12.78125/20.499999618530275 = 62.3% done in 1255.0s, 757.9s to go
+on time step 2045 (time=12.7812), 0.591067 s/step
+Meep progress: 12.825000000000001/20.499999618530275 = 62.6% done in 1259.1s, 753.5s to go
+on time step 2052 (time=12.825), 0.586094 s/step
+Meep progress: 12.86875/20.499999618530275 = 62.8% done in 1263.2s, 749.1s to go
+on time step 2059 (time=12.8688), 0.589509 s/step
+Meep progress: 12.912500000000001/20.499999618530275 = 63.0% done in 1267.4s, 744.7s to go
+on time step 2066 (time=12.9125), 0.588571 s/step
+Meep progress: 12.95625/20.499999618530275 = 63.2% done in 1271.9s, 740.6s to go
+on time step 2073 (time=12.9563), 0.653857 s/step
+Meep progress: 13.0/20.499999618530275 = 63.4% done in 1276.4s, 736.4s to go
+on time step 2080 (time=13), 0.632172 s/step
+Meep progress: 13.043750000000001/20.499999618530275 = 63.6% done in 1280.5s, 732.0s to go
+on time step 2087 (time=13.0438), 0.588377 s/step
+Meep progress: 13.0875/20.499999618530275 = 63.8% done in 1284.6s, 727.6s to go
+on time step 2094 (time=13.0875), 0.590901 s/step
+Meep progress: 13.131250000000001/20.499999618530275 = 64.1% done in 1288.8s, 723.2s to go
+on time step 2101 (time=13.1313), 0.590522 s/step
+Meep progress: 13.175/20.499999618530275 = 64.3% done in 1292.9s, 718.8s to go
+on time step 2108 (time=13.175), 0.589066 s/step
+Meep progress: 13.21875/20.499999618530275 = 64.5% done in 1297.5s, 714.7s to go
+on time step 2115 (time=13.2188), 0.655378 s/step
+Meep progress: 13.262500000000001/20.499999618530275 = 64.7% done in 1301.6s, 710.3s to go
+on time step 2122 (time=13.2625), 0.589882 s/step
+Meep progress: 13.30625/20.499999618530275 = 64.9% done in 1305.7s, 705.9s to go
+on time step 2129 (time=13.3063), 0.591716 s/step
+Meep progress: 13.350000000000001/20.499999618530275 = 65.1% done in 1309.9s, 701.5s to go
+on time step 2136 (time=13.35), 0.589985 s/step
+Meep progress: 13.39375/20.499999618530275 = 65.3% done in 1314.0s, 697.2s to go
+on time step 2143 (time=13.3938), 0.589439 s/step
+Meep progress: 13.4375/20.499999618530275 = 65.5% done in 1318.1s, 692.8s to go
+on time step 2150 (time=13.4375), 0.588333 s/step
+Meep progress: 13.481250000000001/20.499999618530275 = 65.8% done in 1322.2s, 688.4s to go
+on time step 2157 (time=13.4813), 0.589339 s/step
+Meep progress: 13.525/20.499999618530275 = 66.0% done in 1326.8s, 684.2s to go
+on time step 2164 (time=13.525), 0.651876 s/step
+Meep progress: 13.568750000000001/20.499999618530275 = 66.2% done in 1330.9s, 679.9s to go
+on time step 2171 (time=13.5688), 0.587204 s/step
+Meep progress: 13.6125/20.499999618530275 = 66.4% done in 1335.0s, 675.5s to go
+on time step 2178 (time=13.6125), 0.589344 s/step
+Meep progress: 13.65625/20.499999618530275 = 66.6% done in 1339.2s, 671.1s to go
+on time step 2185 (time=13.6562), 0.587686 s/step
+Meep progress: 13.700000000000001/20.499999618530275 = 66.8% done in 1343.3s, 666.7s to go
+on time step 2192 (time=13.7), 0.589667 s/step
+Meep progress: 13.74375/20.499999618530275 = 67.0% done in 1347.4s, 662.4s to go
+on time step 2199 (time=13.7438), 0.588993 s/step
+Meep progress: 13.78125/20.499999618530275 = 67.2% done in 1351.4s, 658.9s to go
+on time step 2205 (time=13.7812), 0.667992 s/step
+Meep progress: 13.825000000000001/20.499999618530275 = 67.4% done in 1355.5s, 654.5s to go
+on time step 2212 (time=13.825), 0.589554 s/step
+Meep progress: 13.86875/20.499999618530275 = 67.7% done in 1359.7s, 650.1s to go
+on time step 2219 (time=13.8688), 0.587384 s/step
+Meep progress: 13.912500000000001/20.499999618530275 = 67.9% done in 1363.8s, 645.8s to go
+on time step 2226 (time=13.9125), 0.591705 s/step
+Meep progress: 13.95625/20.499999618530275 = 68.1% done in 1367.9s, 641.4s to go
+on time step 2233 (time=13.9563), 0.590707 s/step
+Meep progress: 14.0/20.499999618530275 = 68.3% done in 1372.4s, 637.2s to go
+on time step 2240 (time=14), 0.634144 s/step
+Meep progress: 14.043750000000001/20.499999618530275 = 68.5% done in 1376.5s, 632.8s to go
+on time step 2247 (time=14.0438), 0.588663 s/step
+Meep progress: 14.0875/20.499999618530275 = 68.7% done in 1381.1s, 628.6s to go
+on time step 2254 (time=14.0875), 0.654046 s/step
+Meep progress: 14.131250000000001/20.499999618530275 = 68.9% done in 1385.2s, 624.3s to go
+on time step 2261 (time=14.1313), 0.591771 s/step
+Meep progress: 14.175/20.499999618530275 = 69.1% done in 1389.3s, 619.9s to go
+on time step 2268 (time=14.175), 0.588727 s/step
+Meep progress: 14.21875/20.499999618530275 = 69.4% done in 1393.5s, 615.6s to go
+on time step 2275 (time=14.2188), 0.589168 s/step
+Meep progress: 14.262500000000001/20.499999618530275 = 69.6% done in 1397.6s, 611.2s to go
+on time step 2282 (time=14.2625), 0.58713 s/step
+Meep progress: 14.30625/20.499999618530275 = 69.8% done in 1401.7s, 606.9s to go
+on time step 2289 (time=14.3063), 0.590813 s/step
+Meep progress: 14.350000000000001/20.499999618530275 = 70.0% done in 1406.3s, 602.7s to go
+on time step 2296 (time=14.35), 0.653552 s/step
+Meep progress: 14.39375/20.499999618530275 = 70.2% done in 1410.4s, 598.3s to go
+on time step 2303 (time=14.3938), 0.589402 s/step
+Meep progress: 14.4375/20.499999618530275 = 70.4% done in 1414.5s, 594.0s to go
+on time step 2310 (time=14.4375), 0.587508 s/step
+Meep progress: 14.481250000000001/20.499999618530275 = 70.6% done in 1418.6s, 589.6s to go
+on time step 2317 (time=14.4813), 0.590317 s/step
+Meep progress: 14.525/20.499999618530275 = 70.9% done in 1422.8s, 585.3s to go
+on time step 2324 (time=14.525), 0.591091 s/step
+Meep progress: 14.568750000000001/20.499999618530275 = 71.1% done in 1426.9s, 580.9s to go
+on time step 2331 (time=14.5688), 0.588873 s/step
+Meep progress: 14.6125/20.499999618530275 = 71.3% done in 1431.0s, 576.6s to go
+on time step 2338 (time=14.6125), 0.590694 s/step
+Meep progress: 14.65/20.499999618530275 = 71.5% done in 1435.1s, 573.0s to go
+on time step 2344 (time=14.65), 0.669109 s/step
+Meep progress: 14.693750000000001/20.499999618530275 = 71.7% done in 1439.2s, 568.7s to go
+on time step 2351 (time=14.6938), 0.589905 s/step
+Meep progress: 14.7375/20.499999618530275 = 71.9% done in 1443.3s, 564.4s to go
+on time step 2358 (time=14.7375), 0.590589 s/step
+Meep progress: 14.78125/20.499999618530275 = 72.1% done in 1447.4s, 560.0s to go
+on time step 2365 (time=14.7812), 0.589436 s/step
+Meep progress: 14.825000000000001/20.499999618530275 = 72.3% done in 1451.6s, 555.7s to go
+on time step 2372 (time=14.825), 0.589508 s/step
+Meep progress: 14.86875/20.499999618530275 = 72.5% done in 1455.7s, 551.3s to go
+on time step 2379 (time=14.8688), 0.593339 s/step
+Meep progress: 14.90625/20.499999618530275 = 72.7% done in 1459.7s, 547.8s to go
+on time step 2385 (time=14.9062), 0.66683 s/step
+Meep progress: 14.950000000000001/20.499999618530275 = 72.9% done in 1463.9s, 543.4s to go
+on time step 2392 (time=14.95), 0.592977 s/step
+Meep progress: 14.99375/20.499999618530275 = 73.1% done in 1468.0s, 539.1s to go
+on time step 2399 (time=14.9938), 0.591089 s/step
+Meep progress: 15.037500000000001/20.499999618530275 = 73.4% done in 1472.5s, 534.9s to go
+on time step 2406 (time=15.0375), 0.635014 s/step
+Meep progress: 15.08125/20.499999618530275 = 73.6% done in 1476.6s, 530.5s to go
+on time step 2413 (time=15.0813), 0.589293 s/step
+Meep progress: 15.125/20.499999618530275 = 73.8% done in 1480.7s, 526.2s to go
+on time step 2420 (time=15.125), 0.589865 s/step
+Meep progress: 15.168750000000001/20.499999618530275 = 74.0% done in 1484.9s, 521.9s to go
+on time step 2427 (time=15.1688), 0.592052 s/step
+Meep progress: 15.2125/20.499999618530275 = 74.2% done in 1489.4s, 517.7s to go
+on time step 2434 (time=15.2125), 0.654664 s/step
+Meep progress: 15.256250000000001/20.499999618530275 = 74.4% done in 1493.6s, 513.4s to go
+on time step 2441 (time=15.2563), 0.589684 s/step
+Meep progress: 15.3/20.499999618530275 = 74.6% done in 1497.7s, 509.0s to go
+on time step 2448 (time=15.3), 0.590569 s/step
+Meep progress: 15.34375/20.499999618530275 = 74.8% done in 1501.8s, 504.7s to go
+on time step 2455 (time=15.3438), 0.591493 s/step
+Meep progress: 15.387500000000001/20.499999618530275 = 75.1% done in 1506.0s, 500.4s to go
+on time step 2462 (time=15.3875), 0.591567 s/step
+Meep progress: 15.43125/20.499999618530275 = 75.3% done in 1510.1s, 496.0s to go
+on time step 2469 (time=15.4313), 0.587862 s/step
+Meep progress: 15.46875/20.499999618530275 = 75.5% done in 1514.1s, 492.5s to go
+on time step 2475 (time=15.4688), 0.667836 s/step
+Meep progress: 15.512500000000001/20.499999618530275 = 75.7% done in 1518.2s, 488.1s to go
+on time step 2482 (time=15.5125), 0.589483 s/step
+Meep progress: 15.55625/20.499999618530275 = 75.9% done in 1522.4s, 483.8s to go
+on time step 2489 (time=15.5563), 0.591643 s/step
+Meep progress: 15.600000000000001/20.499999618530275 = 76.1% done in 1526.5s, 479.5s to go
+on time step 2496 (time=15.6), 0.588263 s/step
+Meep progress: 15.64375/20.499999618530275 = 76.3% done in 1530.6s, 475.1s to go
+on time step 2503 (time=15.6438), 0.589089 s/step
+Meep progress: 15.6875/20.499999618530275 = 76.5% done in 1534.8s, 470.8s to go
+on time step 2510 (time=15.6875), 0.590512 s/step
+Meep progress: 15.731250000000001/20.499999618530275 = 76.7% done in 1538.9s, 466.5s to go
+on time step 2517 (time=15.7313), 0.587098 s/step
+Meep progress: 15.775/20.499999618530275 = 77.0% done in 1543.4s, 462.3s to go
+on time step 2524 (time=15.775), 0.654183 s/step
+Meep progress: 15.818750000000001/20.499999618530275 = 77.2% done in 1547.6s, 458.0s to go
+on time step 2531 (time=15.8188), 0.589412 s/step
+Meep progress: 15.8625/20.499999618530275 = 77.4% done in 1551.7s, 453.6s to go
+on time step 2538 (time=15.8625), 0.588579 s/step
+Meep progress: 15.90625/20.499999618530275 = 77.6% done in 1555.8s, 449.3s to go
+on time step 2545 (time=15.9062), 0.588949 s/step
+Meep progress: 15.950000000000001/20.499999618530275 = 77.8% done in 1559.9s, 445.0s to go
+on time step 2552 (time=15.95), 0.587842 s/step
+Meep progress: 15.99375/20.499999618530275 = 78.0% done in 1564.1s, 440.7s to go
+on time step 2559 (time=15.9938), 0.591567 s/step
+Meep progress: 16.03125/20.499999618530275 = 78.2% done in 1568.4s, 437.2s to go
+on time step 2565 (time=16.0312), 0.716029 s/step
+Meep progress: 16.075/20.499999618530275 = 78.4% done in 1572.5s, 432.9s to go
+on time step 2572 (time=16.075), 0.590994 s/step
+Meep progress: 16.118750000000002/20.499999618530275 = 78.6% done in 1576.6s, 428.5s to go
+on time step 2579 (time=16.1188), 0.589581 s/step
+Meep progress: 16.1625/20.499999618530275 = 78.8% done in 1580.8s, 424.2s to go
+on time step 2586 (time=16.1625), 0.59232 s/step
+Meep progress: 16.20625/20.499999618530275 = 79.1% done in 1584.9s, 419.9s to go
+on time step 2593 (time=16.2063), 0.589786 s/step
+Meep progress: 16.25/20.499999618530275 = 79.3% done in 1589.0s, 415.6s to go
+on time step 2600 (time=16.25), 0.586454 s/step
+Meep progress: 16.29375/20.499999618530275 = 79.5% done in 1593.1s, 411.3s to go
+on time step 2607 (time=16.2937), 0.59028 s/step
+Meep progress: 16.337500000000002/20.499999618530275 = 79.7% done in 1597.7s, 407.1s to go
+on time step 2614 (time=16.3375), 0.654269 s/step
+Meep progress: 16.38125/20.499999618530275 = 79.9% done in 1601.9s, 402.8s to go
+on time step 2621 (time=16.3813), 0.590253 s/step
+Meep progress: 16.425/20.499999618530275 = 80.1% done in 1606.0s, 398.4s to go
+on time step 2628 (time=16.425), 0.588412 s/step
+Meep progress: 16.46875/20.499999618530275 = 80.3% done in 1610.1s, 394.1s to go
+on time step 2635 (time=16.4688), 0.58957 s/step
+Meep progress: 16.5125/20.499999618530275 = 80.5% done in 1614.2s, 389.8s to go
+on time step 2642 (time=16.5125), 0.591364 s/step
+Meep progress: 16.556250000000002/20.499999618530275 = 80.8% done in 1618.4s, 385.5s to go
+on time step 2649 (time=16.5563), 0.590149 s/step
+Meep progress: 16.6/20.499999618530275 = 81.0% done in 1622.9s, 381.3s to go
+on time step 2656 (time=16.6), 0.653913 s/step
+Meep progress: 16.64375/20.499999618530275 = 81.2% done in 1627.1s, 377.0s to go
+on time step 2663 (time=16.6438), 0.589086 s/step
+Meep progress: 16.6875/20.499999618530275 = 81.4% done in 1631.2s, 372.7s to go
+on time step 2670 (time=16.6875), 0.589308 s/step
+Meep progress: 16.73125/20.499999618530275 = 81.6% done in 1635.3s, 368.4s to go
+on time step 2677 (time=16.7312), 0.593462 s/step
+Meep progress: 16.775000000000002/20.499999618530275 = 81.8% done in 1639.5s, 364.1s to go
+on time step 2684 (time=16.775), 0.587748 s/step
+Meep progress: 16.81875/20.499999618530275 = 82.0% done in 1643.6s, 359.7s to go
+on time step 2691 (time=16.8188), 0.591386 s/step
+Meep progress: 16.8625/20.499999618530275 = 82.3% done in 1647.7s, 355.4s to go
+on time step 2698 (time=16.8625), 0.591109 s/step
+Meep progress: 16.90625/20.499999618530275 = 82.5% done in 1652.3s, 351.2s to go
+on time step 2705 (time=16.9062), 0.655776 s/step
+Meep progress: 16.95/20.499999618530275 = 82.7% done in 1656.5s, 346.9s to go
+on time step 2712 (time=16.95), 0.5885 s/step
+Meep progress: 16.993750000000002/20.499999618530275 = 82.9% done in 1660.6s, 342.6s to go
+on time step 2719 (time=16.9938), 0.58885 s/step
+Meep progress: 17.0375/20.499999618530275 = 83.1% done in 1665.0s, 338.4s to go
+on time step 2726 (time=17.0375), 0.633304 s/step
+Meep progress: 17.08125/20.499999618530275 = 83.3% done in 1669.1s, 334.1s to go
+on time step 2733 (time=17.0813), 0.589224 s/step
+Meep progress: 17.125/20.499999618530275 = 83.5% done in 1673.3s, 329.8s to go
+on time step 2740 (time=17.125), 0.591316 s/step
+Meep progress: 17.16875/20.499999618530275 = 83.8% done in 1677.8s, 325.6s to go
+on time step 2747 (time=17.1687), 0.65373 s/step
+Meep progress: 17.212500000000002/20.499999618530275 = 84.0% done in 1682.0s, 321.2s to go
+on time step 2754 (time=17.2125), 0.589012 s/step
+Meep progress: 17.25625/20.499999618530275 = 84.2% done in 1686.1s, 316.9s to go
+on time step 2761 (time=17.2563), 0.591939 s/step
+Meep progress: 17.3/20.499999618530275 = 84.4% done in 1690.2s, 312.6s to go
+on time step 2768 (time=17.3), 0.590413 s/step
+Meep progress: 17.34375/20.499999618530275 = 84.6% done in 1694.4s, 308.3s to go
+on time step 2775 (time=17.3438), 0.590357 s/step
+Meep progress: 17.3875/20.499999618530275 = 84.8% done in 1698.5s, 304.0s to go
+on time step 2782 (time=17.3875), 0.589355 s/step
+Meep progress: 17.431250000000002/20.499999618530275 = 85.0% done in 1702.6s, 299.7s to go
+on time step 2789 (time=17.4313), 0.590167 s/step
+Meep progress: 17.475/20.499999618530275 = 85.2% done in 1707.2s, 295.5s to go
+on time step 2796 (time=17.475), 0.657414 s/step
+Meep progress: 17.51875/20.499999618530275 = 85.5% done in 1711.4s, 291.2s to go
+on time step 2803 (time=17.5188), 0.587826 s/step
+Meep progress: 17.5625/20.499999618530275 = 85.7% done in 1715.5s, 286.9s to go
+on time step 2810 (time=17.5625), 0.593418 s/step
+Meep progress: 17.60625/20.499999618530275 = 85.9% done in 1719.6s, 282.6s to go
+on time step 2817 (time=17.6062), 0.589029 s/step
+Meep progress: 17.650000000000002/20.499999618530275 = 86.1% done in 1723.8s, 278.3s to go
+on time step 2824 (time=17.65), 0.591633 s/step
+Meep progress: 17.69375/20.499999618530275 = 86.3% done in 1727.9s, 274.0s to go
+on time step 2831 (time=17.6938), 0.589956 s/step
+Meep progress: 17.7375/20.499999618530275 = 86.5% done in 1732.5s, 269.8s to go
+on time step 2838 (time=17.7375), 0.654258 s/step
+Meep progress: 17.78125/20.499999618530275 = 86.7% done in 1736.6s, 265.5s to go
+on time step 2845 (time=17.7812), 0.591908 s/step
+Meep progress: 17.825/20.499999618530275 = 87.0% done in 1740.7s, 261.2s to go
+on time step 2852 (time=17.825), 0.588905 s/step
+Meep progress: 17.868750000000002/20.499999618530275 = 87.2% done in 1744.9s, 256.9s to go
+on time step 2859 (time=17.8688), 0.590541 s/step
+Meep progress: 17.9125/20.499999618530275 = 87.4% done in 1749.0s, 252.6s to go
+on time step 2866 (time=17.9125), 0.589207 s/step
+Meep progress: 17.95625/20.499999618530275 = 87.6% done in 1753.1s, 248.4s to go
+on time step 2873 (time=17.9563), 0.588532 s/step
+Meep progress: 18.0/20.499999618530275 = 87.8% done in 1758.0s, 244.2s to go
+on time step 2880 (time=18), 0.701337 s/step
+Meep progress: 18.04375/20.499999618530275 = 88.0% done in 1762.2s, 239.9s to go
+on time step 2887 (time=18.0437), 0.58932 s/step
+Meep progress: 18.087500000000002/20.499999618530275 = 88.2% done in 1766.3s, 235.6s to go
+on time step 2894 (time=18.0875), 0.5875 s/step
+Meep progress: 18.13125/20.499999618530275 = 88.4% done in 1770.4s, 231.3s to go
+on time step 2901 (time=18.1313), 0.591071 s/step
+Meep progress: 18.175/20.499999618530275 = 88.7% done in 1774.5s, 227.0s to go
+on time step 2908 (time=18.175), 0.589926 s/step
+Meep progress: 18.21875/20.499999618530275 = 88.9% done in 1778.7s, 222.7s to go
+on time step 2915 (time=18.2188), 0.590581 s/step
+Meep progress: 18.2625/20.499999618530275 = 89.1% done in 1782.8s, 218.4s to go
+on time step 2922 (time=18.2625), 0.588517 s/step
+Meep progress: 18.3/20.499999618530275 = 89.3% done in 1786.8s, 214.8s to go
+on time step 2928 (time=18.3), 0.667861 s/step
+Meep progress: 18.34375/20.499999618530275 = 89.5% done in 1790.9s, 210.5s to go
+on time step 2935 (time=18.3438), 0.592159 s/step
+Meep progress: 18.3875/20.499999618530275 = 89.7% done in 1795.1s, 206.2s to go
+on time step 2942 (time=18.3875), 0.588446 s/step
+Meep progress: 18.431250000000002/20.499999618530275 = 89.9% done in 1799.2s, 201.9s to go
+on time step 2949 (time=18.4313), 0.588417 s/step
+Meep progress: 18.475/20.499999618530275 = 90.1% done in 1803.3s, 197.7s to go
+on time step 2956 (time=18.475), 0.589632 s/step
+Meep progress: 18.51875/20.499999618530275 = 90.3% done in 1807.4s, 193.4s to go
+on time step 2963 (time=18.5188), 0.591126 s/step
+Meep progress: 18.5625/20.499999618530275 = 90.5% done in 1812.0s, 189.1s to go
+on time step 2970 (time=18.5625), 0.649634 s/step
+Meep progress: 18.60625/20.499999618530275 = 90.8% done in 1816.1s, 184.8s to go
+on time step 2977 (time=18.6062), 0.589268 s/step
+Meep progress: 18.650000000000002/20.499999618530275 = 91.0% done in 1820.2s, 180.6s to go
+on time step 2984 (time=18.65), 0.588398 s/step
+Meep progress: 18.69375/20.499999618530275 = 91.2% done in 1824.4s, 176.3s to go
+on time step 2991 (time=18.6938), 0.589374 s/step
+Meep progress: 18.7375/20.499999618530275 = 91.4% done in 1828.5s, 172.0s to go
+on time step 2998 (time=18.7375), 0.587387 s/step
+Meep progress: 18.78125/20.499999618530275 = 91.6% done in 1832.6s, 167.7s to go
+on time step 3005 (time=18.7812), 0.589559 s/step
+Meep progress: 18.825/20.499999618530275 = 91.8% done in 1836.7s, 163.4s to go
+on time step 3012 (time=18.825), 0.592075 s/step
+Meep progress: 18.868750000000002/20.499999618530275 = 92.0% done in 1841.3s, 159.2s to go
+on time step 3019 (time=18.8688), 0.654566 s/step
+Meep progress: 18.9125/20.499999618530275 = 92.3% done in 1845.5s, 154.9s to go
+on time step 3026 (time=18.9125), 0.589272 s/step
+Meep progress: 18.95625/20.499999618530275 = 92.5% done in 1849.6s, 150.6s to go
+on time step 3033 (time=18.9563), 0.590495 s/step
+Meep progress: 19.0/20.499999618530275 = 92.7% done in 1854.0s, 146.4s to go
+on time step 3040 (time=19), 0.635571 s/step
+Meep progress: 19.04375/20.499999618530275 = 92.9% done in 1858.2s, 142.1s to go
+on time step 3047 (time=19.0437), 0.590869 s/step
+Meep progress: 19.087500000000002/20.499999618530275 = 93.1% done in 1862.3s, 137.8s to go
+on time step 3054 (time=19.0875), 0.587796 s/step
+Meep progress: 19.13125/20.499999618530275 = 93.3% done in 1866.9s, 133.6s to go
+on time step 3061 (time=19.1313), 0.653894 s/step
+Meep progress: 19.175/20.499999618530275 = 93.5% done in 1871.0s, 129.3s to go
+on time step 3068 (time=19.175), 0.588452 s/step
+Meep progress: 19.21875/20.499999618530275 = 93.8% done in 1875.1s, 125.0s to go
+on time step 3075 (time=19.2188), 0.587751 s/step
+Meep progress: 19.262500000000003/20.499999618530275 = 94.0% done in 1879.2s, 120.7s to go
+on time step 3082 (time=19.2625), 0.590265 s/step
+Meep progress: 19.306250000000002/20.499999618530275 = 94.2% done in 1883.3s, 116.5s to go
+on time step 3089 (time=19.3063), 0.587099 s/step
+Meep progress: 19.35/20.499999618530275 = 94.4% done in 1887.5s, 112.2s to go
+on time step 3096 (time=19.35), 0.58995 s/step
+Meep progress: 19.39375/20.499999618530275 = 94.6% done in 1891.6s, 107.9s to go
+on time step 3103 (time=19.3938), 0.590544 s/step
+Meep progress: 19.431250000000002/20.499999618530275 = 94.8% done in 1895.6s, 104.3s to go
+on time step 3109 (time=19.4313), 0.666848 s/step
+Meep progress: 19.475/20.499999618530275 = 95.0% done in 1899.7s, 100.0s to go
+on time step 3116 (time=19.475), 0.587891 s/step
+Meep progress: 19.51875/20.499999618530275 = 95.2% done in 1903.9s, 95.7s to go
+on time step 3123 (time=19.5188), 0.589799 s/step
+Meep progress: 19.5625/20.499999618530275 = 95.4% done in 1908.0s, 91.4s to go
+on time step 3130 (time=19.5625), 0.591346 s/step
+Meep progress: 19.606250000000003/20.499999618530275 = 95.6% done in 1912.1s, 87.2s to go
+on time step 3137 (time=19.6063), 0.588448 s/step
+Meep progress: 19.650000000000002/20.499999618530275 = 95.9% done in 1916.2s, 82.9s to go
+on time step 3144 (time=19.65), 0.591296 s/step
+Meep progress: 19.69375/20.499999618530275 = 96.1% done in 1920.8s, 78.6s to go
+on time step 3151 (time=19.6938), 0.654264 s/step
+Meep progress: 19.7375/20.499999618530275 = 96.3% done in 1925.0s, 74.4s to go
+on time step 3158 (time=19.7375), 0.59253 s/step
+Meep progress: 19.78125/20.499999618530275 = 96.5% done in 1929.1s, 70.1s to go
+on time step 3165 (time=19.7812), 0.588927 s/step
+Meep progress: 19.825000000000003/20.499999618530275 = 96.7% done in 1933.2s, 65.8s to go
+on time step 3172 (time=19.825), 0.590667 s/step
+Meep progress: 19.868750000000002/20.499999618530275 = 96.9% done in 1937.4s, 61.6s to go
+on time step 3179 (time=19.8688), 0.592357 s/step
+Meep progress: 19.9125/20.499999618530275 = 97.1% done in 1941.5s, 57.3s to go
+on time step 3186 (time=19.9125), 0.588995 s/step
+Meep progress: 19.95625/20.499999618530275 = 97.3% done in 1945.6s, 53.0s to go
+on time step 3193 (time=19.9563), 0.590941 s/step
+Meep progress: 20.0/20.499999618530275 = 97.6% done in 1950.5s, 48.8s to go
+on time step 3200 (time=20), 0.698259 s/step
+Meep progress: 20.043750000000003/20.499999618530275 = 97.8% done in 1954.7s, 44.5s to go
+on time step 3207 (time=20.0438), 0.589506 s/step
+Meep progress: 20.087500000000002/20.499999618530275 = 98.0% done in 1958.8s, 40.2s to go
+on time step 3214 (time=20.0875), 0.592255 s/step
+Meep progress: 20.13125/20.499999618530275 = 98.2% done in 1962.9s, 36.0s to go
+on time step 3221 (time=20.1313), 0.590859 s/step
+Meep progress: 20.175/20.499999618530275 = 98.4% done in 1967.1s, 31.7s to go
+on time step 3228 (time=20.175), 0.589819 s/step
+Meep progress: 20.21875/20.499999618530275 = 98.6% done in 1971.2s, 27.4s to go
+on time step 3235 (time=20.2188), 0.589689 s/step
+Meep progress: 20.25625/20.499999618530275 = 98.8% done in 1975.2s, 23.8s to go
+on time step 3241 (time=20.2563), 0.667321 s/step
+Meep progress: 20.3/20.499999618530275 = 99.0% done in 1979.3s, 19.5s to go
+on time step 3248 (time=20.3), 0.591095 s/step
+Meep progress: 20.34375/20.499999618530275 = 99.2% done in 1983.5s, 15.2s to go
+on time step 3255 (time=20.3438), 0.59007 s/step
+Meep progress: 20.387500000000003/20.499999618530275 = 99.5% done in 1987.6s, 11.0s to go
+on time step 3262 (time=20.3875), 0.590857 s/step
+Meep progress: 20.431250000000002/20.499999618530275 = 99.7% done in 1991.7s, 6.7s to go
+on time step 3269 (time=20.4313), 0.589368 s/step
+Meep progress: 20.475/20.499999618530275 = 99.9% done in 1995.9s, 2.4s to go
+on time step 3276 (time=20.475), 0.591562 s/step
+creating output file "./nanobeam-eps-000003280.h5"...
+creating output file "./nanobeam-ey-000003280.h5"...
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+run 0 finished at t = 20.5 (3280 timesteps)
+Generating MP4...
+flux1:, 1.1764705882352942, 0.04013126631868916, 0.01217114557643359, -0.09281700121109411, -0.24204436918039957, 0.09077491313135705
+flux1:, 1.1774529451058982, 0.04044208361511767, 0.012311593079760963, -0.09439580767298941, -0.2463223342078798, 0.09177018978701089
+flux1:, 1.1784353019765021, 0.04076021600778764, 0.012454284115647873, -0.09589755108923229, -0.25087234062455777, 0.09279309079187953
+flux1:, 1.179417658847106, 0.04108581281222908, 0.012599185691347872, -0.09730442236706392, -0.2557093308290802, 0.09384767423562465
+flux1:, 1.18040001571771, 0.041419015176847526, 0.012746259048711564, -0.0985972198929149, -0.26084878034179376, 0.09493862324530897
+flux1:, 1.181382372588314, 0.0417599550355799, 0.01289545940490566, -0.099755317210636, -0.2663067142539623, 0.0960713099172453
+flux1:, 1.182364729458918, 0.0421087540190085, 0.013046735692343657, -0.10075663486862575, -0.27209972592739395, 0.09725186360673332
+flux1:, 1.183347086329522, 0.04246552232559115, 0.013200030298478058, -0.10157761682742977, -0.2782449982609668, 0.09848724374432528
+flux1:, 1.1843294432001257, 0.04283035755460042, 0.013355278806155746, -0.10219321181267585, -0.28476032786140376, 0.09978531734626332
+flux1:, 1.1853118000707297, 0.04320334350302801, 0.013512409735272363, -0.10257685998884397, -0.29166415247598504, 0.10115494138520084
+flux1:, 1.1862941569413337, 0.04358454892886668, 0.013671344286499581, -0.10270048531514828, -0.2989755820653389, 0.10260605018574287
+flux1:, 1.1872765138119377, 0.04397402628351113, 0.013831996087917303, -0.10253449392761435, -0.3067144339136766, 0.10414974800639307
+flux1:, 1.1882588706825417, 0.04437181041662958, 0.013994270945401536, -0.1020477788698114, -0.31490127219324865, 0.10579840696692133
+flux1:, 1.1892412275531457, 0.04477791725687275, 0.014158066597683249, -0.10120773146792425, -0.3235574524172123, 0.10756577047640092
+flux1:, 1.1902235844237494, 0.045192342472712366, 0.014323272477026798, -0.09998025961641019, -0.33270517123278154, 0.10946706231318379
+flux1:, 1.1912059412943534, 0.04561506011755692, 0.014489769476509302, -0.09832981320395667, -0.3423675220211057, 0.11151910150318878
+flux1:, 1.1921882981649574, 0.046046021264255645, 0.014657429724949628, -0.09621941687047975, -0.3525685567857463, 0.11374042313813543
+flux1:, 1.1931706550355614, 0.046485152634217645, 0.014826116370542191, -0.0936107102402421, -0.36333335482278656, 0.11615140526926893
+flux1:, 1.1941530119061654, 0.046932355227062135, 0.014995683374328092, -0.0904639957266078, -0.37468809867698943, 0.11877440200600259
+flux1:, 1.1951353687767692, 0.04738750295707983, 0.015165975314656145, -0.08673829394878016, -0.3866601578965576, 0.12163388294228489
+flux1:, 1.1961177256473732, 0.047850441303399896, 0.015336827203816584, -0.08239140674076849, -0.3992781811043521, 0.12475657902592696
+flux1:, 1.1971000825179772, 0.04832098598121325, 0.015508064318104335, -0.07737998766780776, -0.41257219690843905, 0.12817163497924466
+flux1:, 1.1980824393885812, 0.04879892164197502, 0.01567950204256365, -0.07165961989533023, -0.4265737241729912, 0.13191076836980847
+flux1:, 1.1990647962591852, 0.04928400061107722, 0.015850945731739275, -0.06518490118023648, -0.4413158921710661, 0.13600843542343527
+flux1:, 1.200047153129789, 0.049775941671996685, 0.016022190587762695, -0.057909535674702084, -0.4568335711323423, 0.14050200366089452
+flux1:, 1.201029510000393, 0.05027442890650037, 0.016193021557165854, -0.04978643214782168, -0.4731635136914594, 0.14543193143167138
+flux1:, 1.202011866870997, 0.05077911060116492, 0.01636321324782015, -0.04076780814178645, -0.49034450772963367, 0.15084195440862386
+flux1:, 1.202994223741601, 0.051289598230923154, 0.016532529867441737, -0.030805299485685084, -0.5084175410843799, 0.15677927909674408
+flux1:, 1.203976580612205, 0.05180546553096594, 0.01670072518513616, -0.01985007449329782, -0.5274259785836262, 0.16329478340047318
+flux1:, 1.2049589374828087, 0.05232624766905983, 0.016867542517462558, -0.007852952070769807, -0.5474157518333702, 0.17044322428308326
+flux1:, 1.2059412943534127, 0.05285144053066985, 0.0170327147405404, 0.005235477144616141, -0.5684355621611359, 0.17828345254204378
+flux1:, 1.2069236512240167, 0.05338050013021183, 0.0171959643297323, 0.019464727597849618, -0.5905370970813232, 0.18687863471427374
+flux1:, 1.2079060080946207, 0.053912842161975616, 0.017357003428448946, 0.034884294676320225, -0.6137752606135595, 0.1962964821142133
+flux1:, 1.2088883649652247, 0.05444784170514847, 0.01751553394765213, 0.051543530818924974, -0.6382084177389301, 0.20660948699934573
+flux1:, 1.2098707218358287, 0.054984833097798634, 0.01767124769762292, 0.06949152318900442, -0.6638986532343806, 0.2178951658464887
+flux1:, 1.2108530787064324, 0.055523109995251466, 0.017823826553592752, 0.08877697433814977, -0.6909120450716053, 0.230236309714124
+flux1:, 1.2118354355770364, 0.05606192562884066, 0.017972942656810303, 0.10944808739764797, -0.7193189525102388, 0.24372124165545134
+flux1:, 1.2128177924476404, 0.056600493281649046, 0.018118258652655338, 0.13155245744624575, -0.7491943189537434, 0.2584440811403155
+flux1:, 1.2138001493182444, 0.057137986998162804, 0.0182594279673604, 0.15513697081072358, -0.7806179895701882, 0.27450501543373046
+flux1:, 1.2147825061888484, 0.05767354254551047, 0.0183960951249481, 0.18024771416181, -0.8136750436087565, 0.29201057787318374
+flux1:, 1.2157648630594522, 0.058206258644185015, 0.018527896105922564, 0.20692989536995862, -0.8484561412677634, 0.31107393297841124
+flux1:, 1.2167472199300562, 0.05873519848680735, 0.018654458749289206, 0.2352277781843764, -0.885057884892144, 0.33181516832295666
+flux1:, 1.2177295768006602, 0.059259391563667295, 0.01877540319941013, 0.2651846328897816, -0.9235831941914758, 0.35436159308959403
+flux1:, 1.2187119336712642, 0.059777835814336856, 0.018890342399221396, 0.2968427051834395, -0.964141695087242, 0.37884804322894683
+flux1:, 1.2196942905418682, 0.06028950012494903, 0.01899888263126484, 0.33024320559140385, -1.006850121703339, 0.40541719313616753
+flux1:, 1.220676647412472, 0.06079332719088983, 0.01910062410797922, 0.3654263218168841, -1.051832730922397, 0.43421987375849974
+flux1:, 1.221659004283076, 0.06128823676507984, 0.019195161612650554, 0.40243125647128175, -1.099221728834996, 0.4654153970451727
+flux1:, 1.22264136115368, 0.061773129312079685, 0.019282085192355396, 0.44129629269167236, -1.149157708307761, 0.49917188665068146
+flux1:, 1.223623718024284, 0.06224689008850573, 0.019360980904205634, 0.48205889018731524, -1.2017900967989645, 0.5356666148032466
+flux1:, 1.224606074894888, 0.06270839367017815, 0.01943143161612963, 0.524755814284602, -1.2572776134475971, 0.5750863452536302
+flux1:, 1.2255884317654917, 0.06315650894664233, 0.01949301786335425, 0.5694233005531764, -1.315788734359081, 0.6176276822204528
+flux1:, 1.2265707886360957, 0.06359010460345446, 0.019545318761703668, 0.6160972575958512, -1.37750216491098, 0.6634974252556867
+flux1:, 1.2275531455066997, 0.06400805511268622, 0.01958791297873034, 0.6648135105683657, -1.442607317797518, 0.7129129299574308
+flux1:, 1.2285355023773037, 0.06440924725182573, 0.019620379763635037, 0.7156080879611728, -1.5113047954354581, 0.7661024744663539
+flux1:, 1.2295178592479077, 0.06479258717100314, 0.01964230003682218, 0.7685175541286089, -1.5838068752511876, 0.8233056316885076
+flux1:, 1.2305002161185117, 0.06515700802817373, 0.019653257539858665, 0.8235793899795115, -1.6603379962782852, 0.8847736471992694
+flux1:, 1.2314825729891155, 0.06550147821142323, 0.019652840046495274, 0.880832424159146, -1.741135245399008, 0.9507698227915158
+flux1:, 1.2324649298597194, 0.06582501016712494, 0.019640640635304768, 0.940317316944971, -1.826448841479534, 1.0215699056460135
+flux1:, 1.2334472867303234, 0.06612666985197796, 0.0196162590243811, 1.0020770989530685, -1.9165426155627707, 1.0974624831116038
+flux1:, 1.2344296436009274, 0.06640558682637288, 0.019579302968402722, 1.0661577666040012, -2.01169448521077, 1.1787493831012845
+flux1:, 1.2354120004715314, 0.06666096500570444, 0.019529389718287042, 1.1326089361308842, -2.112196921016049, 1.265746080119635
+flux1:, 1.2363943573421352, 0.06689209408535397, 0.01946614754345332, 1.2014845577200988, -2.2183574032434006, 1.3587821069587966
+flux1:, 1.2373767142127392, 0.06709836165413939, 0.019389217316656767, 1.272843691166298, -2.330498866508182, 1.4582014721123662
+flux1:, 1.2383590710833432, 0.06727926600986134, 0.0192982541611389, 1.3467513441884904, -2.4489601303568738, 1.5643630829730535
+flux1:, 1.2393414279539472, 0.06743442968949011, 0.0191929291597354, 1.423279374301109, -2.5740963135826065, 1.6776411749027385
+flux1:, 1.2403237848245512, 0.06756361372517876, 0.019072931125407696, 1.5025074548544846, -2.7062792300871115, 1.7984257462714848
+flux1:, 1.241306141695155, 0.06766673263580929, 0.01893796843249434, 1.5845241055655868, -2.8458977640914704, 1.927122999588657
+flux1:, 1.242288498565759, 0.06774387016250055, 0.018787770907817646, 1.6694277875369314, -2.9933582225054263, 2.064155788860179
+flux1:, 1.243270855436363, 0.0677952957545655, 0.01862209178061883, 1.7573280624240581, -3.149084662277384, 2.2099640733223587
+flux1:, 1.244253212306967, 0.06782148181093305, 0.018440709690073918, 1.8483468150577163, -3.313519190587224, 2.3650053777225777
+flux1:, 1.245235569177571, 0.06782312168001874, 0.018243430749013533, 1.942619538439083, -3.4871222357834735, 2.5297552593257766
+flux1:, 1.2462179260481747, 0.06780114841921035, 0.018030090662230294, 2.040296679645122, -3.6703727870380756, 2.704707781841959
+flux1:, 1.2472002829187787, 0.06775675431287453, 0.017800556897584027, 2.141545044756405, -3.8637686007654573, 2.8903759964804565
+flux1:, 1.2481826397893827, 0.06769141114581097, 0.01755473090792149, 2.2465492605056068, -4.06782637195235, 3.087292430344506
+flux1:, 1.2491649966599867, 0.06760689122663033, 0.0172925504016048, 2.3555132898952644, -4.283081868657332, 3.296009582387947
+flux1:, 1.2501473535305907, 0.06750528915315793, 0.017013991659251538, 2.4686619985876894, -4.510090028071847, 3.5171004271584407
+flux1:, 1.2511297104011945, 0.0673890443094969, 0.0167190718940727, 2.5862427684079163, -4.749425012680693, 3.751158926553431
+flux1:, 1.2521120672717985, 0.06726096408169943, 0.016407851652968788, 2.708527153829765, -5.001680225227009, 3.998800549810446
+flux1:, 1.2530944241424025, 0.06712424777634886, 0.016080437255358702, 2.8358125768414895, -5.267468281372999, 4.260662801949219
+flux1:, 1.2540767810130065, 0.06698251122346992, 0.01573698326645914, 2.9684240551090277, -5.547420939148117, 4.537405760869343
+flux1:, 1.2550591378836105, 0.06683981204222311, 0.0153776950015298, 3.106715957878246, -5.842188984490345, 4.829712623295003
+flux1:, 1.2560414947542144, 0.06670067554511583, 0.015002831057395603, 3.2510737835768655, -6.1524420724332005, 5.138290259731718
+flux1:, 1.2570238516248182, 0.0665701212528849, 0.01461270586729155, 3.4019159526073186, -6.478868523727998, 5.463869778582515
+flux1:, 1.2580062084954222, 0.06645368998959186, 0.014207692274886953, 3.55969560835815, -6.822175076972736, 5.807207099530197
+flux1:, 1.2589885653660262, 0.06635747152377969, 0.013788224123113743, 3.7249024189998416, -7.183086596590043, 6.169083536257739
+flux1:, 1.2599709222366302, 0.06628813271851307, 0.013354798853195871, 3.8980643721996313, -7.562345737296739, 6.550306388536029
+flux1:, 1.2609532791072342, 0.06625294614961151, 0.012907980109062652, 4.079749554459768, -7.960712566019634, 6.951709543652832
+flux1:, 1.261935635977838, 0.06625981914810168, 0.012448400342089352, 4.270567906373116, -8.378964142521728, 7.374154087096362
+flux1:, 1.262917992848442, 0.06631732321927886, 0.011976763410943858, 4.471172944725772, -8.817894060345141, 7.818528922348217
+flux1:, 1.263900349719046, 0.06643472378743202, 0.011493847171028302, 4.682263441992204, -9.278311950000452, 8.285751399548296
+flux1:, 1.26488270658965, 0.06662201021170797, 0.011000506047874092, 4.904585053472329, -9.761042946690873, 8.776767952737059
+flux1:, 1.265865063460254, 0.06688992601499558, 0.010497673588577408, 5.138931882001395, -10.266927125197064, 9.29255474525683
+flux1:, 1.266847420330858, 0.06724999926427688, 0.009986364985216408, 5.386147969915182, -10.796818904905185, 9.834118322823466
+flux1:, 1.2678297772014617, 0.06771457303727613, 0.009467679563955176, 5.647128707736181, -11.351586428308838, 10.402496273649321
+flux1:, 1.2688121340720657, 0.06829683590674024, 0.008942803233384726, 5.922822148856595, -11.932110916672158, 10.998757894888866
+flux1:, 1.2697944909426697, 0.06901085237015979, 0.008413010885456741, 6.214230219373094, -12.539286006874425, 11.624004864549322
+flux1:, 1.2707768478132737, 0.06987159314937984, 0.00787966874219174, 6.522409812131409, -13.17401707381092, 12.279371917868328
+flux1:, 1.2717592046838777, 0.07089496528099676, 0.007344236641195438, 6.848473754012887, -13.837220543037288, 12.966027527023352
+flux1:, 1.2727415615544815, 0.07209784191522142, 0.006808270252849283, 7.193591635501469, -14.529823198670215, 13.685174582867242
+flux1:, 1.2737239184250855, 0.0734980917375939, 0.006273423221914699, 7.558990491648559, -15.252761491867265, 14.43805107723543
+flux1:, 1.2747062752956895, 0.07511460792470476, 0.00574144922614768, 7.945955323679774, -16.006980855465084, 15.225930784184245
+flux1:, 1.2756886321662935, 0.07696733654211965, 0.005214203944407181, 8.355829450668972, -16.793435030652024, 16.050123938346932
+flux1:, 1.2766709890368975, 0.07907730428963494, 0.004693646926634295, 8.79001468096948, -17.613085411761155, 16.91197790839755
+flux1:, 1.2776533459075012, 0.08146664549629863, 0.004181843357993081, 9.249971293370871, -18.466900415504977, 17.812877863415803
+flux1:, 1.2786357027781052, 0.08415862826484247, 0.003680965709378029, 9.737217818362401, -19.355854881137727, 18.75424742974003
+flux1:, 1.2796180596487092, 0.08717767966275779, 0.003193295266428971, 10.253330610277953, -20.28092950818412, 19.73754933568522
+flux1:, 1.2806004165193132, 0.09054940985485874, 0.00272122352916444, 10.799943201629775, -21.243110338507037, 20.764286041271095
+flux1:, 1.2815827733899172, 0.09430063507007569, 0.00226725347429363, 11.378745431478206, -22.24338828952838, 21.836000349906122
+flux1:, 1.282565130260521, 0.09845939929322124, 0.001834000672260577, 11.991482340326451, -23.28275874548525, 22.954275998702798
+flux1:, 1.283547487131125, 0.1030549945708362, 0.0014241942511010056, 12.639952824700307, -24.362221213568887, 24.12073822390548
+flux1:, 1.284529844001729, 0.10811797981864692, 0.001040677699166578, 13.326008045344482, -25.48277905176159, 25.337054297654486
+flux1:, 1.285512200872333, 0.11368019801700593, 0.0006864094988801647, 14.051549583759643, -26.64543927505499, 26.604934032048604
+flux1:, 1.286494557742937, 0.11977479167964729, 0.0003644635836858002, 14.818527342675122, -27.851212446617115, 27.926130246278838
+flux1:, 1.2874769146135407, 0.1264362164804241, 7.802961048231011e-05, 15.628937186988606, -29.1011126602198, 29.30243919231765
+flux1:, 1.2884592714841447, 0.13370025292223814, -0.0001695869600786058, 16.484818322658434, -30.39615762002619, 30.7357009344197
+flux1:, 1.2894416283547487, 0.14160401593231148, -0.0003749649829332103, 17.38825041208396, -31.737368823480306, 32.22779967745216
+flux1:, 1.2904239852253527, 0.1501859622680668, -0.0005345679549202207, 18.34135042555915, -33.12577185270633, 33.78066403886518
+flux1:, 1.2914063420959567, 0.15948589561847815, -0.0006447445552525001, 19.346269229527262, -34.562396779322455, 35.39626725881669
+flux1:, 1.2923886989665605, 0.16954496928656615, -0.000701729407117405, 20.40518791349036, -36.04827868719532, 37.0766273428132
+flux1:, 1.2933710558371645, 0.18040568633989248, -0.0007016440671909144, 21.520313858616934, -37.584458317002955, 38.82380713097209
+flux1:, 1.2943534127077685, 0.1921118971175212, -0.0006404982495603021, 22.69387655234403, -39.171982835899385, 40.63991428782317
+flux1:, 1.2953357695783725, 0.2047087939837624, -0.0005141912903438258, 23.928123154440538, -40.81190673496842, 42.52710120633139
+flux1:, 1.2963181264489765, 0.21824290322137607, -0.0003185138589627813, 25.225313821322988, -42.505292856320764, 44.48756481973686
+flux1:, 1.2973004833195805, 0.23276207395951007, -4.914992173868669e-05, 26.587716796625614, -44.253213551007185, 46.52354631451732
+flux1:, 1.2982828401901843, 0.2483154640347532, 0.00029832103687797376, 28.01760327734269, -46.0567519680221, 48.63733073772697
+flux1:, 1.2992651970607882, 0.2649535226870955, 0.0007284215304537858, 29.517242066084624, -47.9170034738102, 50.83124649179702
+flux1:, 1.3002475539313922, 0.28272796999654337, 0.0012457733195462301, 31.08889402130583, -49.83507720075264, 53.10766470973203
+flux1:, 1.3012299108019962, 0.3016917729700749, 0.0018550943893042473, 32.73480631855598, -51.81209772212455, 55.468998503655804
+flux1:, 1.3022122676726002, 0.3218991181936606, 0.0025611956519775137, 34.45720653706496, -53.84920684995748, 57.917702079449185
+flux1:, 1.303194624543204, 0.3434053809688884, 0.003368977371031759, 36.25829658716399, -55.94756555123384, 60.45626971032388
+flux1:, 1.304176981413808, 0.36626709085910986, 0.004283425304076338, 38.14024649516246, -58.108355976672534, 63.08723456203536
+flux1:, 1.305159338284412, 0.3905418935760291, 0.0053096065622892765, 40.10518806350047, -60.33278359526934, 65.81316736256895
+flux1:, 1.306141695155016, 0.4162885091438801, 0.006452665184567931, 42.155208424980046, -62.622079426585046, 68.63667490907538
+flux1:, 1.30712405202562, 0.4435666862847373, 0.0077178174251492085, 44.29234351089574, -64.9775023616004, 71.5603984049933
+flux1:, 1.308106408896224, 0.4724371529759074, 0.009110346754053937, 46.51857145389781, -67.40034156172588, 74.58701162037181
+flux1:, 1.3090887657668278, 0.502961563137389, 0.0106355985702361, 48.83580594719039, -69.89191892442975, 77.71921886851479
+flux1:, 1.3100711226374318, 0.5352024394152393, 0.01229897462798375, 51.24588958252319, -72.45359160264138, 80.95975279235917
+flux1:, 1.3110534795080357, 0.5692231120350966, 0.014105927177703514, 53.75058719013997, -75.08675456397337, 84.31137195408708
+flux1:, 1.3120358363786397, 0.6050876537079392, 0.016061952822857946, 56.35157920439768, -77.79284317456418, 87.77685822184786
+flux1:, 1.3130181932492437, 0.6428608105798421, 0.018172586095523663, 59.05045507940524, -80.5733357912202, 91.359013947704
+flux1:, 1.3140005501198475, 0.6826079292256022, 0.02044339275365229, 61.848706779306895, -83.42975634434802, 95.06065893128043
+flux1:, 1.3149829069904515, 0.7243948796966079, 0.02287996280385744, 64.74772236826685, -86.36367689310521, 98.88462716392932
+flux1:, 1.3159652638610555, 0.7682879746420896, 0.025487903254214423, 67.74877972532332, -89.37672013314507, 102.8337633487709
+flux1:, 1.3169476207316595, 0.814353884533354, 0.028272830602271842, 70.8530404094073, -92.47056183621184, 106.9109191922907
+flux1:, 1.3179299776022635, 0.8626595490311734, 0.03124036306423562, 74.06154369976878, -95.64693320012768, 111.11894946378747
+flux1:, 1.3189123344728673, 0.9132720845459397, 0.03439611255192358, 77.3752008368806, -98.90762308660032, 115.46070781948134
+flux1:, 1.3198946913434713, 0.966258688051917, 0.03774567640497141, 80.79478948866868, -102.25448012355949, 119.93904238873394
+flux1:, 1.3208770482140753, 1.02168653722726, 0.04129462888631054, 84.3209484663559, -105.68941464810656, 124.55679112035799
+flux1:, 1.3218594050846793, 1.0796226870023278, 0.045048512449892344, 87.95417271390829, -109.21440046539853, 129.31677688786374
+flux1:, 1.3228417619552832, 1.1401339626107105, 0.04901282879023144, 91.6948085941336, -112.83147639837766, 134.22180235302835
+flux1:, 1.323824118825887, 1.203286849247209, 0.05319302968411882, 95.54304949395264, -116.54274760274464, 139.27464458804351
+flux1:, 1.324806475696491, 1.269147378450025, 0.057594507635649626, 99.49893177025326, -120.35038662140504, 144.4780494573269
+flux1:, 1.325788832567095, 1.3377810113343287, 0.06222258633638261, 103.56233105678949, -124.25663415233177, 149.83472576082102
+flux1:, 1.326771189437699, 1.4092525188165703, 0.06708251095321267, 107.73295895144446, -128.26379950378876, 155.34733914154077
+flux1:, 1.327753546308303, 1.4836258589797278, 0.07217943825725055, 112.01036010183033, -132.3742607110145, 161.01850576110525
+flux1:, 1.3287359031789068, 1.5609640517413874, 0.07751842660772966, 116.39390970588737, -136.5904642885889, 166.85078574781193
+flux1:, 1.3297182600495108, 1.6413290509973628, 0.08310442580563644, 120.88281144260536, -140.91492459321043, 172.84667642289108
+flux1:, 1.3307006169201148, 1.7247816144247095, 0.08894226683245575, 125.47609584637917, -145.35022277204342, 179.00860531153677
+flux1:, 1.3316829737907188, 1.8113811711390722, 0.09503665149012339, 130.1726191369072, -149.89900527255696, 185.33892294628023
+flux1:, 1.3326653306613228, 1.9011856874118753, 0.10139214195884048, 134.9710625146273, -154.563981890679, 191.83989547147954
+flux1:, 1.3336476875319265, 1.994251530663065, 0.1080131502901414, 139.86993192993089, -159.34792333491833, 198.51369705859173
+flux1:, 1.3346300444025305, 2.0906333319560044, 0.11490392785312022, 144.8675583324833, -164.25365828550875, 205.36240214310254
+flux1:, 1.3356124012731345, 2.1903838472306463, 0.12206855475236515, 149.96209840484633, -169.28406992887145, 212.38797749496652
+flux1:, 1.3365947581437385, 2.2935538175196317, 0.1295109292365997, 155.1515357826679, -174.44209194909845, 219.59227413560902
+flux1:, 1.3375771150143425, 2.400191828404131, 0.13723475711771763, 160.4336827616391, -179.73070396004894, 226.97701911559662
+flux1:, 1.3385594718849465, 2.5103441689711055, 0.14524354122022326, 165.80618248917696, -185.15292636330582, 234.54380716816996
+flux1:, 1.3395418287555503, 2.6240546905453286, 0.1535405708815641, 171.2665116367832, -190.71181461931423, 242.29409225493757
+flux1:, 1.3405241856261543, 2.7413646654758055, 0.16212891152441467, 176.81198354671398, -196.41045292105792, 250.22917902113667
+flux1:, 1.3415065424967583, 2.8623126462633603, 0.17101139432211668, 182.43975184467553, -202.25194726218518, 258.3502141788504
+flux1:, 1.3424888993673623, 2.9869343253242806, 0.18019060597898126, 188.1468145078409, -208.23941789347577, 266.65817783772087
+flux1:, 1.3434712562379663, 3.115262395689557, 0.18966887864739976, 193.93001837567664, -214.37599116468454, 275.1538748036492
+flux1:, 1.34445361310857, 3.2473264129468697, 0.19944828000399795, 199.78606408863075, -220.66479075098806, 283.8379258669404
+flux1:, 1.345435969979174, 3.383152658734847, 0.20953060350713673, 205.71151143819625, -227.1089282663852, 292.7107591024373
+flux1:, 1.346418326849778, 3.5227640061060246, 0.2199173588584344, 211.70278510928642, -233.711493269198, 301.77260120478434
+flux1:, 1.347400683720382, 3.6661797870772057, 0.23060976269091749, 217.75618079461074, -240.47554266800532, 311.02346888330794
+flux1:, 1.348383040590986, 3.8134156626890503, 0.24160872950654172, 223.8678716583722, -247.40408953917157, 320.46316034143905
+flux1:, 1.34936539746159, 3.9644834958987425, 0.2529148628857803, 230.03391512532662, -254.50009137066147, 330.09124686625717
+flux1:, 1.3503477543321938, 4.119391227631837, 0.264528446992044, 236.25025996939914, -261.7664377499031, 339.9070645549928
+flux1:, 1.3513301112027978, 4.278142756318708, 0.2764494383933912, 242.51275367456284, -269.2059375167012, 349.9097062053881
+flux1:, 1.3523124680734018, 4.4407378212418385, 0.28867745822404517, 248.81715003956873, -276.821305405669, 360.09801339752653
+flux1:, 1.3532948249440058, 4.607171890018656, 0.30121178470785004, 255.159116996543, -284.61514820611274, 370.47056879544084
+flux1:, 1.3542771818146098, 4.777436050543598, 0.31405134606569945, 261.5342446127387, -292.58995047021926, 381.02568869702486
+flux1:, 1.3552595386852135, 4.951516907708703, 0.3271947138283406, 267.9380532435105, -300.74805980427755, 391.76141586079916
+flux1:, 1.3562418955558175, 5.129396485219934, 0.34064009657602945, 274.36600180408135, -309.09167178050217, 402.675512639198
+flux1:, 1.3572242524264215, 5.311052132822199, 0.35438533412557505, 280.81349612691264, -317.6228145106242, 413.7654544470056
+flux1:, 1.3582066092970255, 5.49645643923861, 0.36842789218513605, 287.27589737098174, -326.34333292547007, 425.0284235944605
+flux1:, 1.3591889661676295, 5.685577151126432, 0.3827648574964724, 293.74853044941926, -335.2548728075957, 436.46130351435926
+flux1:, 1.3601713230382333, 5.8783770983420185, 0.3973929334837104, 300.22669244148994, -344.35886462766547, 448.06067341180045
+flux1:, 1.3611536799088373, 6.074814125801506, 0.4123084364270094, 306.70566095499584, -353.6565072373779, 459.8228033656561
+flux1:, 1.3621360367794413, 6.2748410322130415, 0.42750729217877226, 313.1807024061134, -363.14875147504097, 471.7436499098769
+flux1:, 1.3631183936500453, 6.4784055159494764, 0.4429850334393343, 319.6470801831658, -372.8362837422241, 483.8188521227806
+flux1:, 1.3641007505206493, 6.685450128316503, 0.4587367976081182, 326.1000626625167, -382.7195096122126, 496.04372825117093
+flux1:, 1.365083107391253, 6.895912234462082, 0.47475732522528125, 332.53493104484295, -392.7985375335814, 508.4132728962914
+flux1:, 1.366065464261857, 7.109723982161184, 0.491040959018224, 338.94698698153746, -403.0731626935517, 520.9221547870378
+flux1:, 1.367047821132461, 7.326812278694007, 0.5075816435658669, 345.33155996207415, -413.54285110835195, 533.5647151651839
+flux1:, 1.368030178003065, 7.547098776025524, 0.5243729255929932, 351.6840144343874, -424.2067240084336, 546.3349668066512
+flux1:, 1.369012534873669, 7.770499864477297, 0.5414079549055194, 357.9997566321413, -435.06354258858914, 559.2265937007843
+flux1:, 1.3699948917442728, 7.996926675068345, 0.558679485976634, 364.2742410843949, -446.11169319308, 572.2329514096898
+flux1:, 1.3709772486148768, 8.22628509068398, 0.5761798801923099, 370.5029767846541, -457.3491730073453, 585.3470681267167
+flux1:, 1.3719596054854808, 8.458475766218726, 0.5939011087637496, 376.68153299866907, -468.7735763278399, 598.5616464528122
+flux1:, 1.3729419623560848, 8.69339415781686, 0.6118347563127913, 382.8055446926385, -480.3820814817966, 611.8690659077423
+flux1:, 1.3739243192266888, 8.930930561321848, 0.6299720251350844, 388.87071756491997, -492.17143846844596, 625.2613861909717
+flux1:, 1.3749066760972926, 9.170970160021392, 0.6483037401445617, 394.8728326675584, -504.1379573927876, 638.730351204997
+flux1:, 1.3758890329678966, 9.41339308176173, 0.6668203545012723, 400.80775060554805, -516.2774977619677, 652.267393853756
+flux1:, 1.3768713898385005, 9.658074465480865, 0.6855119559231868, 406.6714153051696, -528.5854587135443, 665.8636416241799
+flux1:, 1.3778537467091045, 9.904884537193132, 0.704368273681334, 412.4598573441834, -541.0567702425197, 679.5099229588253
+flux1:, 1.3788361035797085, 10.15368869543516, 0.7233786862759668, 418.16919684031774, -553.6858854933942, 693.1967744248527
+flux1:, 1.3798184604503125, 10.404347606165436, 0.7425322297901785, 423.7956458964651, -566.4667741800213, 706.9144486818674
+flux1:, 1.3808008173209163, 10.65671730708471, 0.7618176069156947, 429.335510603648, -579.3929171946182, 720.6529232495277
+flux1:, 1.3817831741915203, 10.910649321328242, 0.7812231966443034, 434.78519260610204, -592.457302463397, 734.4019100734633
+flux1:, 1.3827655310621243, 11.165990780454294, 0.8007370646166994, 440.1411902345708, -605.6524221039743, 748.150865884707
+flux1:, 1.3837478879327283, 11.422584556637037, 0.8203469741190456, 445.4000992172026, -618.9702709353885, 761.889003346987
+flux1:, 1.3847302448033323, 11.680269403945749, 0.8400403977162442, 450.5586129795718, -632.402346388764, 775.6053029823065
+flux1:, 1.3857126016739363, 11.938880108574716, 0.8598045295090531, 455.6135225482403, -645.9396498610497, 789.2885258633655
+flux1:, 1.38669495854454, 12.198247647863028, 0.8796262980010211, 460.5617160741362, -659.5726895514827, 802.9272270592169
+flux1:, 1.387677315415144, 12.458199357926064, 0.8994923795596238, 465.4001779948705, -673.291484814247, 816.5097698170572
+flux1:, 1.388659672285748, 12.718559109694949, 0.9193892124543589, 470.12598785704745, -687.0855720571428, 830.0243404614879
+flux1:, 1.389642029156352, 12.979147493143824, 0.9393030114534988, 474.7363188216664, -700.9440122097484, 843.4589639896672
+flux1:, 1.390624386026956, 13.239782009459152, 0.9592197829593336, 479.2284358778044, -714.8553997800932, 856.8015203379401
+flux1:, 1.3916067428975598, 13.50027727089035, 0.9791253406607205, 483.5996937914745, -728.8078735123315, 870.0397612937833
+flux1:, 1.3925890997681638, 13.760445207996302, 0.9990053216802285, 487.8475348182349, -742.7891286531109, 883.1613280238477
+flux1:, 1.3935714566387678, 14.020095283984785, 1.0188452031918194, 491.96948620930084, -756.786430827424, 896.1537691869659
+flux1:, 1.3945538135093718, 14.279034715824618, 1.0386303194838373, 495.96315754275724, -770.7866315192751, 909.0045595981011
+flux1:, 1.3955361703799758, 14.537068701789067, 1.0583458794409166, 499.8262379118727, -784.776185146076, 921.7011194075804
+flux1:, 1.3965185272505796, 14.794000655071713, 1.0779769844168556, 503.55649300374864, -798.7411677090626, 934.2308337576368
+flux1:, 1.3975008841211836, 15.049632443102166, 1.0975086464700023, 507.1517621022823, -812.667296996816, 946.5810728754129
+flux1:, 1.3984832409917876, 15.303764632167166, 1.1169258069309291, 510.6099550493537, -826.5399543107586, 958.7392125609989
+flux1:, 1.3994655978623916, 15.556196736933014, 1.1362133552718046, 513.9290491992541, -840.3442076772418, 970.6926550258373
+flux1:, 1.4004479547329955, 15.806727474445525, 1.1553561482453998, 517.107086400142, -854.0648365027398, 982.4288500358989
+flux1:, 1.4014303116035993, 16.05515502217366, 1.1743390292611278, 520.1421700373568, -867.6863576233028, 993.935316312003
+flux1:, 1.4024126684742033, 16.301277279647305, 1.193146847964587, 523.0324621720445, -881.1930526934966, 1005.199663138063
+flux1:, 1.4033950253448073, 16.544892133229403, 1.2117644799861689, 525.7761808082217, -894.5689968528236, 1016.2096121272192
+flux1:, 1.4043773822154113, 16.785797723552154, 1.2301768468240133, 528.3715973205854, -907.7980886030075, 1026.9530190935313
+flux1:, 1.4053597390860153, 17.023792715134828, 1.248368935825608, 530.8170340741696, -920.8640808230721, 1037.4178959771393
+flux1:, 1.406342095956619, 17.258676567694597, 1.266325820231965, 533.1108622653137, -933.7506128436156, 1047.5924327683633
+flux1:, 1.407324452827223, 17.490249808652255, 1.2840326792480363, 535.2515000125976, -946.4412434968813, 1057.4650193770372
+flux1:, 1.408306809697827, 17.71831430633014, 1.3014748181023135, 537.2374107238765, -958.9194850532955, 1067.0242673911575
+flux1:, 1.409289166568431, 17.942673543331004, 1.3186376880587494, 539.0671017640402, -971.1688379516021, 1076.2590316701117
+flux1:, 1.410271523439035, 18.16313288958663, 1.3355069063434746, 540.7391234461936, -983.1728262241509, 1085.158431715709
+flux1:, 1.4112538803096388, 18.379499874558693, 1.352068275949157, 542.252068366041, -994.9150335154077, 1093.7118727659147
+flux1:, 1.4122362371802428, 18.59158445807369, 1.3683078052795214, 543.6045710979454, -1006.3791395880276, 1101.9090665553395
+flux1:, 1.4132185940508468, 18.799199299274814, 1.3842117275966148, 544.7953082670319, -1017.5489572070727, 1109.740051686461
+flux1:, 1.4142009509214508, 19.002160023170564, 1.3997665202340304, 545.8229990105949, -1028.4084692906101, 1117.1952135572049
+flux1:, 1.4151833077920548, 19.200285484268054, 1.4149589235389755, 546.6864058384, -1038.941866211446, 1124.2653037898558
+flux1:, 1.4161656646626586, 19.39339802677409, 1.4297759595066062, 547.3843358987012, -1049.1335831341498, 1130.9414591085747
+flux1:, 1.4171480215332626, 19.581323740861187, 1.4442049500709726, 547.9156426539821, -1058.9683372679842, 1137.21521961194
+flux1:, 1.4181303784038666, 19.763892714491174, 1.4582335350166171, 548.279227967636, -1068.4311649165672, 1143.0785463903558
+flux1:, 1.4191127352744706, 19.940939280305905, 1.471849689476099, 548.474044599023, -1077.5074582042755, 1148.5238384371944
+flux1:, 1.4200950921450746, 20.112302257094594, 1.4850417409793535, 548.4990991025518, -1086.1830013581168, 1153.5439488065408
+flux1:, 1.4210774490156786, 20.277825185363348, 1.497798386021253, 548.3534551216952, -1094.444006424991, 1158.1321999696647
+flux1:, 1.4220598058862823, 20.437356556536812, 1.5101087061149152, 548.036237067639, -1102.2771483053382, 1162.28239832681
+flux1:, 1.4230421627568863, 20.590750035339717, 1.5219621832992773, 547.5466341677702, -1109.669598983461, 1165.9888478298847
+flux1:, 1.4240245196274903, 20.73786467491443, 1.5333487150701526, 546.8839048672733, -1116.609060839221, 1169.2463626779725
+flux1:, 1.4250068764980943, 20.878565124246443, 1.544258628705545, 546.0473815634663, -1123.0837989258046, 1172.0502790449684
+flux1:, 1.4259892333686983, 21.012721827485215, 1.5546826949568027, 545.036475650578, -1129.0826721016426, 1174.3964658056702
+flux1:, 1.4269715902393023, 21.14021121476292, 1.5646121410786487, 543.8506828492187, -1134.5951629086605, 1176.281334226682
+flux1:, 1.427953947109906, 21.260915884130668, 1.5740386631724217, 542.4895887929357, -1139.6114060905284, 1177.7018465917072
+flux1:, 1.42893630398051, 21.374724774251252, 1.5829544378181692, 540.9528748412322, -1144.1222156511114, 1178.6555237342818
+flux1:, 1.429918660851114, 21.48153332750401, 1.591352132972866, 539.2403240868789, -1148.1191103554274, 1179.1404514536785
+flux1:, 1.430901017721718, 21.581243643179576, 1.5992249181131495, 537.3518275228322, -1151.594337582365, 1179.155285792254
+flux1:, 1.431883374592322, 21.67376462046126, 1.6065664736031093, 535.2873903324977, -1154.54089544268, 1178.6992571569433
+flux1:, 1.4328657314629258, 21.759012090911515, 1.6133709992687355, 533.047138265054, -1156.95255308035, 1177.7721732688267
+flux1:, 1.4338480883335298, 21.836908940204914, 1.6196332221625935, 530.6313240567514, -1158.82386908485, 1176.3744209309323
+flux1:, 1.4348304452041338, 21.90738521886889, 1.6253484035038825, 528.040333857469, -1160.1502079435827, 1174.5069666040008
+flux1:, 1.4358128020747378, 21.970378241821354, 1.6305123447807792, 525.2746936206552, -1160.9277544749389, 1172.1713557873352
+flux1:, 1.4367951589453418, 22.025832676512852, 1.6351213930037907, 522.3350754147343, -1161.1535261853357, 1169.3697112020523
+flux1:, 1.4377775158159456, 22.073700619508973, 1.6391724451005554, 519.2223036127472, -1160.825383504347, 1166.1047297792798
+flux1:, 1.4387598726865496, 22.113941661371758, 1.6426629514444335, 515.9373609177776, -1159.9420378561954, 1162.3796784583703
+flux1:, 1.4397422295571536, 22.146522939722846, 1.6455909185109379, 512.4813941803106, -1158.503057536104, 1158.1983888046848
+flux1:, 1.4407245864277576, 22.1714191803984, 1.6479549106581, 508.8557199656732, -1156.508871365996, 1153.5652504583002
+flux1:, 1.4417069432983616, 22.188612726629284, 1.6497540510285298, 505.0618298289105, -1153.960770112301, 1148.4852034297865
+flux1:, 1.4426893001689653, 22.198093556206285, 1.6509880215729142, 501.10139525557804, -1150.8609056571988, 1142.9637292621253
+flux1:, 1.4436716570395693, 22.199859286615425, 1.6516570621964755, 496.9762722285326, -1147.2122879214576, 1137.0068410803299
+flux1:, 1.4446540139101733, 22.193915168153808, 1.6517619690319214, 492.6885053813433, -1143.0187795459524, 1130.6210725546878
+flux1:, 1.4456363707807773, 22.180274065062203, 1.6513040918440116, 488.2403317009468, -1138.2850883462163, 1123.8134658058889
+flux1:, 1.4466187276513813, 22.158956424735415, 1.650285330572906, 483.6341837435862, -1133.0167575629473, 1116.5915582832147
+flux1:, 1.447601084521985, 22.129990235096926, 1.648708131025209, 478.8726923305601, -1127.2201539381022, 1108.9633686508091
+flux1:, 1.448583441392589, 22.093410970246754, 1.646575479723436, 473.9586886918483, -1120.902453655671, 1100.9373817181538
+flux1:, 1.449565798263193, 22.049261524523654, 1.643890897926106, 468.89520602887535, -1114.0716261913226, 1092.5225324557152
+flux1:, 1.450548155133797, 21.997592135132326, 1.6406584348329367, 463.68548046918863, -1106.7364161249727, 1083.7281891371363
+flux1:, 1.451530512004401, 21.938460293526834, 1.636882659990779, 458.33295138988194, -1098.9063229752373, 1074.564135653311
+flux1:, 1.4525128688750049, 21.87193064575161, 1.6325686549176646, 452.8412610882642, -1090.5915791233954, 1065.0405530447094
+flux1:, 1.4534952257456089, 21.798074881968915, 1.6277220039642974, 447.2142537823483, -1081.8031258993603, 1055.1680003013587
+flux1:, 1.4544775826162128, 21.716971615424953, 1.6223487844332498, 441.45597392621335, -1072.5525879100808, 1044.9573944815781
+flux1:, 1.4554599394868168, 21.62870625112339, 1.616455555978166, 435.57066382887706, -1062.852245695342, 1034.4199902013527
+flux1:, 1.4564422963574208, 21.533370844499697, 1.6100493493062946, 429.56276056880847, -1052.7150068023516, 1023.5673585494634
+flux1:, 1.4574246532280246, 21.431063950406706, 1.6031376542092826, 423.4368921993706, -1042.1543753751741, 1012.4113654831318
+flux1:, 1.4584070100986286, 21.321890462741678, 1.5957284069482234, 417.19787324410515, -1031.184420360469, 1000.9641497615623
+flux1:, 1.4593893669692326, 21.205961445061607, 1.5878299770204845, 410.85069948460153, -1019.8197424344273, 989.2381004749661
+flux1:, 1.4603717238398366, 21.083393952553525, 1.5794511533366211, 404.4005420465446, -1008.0754397605847, 977.2458342272458
+flux1:, 1.4613540807104406, 20.954310845737687, 1.5706011298370373, 397.8527407938595, -995.9670726914356, 965.0001720321035
+flux1:, 1.4623364375810444, 20.818840596300916, 1.561289490578911, 391.21279704372927, -983.5106275290681, 952.51411598182
+flux1:, 1.4633187944516486, 20.677117085468982, 1.5515261943249077, 384.48636561910394, -970.7224794638746, 939.8008257484486
+flux1:, 1.4643011513222524, 20.529279395340115, 1.5413215586659184, 377.67924625865106, -957.6193548113193, 926.8735949774904
+flux1:, 1.4652835081928564, 20.375471593613426, 1.530686243710877, 370.79737440719566, -944.2182926684982, 913.7458276334512
+flux1:, 1.4662658650634603, 20.215842512156932, 1.5196312353775228, 363.8468114129902, -930.5366061140672, 900.4310143567476
+flux1:, 1.4672482219340643, 20.05054551986994, 1.5081678283182034, 356.8337341616132, -916.5918430743969, 886.9427088905458
+flux1:, 1.4682305788046683, 19.879738290300235, 1.496307608515636, 349.76442417833795, -902.4017469800685, 873.2945046356915
+flux1:, 1.4692129356752721, 19.703582564488606, 1.4840624355838803, 342.6452562346987, -887.9842173358483, 859.5000113904127
+flux1:, 1.470195292545876, 19.522243909512497, 1.4714444248099106, 335.48268649642347, -873.357270326161, 845.5728323311961
+flux1:, 1.47117764941648, 19.33589147321317, 1.458465928971708, 328.28324025359666, -858.5389995772151, 831.5265412893865
+flux1:, 1.472160006287084, 19.144697735588103, 1.4451395199685304, 321.0534992747954, -843.5475371953517, 817.3746603765039
+flux1:, 1.473142363157688, 18.948838257334945, 1.431477970299656, 313.8000888300696, -828.4010151972178, 803.1306380101556
+flux1:, 1.4741247200282919, 18.748491426036985, 1.4174942344272472, 306.52966442873674, -813.1175274474554, 788.8078273905336
+flux1:, 1.4751070768988959, 18.543838200475587, 1.403201430059176, 299.2488983198668, -797.7150922136049, 774.4194654751582
+flux1:, 1.4760894337694999, 18.335061853560052, 1.3886128193876346, 291.9644658045374, -782.2116154463109, 759.9786524982696
+flux1:, 1.4770717906401039, 18.122347714355858, 1.3737417903185454, 284.6830314099712, -766.624854888286, 745.4983320782248
+flux1:, 1.4780541475107078, 17.90588290969593, 1.3586018377269613, 277.4112349763894, -750.9723851111711, 730.9912719550422
+flux1:, 1.4790365043813116, 17.685856105851887, 1.3432065447728816, 270.15567770872144, -735.271563574853, 716.4700453966021
+flux1:, 1.4800188612519156, 17.462457250735564, 1.3275695643114072, 262.9229082442688, -719.5394977991823, 701.9470133107455
+flux1:, 1.4810012181225196, 17.235877317098257, 1.311704600430783, 255.71940878891382, -703.7930137324013, 687.4343070973053
+flux1:, 1.4819835749931236, 17.00630804718471, 1.295625390150799, 248.5515813731848, -688.0486253951768, 672.9438122710878
+flux1:, 1.4829659318637276, 16.77394169929092, 1.2793456853137795, 241.4257342798729, -672.3225058739434, 658.4871528855679
+flux1:, 1.4839482887343314, 16.538970796667222, 1.262879234699099, 234.34806869348103, -656.630459730398, 644.0756767823156
+flux1:, 1.4849306456049354, 16.30158787919381, 1.2462397663915863, 227.32466562131629, -640.9878968886887, 629.720441690078
+flux1:, 1.4859130024755394, 16.061985258251166, 1.229440970433208, 220.36147313479427, -625.4098080554716, 615.4322021935415
+flux1:, 1.4868953593461434, 15.820354775186575, 1.2124964817862374, 213.46429397791582, -609.9107417212706, 601.2213975895297
+flux1:, 1.4878777162167474, 15.576887563775275, 1.1954198636352733, 206.63877358833096, -594.5047827852363, 587.0981406451835
+flux1:, 1.4888600730873511, 15.331773817052087, 1.1782245910543383, 199.89038857479312, -579.2055328394398, 573.0722072699283
+flux1:, 1.4898424299579551, 15.085202558881928, 1.160924035063939, 193.224435692335, -564.0260921415166, 559.1530271099299
+flux1:, 1.4908247868285591, 14.83736142061717, 1.1435314471020908, 186.64602135465293, -548.9790432981943, 545.3496750715765
+flux1:, 1.4918071436991631, 14.58843642317945, 1.1260599439316994, 180.16005172045843, -534.076436676323, 531.670863776796
+flux1:, 1.4927895005697671, 14.33861176488189, 1.108522493005851, 173.77122338833064, -519.3297775501796, 518.1249369507193
+flux1:, 1.4937718574403709, 14.088069615295744, 1.090931898310802, 167.48401473146592, -504.7500149892418, 504.7198637396375
+flux1:, 1.4947542143109749, 13.83698991544473, 1.073300786705491, 161.30267790125004, -490.3475324826909, 491.46323395404903
+flux1:, 1.4957365711815789, 13.585550184596872, 1.0556415947748836, 155.23123152540478, -476.13214029183973, 478.3622542293549
+flux1:, 1.4967189280521829, 13.333925333899067, 1.0379665562129323, 149.27345412336388, -462.1130695150575, 465.423745094172
+flux1:, 1.4977012849227869, 13.082287487089225, 1.020287689749921, 143.43287825854927, -448.29896784470395, 452.65413893347363
+flux1:, 1.4986836417933906, 12.830805808497692, 1.0026167876371352, 137.71278544383307, -434.69789698897074, 440.0594788319019
+flux1:, 1.4996659986639946, 12.579646338529367, 0.9849654047006884, 132.11620181331088, -421.31733172711614, 427.6454182798728
+flux1:, 1.5006483555345986, 12.328971836805605, 0.9673448479747089, 126.64589457018177, -408.1641605608285, 415.4172217233247
+flux1:, 1.5016307124052026, 12.078941633118955, 0.9497661669228029, 121.30436921713728, -395.24468791998106, 403.3797659354957
+flux1:, 1.5026130692758066, 11.829711486338734, 0.9322401442552342, 116.09386757252584, -382.56463787589007, 391.53754218757365
+flux1:, 1.5035954261464104, 11.581433451385927, 0.9147772873478227, 111.01636657211493, -370.1291593117683, 379.8946591929026
+flux1:, 1.5045777830170146, 11.334255754376175, 0.8973878202671486, 106.07357785306536, -357.9428324950643, 368.4548467980997
+flux1:, 1.5055601398876184, 11.088322676012158, 0.8800816764055263, 101.26694811356968, -346.00967699351844, 357.22146039249753
+flux1:, 1.5065424967582224, 10.843774443284069, 0.8628684917271913, 96.59766023841885, -334.3331608726839, 346.19748600601673
+flux1:, 1.5075248536288264, 10.60074712952599, 0.8457575986266409, 92.06663517773825, -322.9162111103871, 335.3855460645472
+flux1:, 1.5085072104994304, 10.359372562849183, 0.8287580203980657, 87.67453456317655, -311.76122516024486, 324.7879057701904
+flux1:, 1.5094895673700344, 10.119778242960118, 0.8118784663138264, 83.42176404299569, -300.8700835941839, 314.40648007326814
+flux1:, 1.5104719242406381, 9.882087266353867, 0.7951273273085617, 79.30847731476416, -290.2441637522255, 304.24284120163867
+flux1:, 1.5114542811112421, 9.646418259853135, 0.7785126722644121, 75.33458083178587, -279.8843543256218, 294.2982267123534
+flux1:, 1.5124366379818461, 9.41288532244886, 0.7620422448913691, 71.4997391570286, -269.7910707983506, 284.57354803007433
+flux1:, 1.5134189948524501, 9.18159797538042, 0.7457234611959164, 67.80338093585846, -259.9642716710743, 275.06939943590885
+flux1:, 1.5144013517230541, 8.952661120378835, 0.7295634075298099, 64.24470545700814, -250.4034753907761, 265.7860674704137
+flux1:, 1.515383708593658, 8.72617500597901, 0.7135688392097767, 60.82268976904827, -241.10777790895523, 256.72354071386076
+flux1:, 1.516366065464262, 8.502235201793683, 0.6977461796979502, 57.53609631803009, -232.0758707917278, 247.88151990691827
+flux1:, 1.5173484223348659, 8.280932580627297, 0.6821015203318661, 54.383481070320116, -223.3060598047005, 239.2594283751316
+flux1:, 1.5183307792054699, 8.062353308293007, 0.666640620591856, 51.36320208323044, -214.7962838967438, 230.85642272043486
+flux1:, 1.5193131360760739, 7.846578840983159, 0.6513689088927591, 48.47342848498098, -206.5441345074226, 222.6714037433291
+flux1:, 1.5202954929466777, 7.633685930033358, 0.6362914838861938, 45.71214982441923, -198.54687512403373, 214.70302755983244
+flux1:, 1.5212778498172816, 7.423746633903599, 0.6214131162586275, 43.0771857501698, -190.80146101563577, 206.94971687764232
+flux1:, 1.5222602066878856, 7.216828337194451, 0.6067382510099847, 40.566195978350315, -183.30455907330173, 199.40967239672952
+flux1:, 1.5232425635584896, 7.012993776499841, 0.5922710101965755, 38.17669050749503, -176.0525676875192, 192.08088430012165
+flux1:, 1.5242249204290936, 6.812301072893601, 0.5780151961218876, 35.906040039204775, -169.0416365961429, 184.96114380158653
+flux1:, 1.5252072772996974, 6.614803770833429, 0.5639742949577523, 33.751486563010445, -162.26768663829898, 178.04805471770143
+flux1:, 1.5261896341703014, 6.420550883259956, 0.5501514807783084, 31.71015406411036, -155.72642935253728, 171.33904503280044
+flux1:, 1.5271719910409054, 6.229586942660427, 0.5365496199884822, 29.779059313042318, -149.41338636011702, 164.8313784264901
+flux1:, 1.5281543479115094, 6.041952057858833, 0.5231712761284016, 27.955122696848544, -143.32390847713427, 158.52216573417516
+flux1:, 1.5291367047821134, 5.857681976287914, 0.510018715034722, 26.2351790520679, -137.45319450233808, 152.40837631273203
+flux1:, 1.5301190616527172, 5.676808151495932, 0.49709391033970934, 24.615988460736368, -131.79630963059827, 146.48684928424493
+flux1:, 1.5311014185233212, 5.499357815629561, 0.48439854928853815, 23.09424697161986, -126.3482034451722, 140.75430463228605
+flux1:, 1.5320837753939252, 5.325354056638987, 0.47193403885518176, 21.66659721012891, -121.10372744535938, 135.20735412658905
+flux1:, 1.5330661322645291, 5.15481589993965, 0.45970151213703986, 20.329638841642883, -116.05765206937669, 129.84251205309823
+flux1:, 1.5340484891351331, 4.987758394268392, 0.4477018350085484, 19.079938854469006, -111.20468317587924, 124.6562057280534
+flux1:, 1.535030846005737, 4.824192701466084, 0.4359356130137359, 17.914041630229548, -106.53947795093937, 119.64478577612938
+flux1:, 1.536013202876341, 4.664126189918488, 0.4244031984779563, 16.828478771148482, -102.05666021075076, 114.80453615396046
+flux1:, 1.536995559746945, 4.507562531388458, 0.41310469781900844, 15.819778655493305, -97.75083507397767, 110.13168390217791
+flux1:, 1.537977916617549, 4.35450180096843, 0.4020399790378455, 14.88447569431202, -93.61660298085557, 105.62240861019417
+flux1:, 1.538960273488153, 4.204940579886743, 0.39120867936947223, 14.019119264529046, -89.6485730398703, 101.2728515797845
+flux1:, 1.5399426303587567, 4.058872060900552, 0.3806102130746831, 13.220282295490678, -85.84137568607692, 97.07912467469606
+flux1:, 1.5409249872293607, 3.9162861560093813, 0.3702437793535299, 12.484569488083913, -82.18967463837623, 93.03731884530261
+flux1:, 1.5419073440999647, 3.7771696062289086, 0.3601083703618041, 11.808625147687883, -78.68817814652724, 89.14351231849339
+flux1:, 1.5428897009705687, 3.6415060931619134, 0.35020277931203175, 11.189140614302769, -75.33164952161388, 85.39377844455855
+flux1:, 1.5438720578411727, 3.509276352113305, 0.3405256086409451, 10.622861275382796, -72.11491694689774, 81.78419319425129
+flux1:, 1.5448544147117764, 3.3804582864953914, 0.3310752782256721, 10.106593149018906, -69.03288256884726, 78.31084230055394
+flux1:, 1.5458367715823806, 3.2550270832753534, 0.32185003363140846, 9.637209027288254, -66.08053087104093, 74.96982804100365
+flux1:, 1.5468191284529844, 3.1329553292236287, 0.31284795437381324, 9.211654171701065, -63.25293633629647, 71.75727565777272
+flux1:, 1.5478014853235884, 3.014213127723175, 0.3040669621796735, 8.826951554783912, -60.54527040496524, 68.66933941400208
+flux1:, 1.5487838421941924, 2.8987682159109376, 0.29550482923017307, 8.480206643909746, -57.95280773977688, 65.70220828597127
+flux1:, 1.5497661990647964, 2.7865860819228736, 0.28715918637139803, 8.16861172551859, -55.47093180992248, 62.8521112920907
+flux1:, 1.5507485559354004, 2.6776300820259777, 0.27902753127737157, 7.889449769823839, -53.09513980909855, 60.11532246056383
+flux1:, 1.5517309128060042, 2.5718615574229378, 0.27110723655148344, 7.640097838022725, -50.82104692435134, 57.48816543887434
+flux1:, 1.5527132696766082, 2.4692399505258438, 0.26339555775274404, 7.418030035877489, -48.64438997426336, 54.96701774911023
+flux1:, 1.5536956265472122, 2.369722920500267, 0.25588964133394393, 7.220820019286673, -46.56103043674633, 52.54831469416403
+flux1:, 1.5546779834178162, 2.273266457889362, 0.24858653247934678, 7.046143059150293, -44.56695688814526, 50.228552920746104
+flux1:, 1.5556603402884202, 2.179824998136828, 0.24148318283024092, 6.891777674426938, -42.65828687677258, 48.004293645975615
+flux1:, 1.556642697159024, 2.0893515338328106, 0.23457645808729505, 6.755606843795902, -40.83126825503444, 45.87216555510877
+flux1:, 1.557625054029628, 2.001797725518157, 0.22786314547926315, 6.635618807713541, -39.08227999546199, 43.82886737866281
+flux1:, 1.558607410900232, 1.9171140108879385, 0.22133996108836132, 6.529907473975308, -37.407832516698406, 41.87117015786925
+flux1:, 1.559589767770836, 1.8352497122465075, 0.21500355702305624, 6.4366724410836955, -35.80456754623793, 39.99591920800214
+flux1:, 1.56057212464144, 1.7561531420712808, 0.20885052842997548, 6.3542186548118424, -34.269257547261184, 38.20003578960882
+flux1:, 1.5615544815120437, 1.6797717065549218, 0.20287742033701134, 6.2809557143232375, -32.798804737256454, 36.48051849819292
+flux1:, 1.5625368383826477, 1.606052007000722, 0.19708073432045053, 6.215396845096668, -31.390239726440402, 34.83444438333434
+flux1:, 1.5635191952532517, 1.5349399389580893, 0.19145693498975672, 6.156157556636323, -30.040719804024793, 33.25896980847366
+flux1:, 1.5645015521238557, 1.4663807889895768, 0.18600245628394116, 6.1019540036222395, -28.74752690041501, 31.75133106304508
+flux1:, 1.5654839089944597, 1.4003193289734959, 0.18071370757442493, 6.051601069664783, -27.508065253244187, 30.308844738742074
+flux1:, 1.5664662658650634, 1.3366999078520738, 0.17558707956967667, 6.004010193280041, -26.319858804892384, 28.92890788196461
+flux1:, 1.5674486227356674, 1.2754665407442944, 0.17061895001766067, 5.958186956001047, -25.18054835875639, 27.608997934600975
+flux1:, 1.5684309796062714, 1.2165629953516328, 0.16580568920268213, 5.913228452771066, -24.087888521064134, 26.346672475379428
+flux1:, 1.5694133364768754, 1.1599328755917038, 0.1611436652337584, 5.868320464866047, -23.0397444543908, 25.13956877406105
+flux1:, 1.5703956933474794, 1.10551970240448, 0.1566292491223249, 5.82273445561673, -22.03408846844613, 23.98540317071014
+flux1:, 1.5713780502180832, 1.0532669916824595, 0.15225881964751742, 5.775824409108502, -21.068996472845544, 22.881970292242865
+flux1:, 1.5723604070886872, 1.0031183292849732, 0.14802876800791226, 5.727023531875193, -20.1426443158184, 21.827142118327863
+flux1:, 1.5733427639592912, 0.9550174431035634, 0.14393550225907567, 5.67584083733348, -19.25330403185442, 20.81886690856755
+flux1:, 1.5743251208298952, 0.9089082721533532, 0.13997545153677615, 5.621857632362074, -18.39934002035988, 19.855168002723374
+flux1:, 1.5753074777004992, 0.8647350326726124, 0.1361450700662484, 5.564723925021763, -17.579205176354094, 18.934142505513062
+flux1:, 1.576289834571103, 0.8224422812191018, 0.13244084095830364, 5.504154771895967, -16.791436993197042, 18.053959867248082
+flux1:, 1.577272191441707, 0.7819749747593087, 0.12885927979353784, 5.439926583001575, -16.034653656222627, 17.212860371328198
+flux1:, 1.578254548312311, 0.7432785277529296, 0.12539693799641372, 5.37187340157033, -15.307550145046786, 16.4091535392753
+flux1:, 1.579236905182915, 0.7062988662410109, 0.1220504060012175, 5.299883175342212, -14.608894361157342, 15.641216463657479
+flux1:, 1.580219262053519, 0.6709824789523068, 0.11881631621240482, 5.2238940352800585, -13.937523296221396, 14.907492078902688
+flux1:, 1.5812016189241227, 0.6372764654490438, 0.11569134576225648, 5.143890596841375, -13.292339255400368, 14.206487379643894
+flux1:, 1.5821839757947267, 0.6051285813370835, 0.11267221906890959, 5.059900298132771, -12.672306148749133, 13.536771595802115
+flux1:, 1.5831663326653307, 0.5744872805724394, 0.10975571019836709, 4.97198978843274, -12.07644586263815, 12.896974333248641
+flux1:, 1.5841486895359347, 0.5453017549000561, 0.10693864503424791, 4.880261379698532, -11.50383472195666, 12.285783688454307
+flux1:, 1.5851310464065387, 0.5175219704657806, 0.1042179032593596, 4.784849572773244, -10.953600052706882, 11.70194434508751
+flux1:, 1.5861134032771425, 0.4910987016469178, 0.10159042015344592, 4.685917669115361, -10.424916853484977, 11.144255660124445
+flux1:, 1.5870957601477467, 0.46598356215076525, 0.09905318821165668, 4.583654477936458, -9.91700458322519, 10.61156974655702
+flux1:, 1.5880781170183504, 0.4421290334345565, 0.09660325858853694, 4.478271127730143, -9.429124071530099, 10.10278955936728
+flux1:, 1.5890604738889544, 0.4194884905035788, 0.09423774237248479, 4.3699979902283825, -8.960574556844028, 9.616866990974158
+flux1:, 1.5900428307595584, 0.3980162251477931, 0.09195381169582291, 4.259081723920453, -8.510690856752486, 9.152800981928102
+flux1:, 1.5910251876301624, 0.3776674666802683, 0.0897487006857884, 4.14578244334163, -8.078840673700979, 8.709635652191938
+flux1:, 1.5920075445007664, 0.35839840024319936, 0.08761970626184, 4.030371019456468, -7.664422038526878, 8.28645845788659
+flux1:, 1.5929899013713702, 0.34016618275022537, 0.08556418878480018, 3.9131265155646284, -7.266860893302865, 7.882398377982098
+flux1:, 1.5939722582419742, 0.322928956535745, 0.08357957256348408, 3.7943337623085784, -6.88560881418361, 7.496624134981813
+flux1:, 1.5949546151125782, 0.3066458607836827, 0.08166334622448657, 3.6742810745209686, -6.520140874144689, 7.1283424532211175
+flux1:, 1.5959369719831822, 0.29127704081045186, 0.07981306295086169, 3.5532581118426987, -6.169953644799353, 6.776796358026447
+flux1:, 1.5969193288537862, 0.27678365527768634, 0.07802634059550949, 3.431553884263969, -5.83456333577174, 6.441263518574875
+flux1:, 1.59790168572439, 0.26312788141191323, 0.07630086167506249, 3.3094549029996827, -5.513504069513581, 6.121054636917594
+flux1:, 1.598884042594994, 0.2502729183091932, 0.07463437325006539, 3.187243476395826, -5.206326288838737, 5.815511885280224
+flux1:, 1.599866399465598, 0.23818298840356622, 0.0730246866972936, 3.0651961498974436, -4.912595293969314, 5.5240073933882075
+flux1:, 1.600848756336202, 0.2268233371786384, 0.07146967737994557, 2.94358228847387, -4.631889905380062, 5.2459417872494205
+flux1:, 1.601831113206806, 0.21616023120183064, 0.06996728422147755, 2.822662799305379, -4.363801248337222, 4.980742780489884
+flux1:, 1.6028134700774097, 0.2061609545613581, 0.06851550918876449, 2.7026889919868617, -4.107931654650558, 4.727863819062026
+flux1:, 1.6037958269480137, 0.19679380378522765, 0.06711241669020405, 2.5839015729939865, -3.8638936768273604, 4.4867827798311035
+flux1:, 1.6047781838186177, 0.18802808132202484, 0.06575613289433707, 2.4665297706974454, -3.6313092095758686, 4.257000723308888
+flux1:, 1.6057605406892217, 0.17983408766225578, 0.06444484497442564, 2.350790586785723, -3.4098087133499266, 4.038040700529032
+flux1:, 1.6067428975598257, 0.17218311217866442, 0.06317680028439539, 2.236888169583817, -3.1990305344759262, 3.829446613841576
+flux1:, 1.6077252544304295, 0.16504742276300272, 0.06195030547135469, 2.1250133044145354, -2.998620316246759, 3.6307821311761472
+flux1:, 1.6087076113010335, 0.15840025433606067, 0.06076372552990991, 2.015343015869418, -2.8082304952940684, 3.4416296531410215
+flux1:, 1.6096899681716375, 0.15221579630629808, 0.059615482803253884, 1.9080402765924933, -2.6275198774771487, 3.2615893321251215
+flux1:, 1.6106723250422414, 0.14646917905163162, 0.05850405593596384, 1.8032538169874635, -2.456153287525987, 3.090278142420488
+flux1:, 1.6116546819128454, 0.14113645949714726, 0.05742797878324263, 1.7011180300747197, -2.293801286678748, 2.9273290002272683
+flux1:, 1.6126370387834492, 0.13619460586052062, 0.05638583928128673, 1.6017529656162517, -2.1401399526190854, 2.7723899322704275
+flux1:, 1.6136193956540532, 0.13162148163510126, 0.055376278283187225, 1.5052644075154238, -1.9948507160853997, 2.625123291647921
+flux1:, 1.6146017525246572, 0.12739582887880668, 0.05439798836475639, 1.411744028458715, -1.857620248641295, 2.4852050194196416
+flux1:, 1.6155841093952612, 0.12349725087578066, 0.053449712604432216, 1.3212696157384616, -1.7281403962234563, 2.3523239503675812
+flux1:, 1.6165664662658652, 0.11990619423523884, 0.05253024334126154, 1.233905362210673, -1.6061081532430235, 2.226181161280471
+flux1:, 1.617548823136469, 0.1166039304906636, 0.05163842091485784, 1.149702216386389, -1.4912256721904906, 2.1064893600584664
+flux1:, 1.618531180007073, 0.11357253726011626, 0.050773132390994034, 1.0686982857240725, -1.383200303887011, 1.992972313890237
+flux1:, 1.619513536877677, 0.11079487902666378, 0.04993331027638924, 0.9909192872938947, -1.2817446637386927, 1.8853643147149461
+flux1:, 1.620495893748281, 0.10825458759572823, 0.04911793122604266, 0.9163790401053861, -1.186576719566922, 1.7834096801644348
+flux1:, 1.621478250618885, 0.1059360422841436, 0.04832601474632245, 0.8450799935388573, -1.0974198968289934, 1.686862288168911
+flux1:, 1.6224606074894887, 0.10382434989352964, 0.047556621896855986, 0.7770137864881059, -1.014003197279449, 1.5954851434047326
+flux1:, 1.6234429643600927, 0.10190532451850902, 0.0468088539940825, 0.7121618320089413, -0.93606132737705, 1.5090499737740368
+flux1:, 1.6244253212306967, 0.100165467237885, 0.046081851319194005, 0.6504959224704167, -0.8633348329930634, 1.4273368551222254
+flux1:, 1.6254076781013007, 0.09859194573526577, 0.04537479183301362, 0.5919788504221015, -0.7955702372372391, 1.3501338624245145
+flux1:, 1.6263900349719047, 0.09717257389252897, 0.04468688990019321, 0.5365650406237367, -0.7325201784732518, 1.2772367457018357
+flux1:, 1.6273723918425085, 0.09589579139841638, 0.044017395024971255, 0.4842011889208183, -0.6739435458559148, 1.208448628970241
+flux1:, 1.6283547487131127, 0.09475064341130424, 0.04336559060058345, 0.4348269038983797, -0.6196056099762509, 1.1435797305682054
+flux1:, 1.6293371055837165, 0.09372676031400971, 0.04273079267421937, 0.3883753475057957, -0.5692781464555392, 1.082447103258607
+flux1:, 1.6303194624543205, 0.09281433759548645, 0.042112348729342296, 0.3447738710969409, -0.5227395505730493, 1.024874392555229
+flux1:, 1.6313018193249245, 0.09200411589271167, 0.04150963648697981, 0.303944643602502, -0.4797749412580353, 0.970691611783467
+flux1:, 1.6322841761955285, 0.09128736122378733, 0.0409220627274884, 0.26580526880893157, -0.4401762530068115, 0.9197349324458762
+flux1:, 1.6332665330661325, 0.0906558454410468, 0.04034906213414305, 0.23026938898765792, -0.4037423145143537, 0.8718464885264896
+flux1:, 1.6342488899367362, 0.09010182693127741, 0.03979009615977336, 0.19724727237734427, -0.37027891302529947, 0.8268741934379438
+flux1:, 1.6352312468073402, 0.08961803158779791, 0.039244651917527074, 0.1666463822858571, -0.3395988436173516, 0.7846715683805815
+flux1:, 1.6362136036779442, 0.08919763407743858, 0.03871224109675441, 0.13837192582936314, -0.31152194282571005, 0.7450975809537776
+flux1:, 1.6371959605485482, 0.0888342394234888, 0.03819239890481826, 0.1123273805807723, -0.2858751062039001, 0.7080164929288951
+flux1:, 1.6381783174191522, 0.08852186492379849, 0.03768468303560364, 0.08841499763818184, -0.2624922895898052, 0.6732977161661088
+flux1:, 1.639160674289756, 0.08825492242137027, 0.0371886726653029, 0.06653627986448121, -0.2412144940091588, 0.640815675723606
+flux1:, 1.64014303116036, 0.08802820094320912, 0.03670396747602086, 0.0465924342722208, -0.2218897342980826, 0.610449679281122
+flux1:, 1.641125388030964, 0.08783684972124603, 0.03623018670759844, 0.0284847977491691, -0.20437299166633255, 0.5820837920660371
+flux1:, 1.642107744901568, 0.08767636160776807, 0.03576696823795427, 0.012115235525656813, -0.18852615054798713, 0.5556067165386331
+flux1:, 1.643090101772172, 0.08754255689593703, 0.03531396769220834, -0.0026134880156807004, -0.17421792020135743, 0.5309116761584994
+flux1:, 1.6440724586427757, 0.08743156755469744, 0.03487085758066243, -0.01579736640233963, -0.16132374162171353, 0.5078963026182113
+flux1:, 1.6450548155133797, 0.08733982188583812, 0.03443732646574363, -0.02753083604435857, -0.14972568042148998, 0.48646252599270823
+flux1:, 1.6460371723839837, 0.08726402960939376, 0.03401307815785936, -0.03790648899149941, -0.1393123064106469, 0.4665164673114371
+flux1:, 1.6470195292545877, 0.08720116738258338, 0.03359783094007263, -0.04701481319883993, -0.12997856067844937, 0.4479683331189059
+flux1:, 1.6480018861251917, 0.08714846475584562, 0.03319131682143288, -0.05494395988307659, -0.1216256110341941, 0.4307323116420128
+flux1:, 1.6489842429957955, 0.08710339056854076, 0.032793280818737294, -0.06177953742557853, -0.11416069671022189, 0.41472647023700376
+flux1:, 1.6499665998663995, 0.08706363978572393, 0.03240348026642444, -0.06760443116109699, -0.10749696326795646, 0.39987265383453935
+flux1:, 1.6509489567370035, 0.08702712077616881, 0.03202168415428425, -0.07249864828820543, -0.10155328867296845, 0.38609638415126063
+flux1:, 1.6519313136076075, 0.0869919430308442, 0.031647672492560605, -0.07653918704387072, -0.09625410152333141, 0.3733267594760052
+flux1:, 1.6529136704782115, 0.08695640532034249, 0.03128123570402927, -0.079799929204568, -0.09152919242482221, 0.3614963548814153
+flux1:, 1.6538960273488152, 0.0869189842882518, 0.030922174042581806, -0.08235155490693845, -0.08731351950665278, 0.35054112274790994
+flux1:, 1.6548783842194192, 0.08687832347732341, 0.030570297037775064, -0.08426147872075421, -0.08354700906596899, 0.34040029352131485
+flux1:, 1.6558607410900232, 0.08683322278388055, 0.03022542296481533, -0.08559380585950299, -0.08017435231584087, 0.3310162766567117
+flux1:, 1.6568430979606272, 0.08678262833567685, 0.029887378339392635, -0.08640930737587516, -0.07714479919181294, 0.32233456173020325
+flux1:, 1.6578254548312312, 0.08672562278732347, 0.029555997436760587, -0.08676541315897823, -0.07441195014760692, 0.31430361972445203
+flux1:, 1.658807811701835, 0.08666141602707485, 0.0292311218344283, -0.08671622153202829, -0.0719335468399937, 0.30687480451799043
+flux1:, 1.659790168572439, 0.08658933628801338, 0.02891259997782753, -0.0863125242373677, -0.0696712625684619, 0.30000225462772895
+flux1:, 1.660772525443043, 0.08650882165631936, 0.02860028676827239, -0.08560184559174969, -0.06759049329669609, 0.2936427952713408
+flux1:, 1.661754882313647, 0.08641941196859983, 0.028294043172557883, -0.0846284946013028, -0.06566015004103057, 0.2877558408321049
+flux1:, 1.662737239184251, 0.08632074109009917, 0.027993735853485642, -0.08343362883440254, -0.06385245336621875, 0.2823032978203362
+flux1:, 1.6637195960548548, 0.08621252956512261, 0.02769923682063375, -0.08205532887045358, -0.06214273068212753, 0.2772494684364732
+flux1:, 1.6647019529254587, 0.08609457763053137, 0.027410423100664796, -0.08052868216533497, -0.06050921698538035, 0.27256095484891263
+flux1:, 1.6656843097960627, 0.08596675858316441, 0.02712717642647604, -0.07888587520272876, -0.058932859640596705, 0.26820656430627754
+flux1:, 1.6666666666666667, 0.08582901249162318, 0.026849382944465507, -0.07715629283555281, -0.057397127743951885, 0.2641572152069764
+
+Elapsed run time = 2092.2611 s
