@@ -92,7 +92,7 @@ for m in range(len(names_interest)):
     lower_cav_flux.append(df_flux_normalized['transmission_lower'])
     above_reg_flux.append(df_flux_normalized['transmission_above'])
     below_reg_flux.append(df_flux_normalized['transmission_below'])
-    between_flux.append(df_flux_normalized['transmission_below'])
+    between_flux.append(df_flux_normalized['transmission_between'])
     fluxes.append(df_flux_normalized['freq'])
     lams.append(df_flux_normalized['lam'])
     
