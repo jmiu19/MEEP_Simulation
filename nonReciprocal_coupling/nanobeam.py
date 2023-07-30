@@ -112,19 +112,11 @@ def simulation(params):
     df = fmax-fmin
 
     sources = [# source at upper cavity
-<<<<<<< HEAD
-               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
-               component=-mp.Ey, center=mp.Vector3(0, ctr_sep/2, 0)),
-               # source at lower cavity
-               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
-               component=mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
-=======
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=2,
                component=mp.Ey, center=mp.Vector3(0, 0, 0)),
                # source at lower cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
                component=-mp.Ex, center=mp.Vector3(0, 0, 0))]
->>>>>>> 1e83248 (finished simulation for 1Ex 2Ey source for non-Reciprocal coupling simulation)
 
     ## symmetry of the system ###############################################
     symmetries = [mp.Mirror(mp.X,+1),   ## try symmetry in x direction
