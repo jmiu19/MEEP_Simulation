@@ -113,10 +113,10 @@ def simulation(params):
 
     sources = [# source at upper cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
-               component=mp.Ey, center=mp.Vector3(0, ctr_sep/2, 0)),
+               component=-mp.Ey, center=mp.Vector3(0, ctr_sep/2, 0)),
                # source at lower cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
-               component=-mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
+               component=mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
 
     ## symmetry of the system ###############################################
     symmetries = [mp.Mirror(mp.X,+1),   ## try symmetry in x direction

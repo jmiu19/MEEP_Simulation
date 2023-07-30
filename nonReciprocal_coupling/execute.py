@@ -15,7 +15,7 @@ Times = [25, 500]
 Nwvg_ups = [15]
 Nwvg_los = [15]
 widths = [1.4]
-machine = 'MIC'     ## 'MIC' or 'GL'
+machine = 'GL'     ## 'MIC' or 'GL'
 
 
 def configGen(depth, params, machine_shell_script):
