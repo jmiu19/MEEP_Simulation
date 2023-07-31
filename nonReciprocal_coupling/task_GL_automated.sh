@@ -2,10 +2,10 @@
 #SBATCH --job-name=asymmetric_coupled_cavities
 #SBATCH --account=dengh1
 #SBATCH --partition=standard
-#SBATCH --cpus-per-task=12
-#SBATCH --nodes=2
+#SBATCH --cpus-per-task=2
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=1
-#SBATCH --mem-per-cpu=1g
+#SBATCH --mem-per-cpu=2g
 #SBATCH --mail-type=FAIL,BEGIN,END
 #SBATCH --time=4:00:00
 

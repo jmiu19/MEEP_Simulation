@@ -57,8 +57,8 @@ def simulation(params):
 
     ## size of the computation cell
     sx = 2*sum(a_taper)+2*(max(nwvg_up,nwvg_lo)-1)*a_0+a_0+2.2*dpml # length
-    sy = dpml+dair+(2*width*a_0)+sep+dair+dpml      # width of the cell
-    sz = dpml+dair+6*h+dair+dpml              # height of the simulation cell
+    sy = dpml+dair+(6*width*a_0)+sep+dair+dpml      # width of the cell
+    sz = dpml+dair+3*h+dair+dpml              # height of the simulation cell
     cell_size = mp.Vector3(sx,sy,sz)
     boundary_layers = [mp.PML(dpml)]
 
@@ -111,12 +111,15 @@ def simulation(params):
     fcen = 0.5*(fmin+fmax)
     df = fmax-fmin
 
-    sources = [# source at upper cavity
+    sources = [# source at center for odd mode
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=2,
-               component=mp.Ey, center=mp.Vector3(0, 0, 0)),
+               component=mp.Ex, center=mp.Vector3(0, 0, 0)),
+               # source at upper cavity
+               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
+               component=mp.Ey, center=mp.Vector3(0, ctr_sep/2, 0)),
                # source at lower cavity
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
-               component=-mp.Ex, center=mp.Vector3(0, 0, 0))]
+               component=mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
 
     ## symmetry of the system ###############################################
     symmetries = [mp.Mirror(mp.X,+1),   ## try symmetry in x direction
@@ -145,7 +148,7 @@ def simulation(params):
                      size=mp.Vector3(0.9*(sx-2*dpml), 0, 0.9*(sz-2*dpml)))
     freg_below = mp.FluxRegion(center=mp.Vector3(0, -ctr_sep, 0),
                      size=mp.Vector3(0.9*(sx-2*dpml), 0, 0.9*(sz-2*dpml)))
-    nfreq = 500 # number of frequencies at which to compute flux
+    nfreq = 1000 # number of frequencies at which to compute flux
     trans_upper_cavity = sim.add_flux(fcen, df, nfreq, freg_upper_cavity)
     trans_lower_cavity = sim.add_flux(fcen, df, nfreq, freg_lower_cavity)
     trans_between = sim.add_flux(fcen, df, nfreq, freg_between)
