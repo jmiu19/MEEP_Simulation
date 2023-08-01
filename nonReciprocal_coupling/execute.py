@@ -4,15 +4,15 @@ import numpy as np
 import pandas as pd
 
 ## submit the simulation jobs to cluster
-Resolution = [60]
+Resolution = [40]
 latticeConstant = [0.33]
-Seps = [0.2]
+Seps = [0.7]
 Lam_us = [0.899]
 Lam_ss = [0.613]
 NULL = ['True']
 Animate = ['True']
 Times = [500]
-Nwvg_ups = [3, 5, 15]
+Nwvg_ups = [3, 5, 10]
 Nwvg_los = [15]
 widths = [1.4]
 machine = 'GL'     ## 'MIC' or 'GL'
