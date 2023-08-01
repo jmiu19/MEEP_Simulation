@@ -7,7 +7,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem-per-cpu=4g
 #SBATCH --mail-type=FAIL,BEGIN,END
-#SBATCH --time=4:00:00
+#SBATCH --time=24:00:00
 
 
 JOB_NUM=$((SLURM_ARRAY_TASK_ID))
