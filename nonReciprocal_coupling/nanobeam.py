@@ -123,7 +123,7 @@ def simulation(params):
 
     ## symmetry of the system ###############################################
     symmetries = [mp.Mirror(mp.X,+1),   ## try symmetry in x direction
-                  #mp.Mirror(mp.Y,-1),
+                  #mp.Mirror(mp.Y,-1),   ## try symmetry in y direction
                   mp.Mirror(mp.Z,+1)]   ## put symmetry in z direction
 
     ## define the simulation and detector objects ###########################

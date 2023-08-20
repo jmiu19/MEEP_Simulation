@@ -11,9 +11,9 @@ Lam_us = [0.899]
 Lam_ss = [0.613]
 NULL = ['True']
 Animate = ['True']
-Times = [500]
-Nwvg_ups = [3, 5, 10]
-Nwvg_los = [15]
+Times = [500, 1]
+Nwvg_ups = [15]
+Nwvg_los = [3, 5, 10]
 widths = [1.4]
 machine = 'GL'     ## 'MIC' or 'GL'
 
