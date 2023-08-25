@@ -35,6 +35,7 @@ alpha, kappa = expParam[0], expParam[1]
 sim_df = pd.read_csv('sim_data.csv')
 minC = min(sim_df['C'].values.tolist())
 maxC = max(sim_df['C'].values.tolist())
+print(minC)
 C_range = np.linspace(0.95*minC, 1.05*maxC, 300)
 d_range = [-np.log(targetC/alpha)/kappa-presetW for targetC in C_range]
 
