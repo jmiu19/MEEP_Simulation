@@ -28,6 +28,7 @@ def simulation(params):
     nwvg_lo = params['Nwvg_los']   # number of waveguide holes in lower cavity
     v = params['v']                # separation between nanobeams in a pair
     w = params['w']                # separation between pairs
+    x_offset = params['x_offsets']
     numPairs = params['numPairs']  # number of pairs of nanobeams
 
 
@@ -59,7 +60,7 @@ def simulation(params):
         x_taper.append(sum(a_taper)-(a_taper[i]/2))
 
     ## size of the computation cell
-    sx = 2*sum(a_taper)+2*max(nwvg_up,nwvg_lo)*a_0+a_0+2.5*dpml      # length
+    sx = 2*sum(a_taper)+2*max(nwvg_up,nwvg_lo)*a_0+a_0+2.5*dpml+x_offset
     sy = dpml+dair+numPairs*(2*width*a_0+v)+(numPairs-1)*w+dair+dpml # width
     sz = dpml+dair+2*h+dair+dpml              # height of the simulation cell
     cell_size = mp.Vector3(sx,sy,sz)
@@ -93,8 +94,8 @@ def simulation(params):
                     y_ctr = y_ctr_lo
                 ## add waveguide holes to the nanobeam
                 for mm in range(Nwvg):
-                    x_ctr_r = +sum(a_taper)-a_taper[-1]/2+mm*a_0
-                    x_ctr_l = -sum(a_taper)+a_taper[-1]/2-mm*a_0
+                    x_ctr_r = +sum(a_taper)-a_taper[-1]/2+mm*a_0+x_offset/2*(-1)**i
+                    x_ctr_l = -sum(a_taper)+a_taper[-1]/2-mm*a_0+x_offset/2*(-1)**i
                     ctr_r = mp.Vector3(x_ctr_r, y_ctr, 0)
                     ctr_l = mp.Vector3(x_ctr_r, y_ctr, 0)
                     geometry.append(mp.Cylinder(material=mp.air,
@@ -107,8 +108,8 @@ def simulation(params):
                                                 center=ctr_l))
                 ## add taper holes to the nanobeam
                 for mm in range(Ndef):
-                    ctr_r = mp.Vector3(+x_taper[mm], y_ctr, 0)
-                    ctr_l = mp.Vector3(-x_taper[mm], y_ctr, 0)
+                    ctr_r = mp.Vector3(+x_taper[mm]+x_offset/2*(-1)**i, y_ctr, 0)
+                    ctr_l = mp.Vector3(-x_taper[mm]+x_offset/2*(-1)**i, y_ctr, 0)
                     geometry.append(mp.Cylinder(material=mp.air,
                                                 radius=r_taper[mm],
                                                 height=mp.inf,
