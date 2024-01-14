@@ -4,17 +4,18 @@ import numpy as np
 import pandas as pd
 
 ## submit the simulation jobs to cluster
-Resolution = [50]
+Resolution = [20]
 latticeConstant = [0.33]
-Seps = [0.2]
+v = [0.3]
+w = [0.3]
 Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
 Animate = ['True']
-Times = [0.1, 500]
-Nwvg_ups = [3, 5, 10, 15]
+Times = [0.1]
+Nwvg_ups = [3]
 Nwvg_los = [15]
-widths = [1.4]
+numPairs = [6]
 machine = 'GL'     ## 'MIC' or 'GL'
 
 
@@ -54,7 +55,9 @@ else:
 ## parameter disctionary
 parameters = {
     'Resolution': Resolution,
-    'Seps': Seps,
+    'v': v,
+    'w': w,
+    'numPairs': numPairs,
     'Lam_ss': Lam_ss,
     'Lam_us': Lam_us,
     'NULL': NULL,
@@ -63,7 +66,6 @@ parameters = {
     'Nwvg_ups': Nwvg_ups,
     'Nwvg_los': Nwvg_los,
     'a': latticeConstant,
-    'widths': widths,
 }
 
 
