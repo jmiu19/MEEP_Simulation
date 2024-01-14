@@ -16,7 +16,7 @@ for name_tag in names:
    n=n+1
 print(' ')
 name_ind = input('tag of the simulation of interest (integer input): ')
-name0_ind = input('tag fo the simulation for normalization (integer input): ') 
+name0_ind = input('tag fo the simulation for normalization (integer input): ')
 name = names[int(name_ind)]
 name0 = names[int(name0_ind)]
 plot_res = input('plot resonance of the modes (True or False): ')
@@ -42,9 +42,9 @@ df_flux0.columns = ['name', 'freq',
 
 df_flux['lam'] = 1/df_flux['freq'].values
 
-## truncate flux spectrum
-# df_flux = df_flux[(1/df_flux['freq']>0.7)]
-# df_flux = df_flux[(1/df_flux['freq']<0.78)]
+# truncate flux spectrum
+df_flux = df_flux[(1/df_flux['freq']>0.7)]
+df_flux = df_flux[(1/df_flux['freq']<0.78)]
 
 trans_names = ['transmission_upper',
                'transmission_lower',
