@@ -27,7 +27,6 @@ def simulation(params):
     nwvg_lo = params['Nwvg_los']   # number of waveguide holes in lower cavity
     w_lo = params['w_los'] # lower nanobeam width
     w_up = params['w_ups'] # upper nanobeam width (try 1.4) (exp 1.5)
-    sourceAmp = params['sourceAmps'] # amplitude of the lower source
 
     NULL = params['NULL']   # bool value, false simulates with no holes
                               # (for the purpose of normalizing the flux plot)
@@ -57,7 +56,7 @@ def simulation(params):
         x_taper.append(sum(a_taper)-(a_taper[i]/2))
 
     ## size of the computation cell
-    sx = 2*sum(a_taper)+2*(max(nwvg_up,nwvg_lo)-1)*a_0+a_0 # length of cell
+    sx = 2*sum(a_taper)+2*(max(nwvg_up,nwvg_lo))*a_0+2*dpml # length of cell
     sy = dpml+dair+((w_lo+w_up)*a_0)+sep+dair+dpml   # width of the simulation cell
     sz = dpml+dair+h+dair+dpml              # height of the simulation cell
     cell_size = mp.Vector3(sx,sy,sz)
@@ -116,7 +115,7 @@ def simulation(params):
                mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
                component=mp.Ey, center=mp.Vector3(0, +ctr_sep/2, 0)),
                # source at lower cavity
-               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=sourceAmp,
+               mp.Source(mp.GaussianSource(fcen, fwidth=df), amplitude=1,
                component=-mp.Ey, center=mp.Vector3(0, -ctr_sep/2, 0))]
 
     ## symmetry of the system ###############################################

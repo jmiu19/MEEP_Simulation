@@ -6,17 +6,16 @@ import pandas as pd
 ## submit the simulation jobs to cluster
 Resolution = [80]
 latticeConstant = [0.33]
-Seps = [0.25, 0.35]
+Seps = [0.35, 0.30]
 Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
 Animate = ['True']
 Times = [300]
-Nwvg_ups = [1]
+Nwvg_ups = [3,15]
 Nwvg_los = [15]
 width_ups = [1.4]
 width_los = [1.4]
-sourceAmps = [1,5,15,50]
 machine = 'GL'     ## 'MIC' or 'GL'
 
 
@@ -67,7 +66,6 @@ parameters = {
     'a': latticeConstant,
     'w_los': width_los,
     'w_ups': width_ups,
-    'sourceAmps': sourceAmps,
 }
 
 
