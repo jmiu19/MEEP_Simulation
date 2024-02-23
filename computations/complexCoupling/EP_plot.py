@@ -27,7 +27,7 @@ df_Eigen = pd.DataFrame(columns=['eigVal',
                                  'XC',
                                  'detuning'])
 for a in range(1,amax+1):
-    C = ini_C + 0.000015*(a-1) + CPhase
+    C = ini_C + 0.000015*(a-1)*1j + CPhase
     M = np.array([[ m11,  C   ],
                   [ C,    m22 ]])
     MeigVal, MeigVec = np.linalg.eig(M)
