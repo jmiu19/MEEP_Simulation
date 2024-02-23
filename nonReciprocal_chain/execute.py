@@ -4,16 +4,16 @@ import numpy as np
 import pandas as pd
 
 ## submit the simulation jobs to cluster
-Resolution = [20]
+Resolution = [50]
 latticeConstant = [0.33]
 v = [0.3]
 w = [0.3]
-x_offsets = [3]
+x_offsets = [2.5]
 Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
 Animate = ['True']
-Times = [0.1]
+Times = [300]
 Nwvg_ups = [3]
 Nwvg_los = [15]
 numPairs = [6]
@@ -58,6 +58,7 @@ parameters = {
     'Resolution': Resolution,
     'v': v,
     'w': w,
+    'x_offsets': x_offsets,
     'numPairs': numPairs,
     'Lam_ss': Lam_ss,
     'Lam_us': Lam_us,

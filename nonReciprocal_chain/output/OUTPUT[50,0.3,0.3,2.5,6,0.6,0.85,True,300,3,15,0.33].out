@@ -1,0 +1,81 @@
+Using MPI version 4.0, 2 processes
+-----------
+Initializing structure...
+Halving computational cell along direction z
+Splitting into 2 chunks by voxels
+time for choose_chunkdivision = 0.00326991 s
+Working in 3D dimensions.
+Computational cell is 18.16 x 12.84 x 4.28 with resolution 50
+     block, center = (0,-4.191,0)
+          size (1e+20,0.462,0.14)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     block, center = (0,-3.429,0)
+          size (1e+20,0.462,0.14)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (4,4,4)
+     cylinder, center = (2.54643,-3.429,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-0.0464286,-3.429,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (2.87643,-3.429,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-0.376429,-3.429,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (3.20643,-3.429,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (-0.706429,-3.429,0)
+          radius 0.1155, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.37729,-3.429,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     cylinder, center = (1.12271,-3.429,0)
+          radius 0.0891, height 1e+20, axis (0, 0, 1)
+          dielectric constant epsilon diagonal = (1,1,1)
+     ...(+ 314 objects not shown)...
+subpixel-averaging is 22.9558% done, 13.4283 s remaining
+subpixel-averaging is 45.6476% done, 4.7635 s remaining
+subpixel-averaging is 68.5682% done, 1.83383 s remaining
+subpixel-averaging is 91.5416% done, 0.369661 s remaining
+subpixel-averaging is 19.6739% done, 16.3328 s remaining
+subpixel-averaging is 38.8981% done, 6.28636 s remaining
+subpixel-averaging is 58.2801% done, 2.86399 s remaining
+subpixel-averaging is 77.7804% done, 1.1431 s remaining
+subpixel-averaging is 96.7917% done, 0.132635 s remaining
+subpixel-averaging is 22.8678% done, 13.4954 s remaining
+subpixel-averaging is 45.4628% done, 4.7985 s remaining
+subpixel-averaging is 68.3482% done, 1.85281 s remaining
+subpixel-averaging is 91.26% done, 0.383092 s remaining
+subpixel-averaging is 19.6265% done, 16.3815 s remaining
+subpixel-averaging is 38.8271% done, 6.30409 s remaining
+subpixel-averaging is 58.146% done, 2.87982 s remaining
+subpixel-averaging is 77.6305% done, 1.15298 s remaining
+subpixel-averaging is 96.5866% done, 0.141374 s remaining
+subpixel-averaging is 22.8238% done, 13.5282 s remaining
+subpixel-averaging is 45.41% done, 4.81041 s remaining
+subpixel-averaging is 68.2162% done, 1.86386 s remaining
+subpixel-averaging is 91.1192% done, 0.389855 s remaining
+subpixel-averaging is 19.5319% done, 16.4809 s remaining
+subpixel-averaging is 38.6851% done, 6.34153 s remaining
+subpixel-averaging is 57.9251% done, 2.90554 s remaining
+subpixel-averaging is 77.3702% done, 1.17037 s remaining
+subpixel-averaging is 96.3972% done, 0.149509 s remaining
+time for set_epsilon = 152.577 s
+-----------
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 538010 RUNNING AT gl3107
+=   EXIT CODE: 9
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions

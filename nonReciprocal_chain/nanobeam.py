@@ -86,6 +86,7 @@ def simulation(params):
     ## define holes in the device ############################################
         if (NULL):
             for j in [0,1]:
+                x_offset_half = (x_offset/2)*((-1)**j)
                 if j==0: # i=0 is the upper nanobeam
                     Nwvg = nwvg_up
                     y_ctr = y_ctr_up
@@ -94,10 +95,10 @@ def simulation(params):
                     y_ctr = y_ctr_lo
                 ## add waveguide holes to the nanobeam
                 for mm in range(Nwvg):
-                    x_ctr_r = +sum(a_taper)-a_taper[-1]/2+mm*a_0+x_offset/2*(-1)**i
-                    x_ctr_l = -sum(a_taper)+a_taper[-1]/2-mm*a_0+x_offset/2*(-1)**i
+                    x_ctr_r = +sum(a_taper)-a_taper[-1]/2+mm*a_0+x_offset_half
+                    x_ctr_l = -sum(a_taper)+a_taper[-1]/2-mm*a_0+x_offset_half
                     ctr_r = mp.Vector3(x_ctr_r, y_ctr, 0)
-                    ctr_l = mp.Vector3(x_ctr_r, y_ctr, 0)
+                    ctr_l = mp.Vector3(x_ctr_l, y_ctr, 0)
                     geometry.append(mp.Cylinder(material=mp.air,
                                                 radius=r_0*a_0,
                                                 height=mp.inf,
@@ -108,8 +109,8 @@ def simulation(params):
                                                 center=ctr_l))
                 ## add taper holes to the nanobeam
                 for mm in range(Ndef):
-                    ctr_r = mp.Vector3(+x_taper[mm]+x_offset/2*(-1)**i, y_ctr, 0)
-                    ctr_l = mp.Vector3(-x_taper[mm]+x_offset/2*(-1)**i, y_ctr, 0)
+                    ctr_r = mp.Vector3(+x_taper[mm]+x_offset_half, y_ctr, 0)
+                    ctr_l = mp.Vector3(-x_taper[mm]+x_offset_half, y_ctr, 0)
                     geometry.append(mp.Cylinder(material=mp.air,
                                                 radius=r_taper[mm],
                                                 height=mp.inf,
@@ -129,10 +130,10 @@ def simulation(params):
     for i in range(numPairs):
         y_ctr_lo = -(sy/2)+dpml+dair+(4*i+1)*halfWidth+i*v+i*w
         y_ctr_up = -(sy/2)+dpml+dair+(4*i+3)*halfWidth+(i+1)*v+i*w
-        aplitude_up = cmath.exp(2*cmath.pi*random.random()*1j)
+        amplitude_up = cmath.exp(2*cmath.pi*random.random()*1j)
         amplitude_lo = cmath.exp(2*cmath.pi*random.random()*1j)
         sources.append(mp.Source(mp.GaussianSource(fcen, fwidth=df),
-                                 amplitude=aplitude_lo,
+                                 amplitude=amplitude_lo,
                                  component=mp.Ey,
                                  center=mp.Vector3(0, y_ctr_lo, h)))
         sources.append(mp.Source(mp.GaussianSource(fcen, fwidth=df),
@@ -155,13 +156,17 @@ def simulation(params):
                         symmetries=symmetries)
 
     ## for flux diagram
-    flux_detectors = []
+    flux_detectors = [0]*(numPairs+1)
+    freg_above = mp.FluxRegion(center=mp.Vector3(0, 0, sz/2-dpml-(dair/2)),
+                               size=mp.Vector3(0.85*sx, 0.85*sy,0))
+    nfreq = 500 # number of frequencies at which to compute flux
+    flux_detectors[0] = sim.add_flux(fcen, df, nfreq, freg_above)
     for i in range(numPairs):
         y_pos = -(sy/2)+dpml+dair+(4*i+2)*halfWidth+(i+1/2)*v+i*w
         freg_between = mp.FluxRegion(center=mp.Vector3(0, y_pos, 0),
                          size=mp.Vector3(0.8*(sx-2*dpml), 0, 0.8*(sz-2*dpml)))
         nfreq = 500 # number of frequencies at which to compute flux
-        flux_detectors.append(sim.add_flux(fcen, df, nfreq, freg_between))
+        flux_detectors[i+1]=sim.add_flux(fcen, df, nfreq, freg_between)
 
 
     ## for animation
@@ -197,11 +202,11 @@ def simulation(params):
 
     # for flux plot
     # print out the flux spectrum
-    n_detector = 0
-    for detector in flux_detectors:
-        meep.display_csv("flux"+str(n_detector), meep.get_flux_freqs(detector))
-        n_detector += 1
-
+    for i in range(numPairs+1):
+        for j in range(len(mp.get_fluxes(flux_detectors[i]))):
+            flux_i = mp.get_fluxes(flux_detectors[i])[j]
+            freq_i = mp.get_flux_freqs(flux_detectors[i])[j]
+            print('detector'+str(i)+','+str(freq_i)+','+str(flux_i))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
