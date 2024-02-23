@@ -139,9 +139,15 @@ def simulation(params):
     freg_lower_cavity = mp.FluxRegion(center=mp.Vector3(+sum(a_taper)+6*a_0,
                                                         -ctr_sep/2, 0),
                                       size=mp.Vector3(0, (w_lo*a_0), h))
-    nfreq = 500 # number of frequencies at which to compute flux
-    trans_upper_cavity = sim.add_flux(fcen, df, nfreq, freg_upper_cavity)
-    trans_lower_cavity = sim.add_flux(fcen, df, nfreq, freg_lower_cavity)
+    nfreq = 1800 # number of frequencies at which to compute flux
+    f_min_trans = 1.365
+    f_max_trans = 1.376
+    fcen_trans = 0.5*(fmin+fmax)
+    df_trans = fmax-fmin
+    trans_upper_cavity = sim.add_flux(fcen_trans, df_trans,
+                                      nfreq, freg_upper_cavity)
+    trans_lower_cavity = sim.add_flux(fcen_trans, df_trans,
+                                      nfreq, freg_lower_cavity)
 
     ## for animation
     if (animate):
