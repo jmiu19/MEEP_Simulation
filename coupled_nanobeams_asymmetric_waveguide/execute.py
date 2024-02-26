@@ -6,7 +6,7 @@ import pandas as pd
 ## submit the simulation jobs to cluster
 Resolution = [60]
 latticeConstant = [0.33]
-Seps = np.linspace(0.46, 0.66, 15)
+Seps = np.linspace(0.46, 0.66, 15).tolist()
 Lam_us = [0.85]
 Lam_ss = [0.60]
 NULL = ['True']
