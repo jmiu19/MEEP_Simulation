@@ -31,6 +31,7 @@ C = df['C']
 
 expParam, expCov = curve_fit(expFit, dplusW, C, p0=[0.005,0.005], maxfev=10000)
 alpha, kappa = expParam[0], expParam[1]
+print('C fitted with distance with alpha='+str(alpha)+", kappa="+str(kappa))
 
 sim_df = pd.read_csv('sim_data.csv')
 minC = min(sim_df['C'].values.tolist())
